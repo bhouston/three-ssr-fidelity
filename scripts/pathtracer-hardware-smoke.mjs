@@ -54,7 +54,7 @@ try {
   );
   console.log('Hardware:', hardware);
   await probe.close();
-  for (const renderer of ['three-gpu-pathtracer', 'three-gpu-pathtracer-webgpu-experimental']) {
+  for (const renderer of ['three-gpu-pathtracer', 'three-dev']) {
     const page = await browser.newPage();
     await page.setViewport({ width: 32, height: 32 });
     const url = new URL('http://127.0.0.1:' + server.address().port + '/performance.html');
@@ -63,7 +63,7 @@ try {
       'fidelityKitParams',
       JSON.stringify({
         renderer,
-        scene: 'cornell-box-basic',
+        scene: 'diag-mirror',
         width: 32,
         height: 32,
         samples: 2,

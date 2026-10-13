@@ -7,12 +7,9 @@ import { batchTasks } from './dockergrid-batch.mjs';
 
 test('full sweep covers every example once per engine and uses native resolution', () => {
   const tasks = batchTasks();
-  assert.equal(tasks.length, listSceneNames().length * 3);
+  assert.equal(tasks.length, listSceneNames().length * 2);
   assert.equal(new Set(tasks.map((t) => `${t.scene}/${t.renderer}`)).size, tasks.length);
-  assert.deepEqual(
-    new Set(tasks.map((t) => t.renderer)),
-    new Set(['three-gpu-pathtracer-webgpu-experimental', 'three-gpu-pathtracer', 'blender']),
-  );
+  assert.deepEqual(new Set(tasks.map((t) => t.renderer)), new Set(['three-dev', 'three-gpu-pathtracer']));
   for (const task of tasks) {
     assert.ok(listSceneNames().includes(task.scene));
     assert.ok(!('width' in task) && !('height' in task) && !('renderers' in task));
@@ -25,8 +22,8 @@ test('full sweep covers every example once per engine and uses native resolution
 
 test('CLI glob selection and sampling overrides produce one task per selected pair', () => {
   const tasks = batchTasks({
-    scenes: 'pt-gi-room-*',
-    renderers: 'blender',
+    scenes: 'diag-*-30',
+    renderers: 'three-dev',
     samples: '2',
     'min-samples': '1',
     'noise-threshold': '0',
@@ -36,7 +33,7 @@ test('CLI glob selection and sampling overrides produce one task per selected pa
   assert.ok(
     tasks.every(
       (t) =>
-        t.renderer === 'blender' &&
+        t.renderer === 'three-dev' &&
         t.samples === 2 &&
         t.minSamples === 1 &&
         t.noiseThreshold === 0 &&
@@ -66,14 +63,14 @@ test('command stdout is directly usable as farm --params JSON', () => {
     [
       fileURLToPath(new URL('./dockergrid-batch.mjs', import.meta.url)),
       '--scenes',
-      'pt-gi-basic',
+      'diag-mirror',
       '--renderers',
-      'three-gpu-pathtracer-webgpu-experimental',
+      'three-dev',
     ],
     { stdio: ['ignore', 'pipe', 'ignore'] },
   );
   const tasks = JSON.parse(stdout.toString());
   assert.equal(tasks.length, 1);
-  assert.equal(tasks[0].scene, 'pt-gi-basic');
-  assert.equal(tasks[0].renderer, 'three-gpu-pathtracer-webgpu-experimental');
+  assert.equal(tasks[0].scene, 'diag-mirror');
+  assert.equal(tasks[0].renderer, 'three-dev');
 });

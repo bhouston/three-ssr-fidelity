@@ -162,7 +162,11 @@ export async function createPerformanceSession(
             if (!context) throw new Error('Capture readback context unavailable');
             return runtime.captureProgressive(
               {
-                draw: () => draw(),
+                // Submit a bounded batch, then drain it through captureProgressive's complete().
+                // Avoid a browser timer and GPU fence round trip for every individual sample.
+                draw: () => {
+                  for (let index = 0; index < 32 && current.frames < samples; index++) draw();
+                },
                 complete,
                 completed: () => current.getCompletedSamples?.() ?? current.frames,
                 limit: current.setSampleLimit?.bind(current),

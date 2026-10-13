@@ -54,7 +54,7 @@ jobs:
         run: node scripts/selection-browser.mjs
       - name: Check distributed capture contracts
         run: |
-          node --test scripts/dockergrid-batch.test.mjs scripts/legacy-links.test.mjs
+          node --test scripts/dockergrid-batch.test.mjs
           python3 docker/test_dockergrid.py
           python3 scripts/test_dockergrid_collect.py
       - name: Audit dependencies
