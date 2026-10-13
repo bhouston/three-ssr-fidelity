@@ -150,6 +150,7 @@ try {
   }
   assert.equal(await page.$eval('h1', (element) => element.textContent), 'three-ssr-fidelity');
   assert.ok(await page.$eval('figure img', (image) => image.naturalWidth > 0));
+  if (process.env.SMOKE_SCREENSHOT) await page.screenshot({ path: process.env.SMOKE_SCREENSHOT, fullPage: true });
   assert.equal(
     await page.$$eval('h2', (elements) => elements.map((e) => e.textContent).join(',')),
     'Fidelity,Performance,Live',

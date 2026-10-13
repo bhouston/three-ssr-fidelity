@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 3,
+  "runId": "01M4V9FC2B558NRNVHJ310PWMB",
+  "screenshot": true,
+  "throughput": {
+    "completedFrames": 3312,
+    "elapsed": 10.240299999999813
+  },
+  "networkProfile": {
+    "name": "unthrottled",
+    "latency": 0,
+    "downloadBytesPerSec": -1,
+    "uploadBytesPerSec": -1
+  },
+  "downloads": [
+    {
+      "phase": "load",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:57819/performance.html?performanceKitRunId=01M4V9FC2B558NRNVHJ310PWMB&performanceKitEntryId=diag-occlusion--three-dev&performanceKitDurationMs=10000&performanceKitParams=%7B%22renderer%22%3A%22three-dev%22%2C%22scene%22%3A%22diag-occlusion%22%2C%22width%22%3A480%2C%22height%22%3A360%7D&performanceKitOrigin=http%3A%2F%2Flocalhost%3A4400",
+          "category": "document",
+          "initiatorType": "navigation",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 812,
+          "encodedBodySize": 512,
+          "decodedBodySize": 512,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/performance-D3vtqxtb.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 1288,
+          "encodedBodySize": 988,
+          "decodedBodySize": 988,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/preload-helper-DLr8UypG.js",
+          "category": "script",
+          "initiatorType": "other",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 2207,
+          "encodedBodySize": 1907,
+          "decodedBodySize": 1907,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/host-CuBhi785.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 17216,
+          "encodedBodySize": 16916,
+          "decodedBodySize": 16916,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/telemetry-DTARCKl_.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 967,
+          "encodedBodySize": 667,
+          "decodedBodySize": 667,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/performance-session-BtYt6FUC.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 4630,
+          "encodedBodySize": 4330,
+          "decodedBodySize": 4330,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/rolldown-runtime-BpQH8Ho1.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0013000000000465662,
+          "responseStart": 0.005200000000186265,
+          "responseEnd": 0.006,
+          "transferSize": 527,
+          "encodedBodySize": 227,
+          "decodedBodySize": 227,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/performance-config-CvoDqRmK.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.002,
+          "responseStart": 0.007200000000186265,
+          "responseEnd": 0.010200000000186265,
+          "transferSize": 1233,
+          "encodedBodySize": 933,
+          "decodedBodySize": 933,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/src-B6aSaTZK.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0018000000000465662,
+          "responseStart": 0.006900000000139698,
+          "responseEnd": 0.01,
+          "transferSize": 17102,
+          "encodedBodySize": 16802,
+          "decodedBodySize": 16802,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/src-DYoHuYo2.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0012000000001862645,
+          "responseStart": 0.0054000000001396984,
+          "responseEnd": 0.0071000000000931325,
+          "transferSize": 234872,
+          "encodedBodySize": 234572,
+          "decodedBodySize": 234572,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/three.core-p45juZrx.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0015,
+          "responseStart": 0.005900000000139698,
+          "responseEnd": 0.007600000000093132,
+          "transferSize": 265703,
+          "encodedBodySize": 265403,
+          "decodedBodySize": 265403,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/SkeletonUtils-CFKRy90z.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0016000000000931322,
+          "responseStart": 0.0065,
+          "responseEnd": 0.011600000000093133,
+          "transferSize": 360506,
+          "encodedBodySize": 360206,
+          "decodedBodySize": 360206,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:57819/assets/src-DTe9474D.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0017000000001862645,
+          "responseStart": 0.009,
+          "responseEnd": 0.020300000000046566,
+          "transferSize": 3125048,
+          "encodedBodySize": 3124748,
+          "decodedBodySize": 3124748,
+          "sizeKnown": true
+        }
+      ],
+      "byCategory": {
+        "script": 4031299,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 812,
+        "other": 0
+      },
+      "totalTransferBytes": 4032111,
+      "totalDecodedBytes": 4028211,
+      "unknownSizeCount": 0
+    },
+    {
+      "phase": "post-load",
+      "resources": [],
+      "byCategory": {
+        "script": 0,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 0,
+        "other": 0
+      },
+      "totalTransferBytes": 0,
+      "totalDecodedBytes": 0,
+      "unknownSizeCount": 0
+    }
+  ],
+  "suiteName": "three-ssr-fidelity / default",
+  "entry": {
+    "id": "diag-occlusion--three-dev",
+    "name": "Three.js dev · stochastic GGX SSR · Diag Occlusion",
+    "renderer": {
+      "id": "three-dev",
+      "name": "Three.js dev · stochastic GGX SSR"
+    },
+    "scene": {
+      "id": "diag-occlusion",
+      "name": "Diag Occlusion"
+    },
+    "url": "performance.html"
+  },
+  "config": {
+    "duration": 10,
+    "vsync": "off"
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "gpuTimestampsAvailable": false,
+    "crossOriginIsolated": false,
+    "devicePixelRatio": 1,
+    "host": {
+      "os": "win32 10.0.26300",
+      "cpu": "AMD Ryzen 9 5950X 16-Core Processor            ",
+      "machineId": "windows001"
+    },
+    "chromeFlags": [
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--disable-backgrounding-occluded-windows",
+      "--enable-unsafe-webgpu",
+      "--enable-webgpu-developer-features",
+      "--site-per-process",
+      "--disable-gpu-vsync",
+      "--disable-frame-rate-limit"
+    ],
+    "gpuAdapter": {
+      "vendor": "nvidia",
+      "architecture": "ampere",
+      "description": "NVIDIA GeForce RTX 3060 Ti"
+    },
+    "api": "webgpu",
+    "canvasSize": {
+      "width": 480,
+      "height": 360
+    }
+  },
+  "status": "ok",
+  "statistics": {
+    "frameCount": 3312,
+    "intervalCount": 0,
+    "cpuSampleCount": 0,
+    "gpuSampleCount": 0,
+    "initMaxBlockDuration": 0.12019999999995343,
+    "initBlockedDuration": 0.23530000000004656,
+    "phaseDurations": {
+      "load": 0.20470000000018626,
+      "process": 0.8231999999999534,
+      "compile": 0.0640999999998604,
+      "unknown": 0.0008000000000465413
+    },
+    "averageFps": 323.4280245695986,
+    "worstResponsiveness": 0.10830000000004655,
+    "initDuration": 1.0928000000000466,
+    "unaccountedDuration": 0.0008000000000465413
+  },
+  "timeline": {
+    "maxTime": 12.339600000000093,
+    "renderStart": 1.0928000000000466,
+    "ready": 1.0928000000000466,
+    "runStart": 2.0992000000001863,
+    "runEnd": 12.339600000000093,
+    "frameTimes": [],
+    "cpuDurations": [],
+    "gpuDurations": [],
+    "frameIndices": [],
+    "watchdogTimes": [
+      0.0005,
+      0.0169000000001397,
+      0.033800000000046564,
+      0.050300000000046564,
+      0.06730000000004657,
+      0.084,
+      0.20830000000004656,
+      0.2249000000001397,
+      0.2415,
+      0.258,
+      0.274,
+      0.2901000000000931,
+      0.30660000000009313,
+      0.32280000000004655,
+      0.3391000000000931,
+      0.3553000000000466,
+      0.37160000000009313,
+      0.3885,
+      0.40480000000004657,
+      0.421,
+      0.4372000000001863,
+      0.4534000000001397,
+      0.47020000000018625,
+      0.4865,
+      0.5032000000001863,
+      0.5195,
+      0.5357000000001862,
+      0.5523000000000465,
+      0.5691000000000931,
+      0.5856000000000932,
+      0.6025,
+      0.619,
+      0.6356000000000931,
+      0.6518000000000466,
+      0.668,
+      0.6846000000000931,
+      0.7011000000000931,
+      0.7173000000000466,
+      0.7334000000001397,
+      0.7495,
+      0.7664000000001397,
+      0.7828000000000466,
+      0.799,
+      0.8151000000000931,
+      0.8313000000000466,
+      0.8474000000001397,
+      0.8644000000001397,
+      0.8815,
+      0.8976000000000931,
+      0.9144000000001397,
+      0.9305,
+      0.9473000000000465,
+      0.9636000000000932,
+      1.0867000000001863
+    ],
+    "watchdogIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "watchdogPeriod": 0.016,
+    "phases": [
+      {
+        "phase": "load",
+        "start": 0,
+        "duration": 0.20470000000018626
+      },
+      {
+        "phase": "process",
+        "start": 0.20470000000018626,
+        "duration": 0.8231999999999534
+      },
+      {
+        "phase": "compile",
+        "start": 1.0279000000001397,
+        "duration": 0.0640999999998604
+      },
+      {
+        "phase": "unknown",
+        "start": 1.092,
+        "duration": 0.0008000000000465413
+      }
+    ],
+    "blocks": [
+      {
+        "start": 0.08810000000009313,
+        "duration": 0.12019999999995343,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      },
+      {
+        "start": 0.9716000000000932,
+        "duration": 0.11510000000009313,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      }
+    ]
+  },
+  "measuredIntervals": [],
+  "timing": {
+    "harness": {
+      "iframeCreated": 0.00039999999990686776,
+      "runEndObserved": 12.34859999999986,
+      "captureSent": 12.35,
+      "teardown": 12.452399999999907
+    },
+    "reporter": {
+      "navigationStart": 0,
+      "ready": 1.0928000000000466,
+      "renderStart": 1.0928000000000466,
+      "runStart": 2.0992000000001863,
+      "runEnd": 12.339600000000093
+    }
+  }
+}
