@@ -3,11 +3,9 @@ import type { HierarchyExperiment, RendererName } from '@three-fidelity/renderer
 
 export const performanceRendererNames = rendererNames;
 
-/** Three-Base is the fixed, stock r186 baseline named three-current by the renderer factory. */
+/** Public SSR renderer configurations. */
 export function performanceConfiguration(params: Record<string, unknown>) {
-  const renderer = (
-    params.renderer === 'three-base' ? 'three-current' : (params.renderer ?? 'three-current')
-  ) as RendererName;
+  const renderer = (params.renderer ?? 'three-dev') as RendererName;
   if (!performanceRendererNames.includes(renderer as (typeof performanceRendererNames)[number]))
     throw new Error(`Unsupported performance renderer: ${renderer}`);
   const experiment = (params.experiment ?? 'baseline') as HierarchyExperiment;
@@ -21,7 +19,7 @@ export function performanceConfiguration(params: Record<string, unknown>) {
   };
   const seed = params.seed ?? 1;
   if (typeof seed !== 'number' || !Number.isSafeInteger(seed)) throw new Error('seed must be an integer');
-  const scene = params.scene ?? 'cornell-box-basic';
+  const scene = params.scene ?? 'diag-mirror';
   if (typeof scene !== 'string') throw new Error('scene must be a string');
   const motion = params.motion ?? 'static';
   if (motion !== 'static' && motion !== 'orbit') throw new Error('motion must be static or orbit');

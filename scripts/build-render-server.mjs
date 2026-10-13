@@ -4,8 +4,9 @@ const at = process.argv.indexOf('--out');
 const out = resolve(at < 0 ? 'render-site' : process.argv[at + 1]);
 await mkdir(out, { recursive: true });
 await cp('packages/playground/dist', out, { recursive: true });
-// Keep the upstream asset paths expected by scene loaders; exclude upstream HTML and source demos.
-for (const folder of ['models', 'textures', 'jsm/libs/draco', 'jsm/libs/basis'])
-  await cp(join('submodules/three.js/examples', folder), join(out, folder), { recursive: true });
-await cp('assets', join(out, 'suite-assets'), { recursive: true });
-console.log(`Browser render server: ${out}`);
+// The curated suite has one external model; avoid publishing unrelated upstream assets.
+for (const file of ['models/gltf/steampunk_camera.glb', 'jsm/libs/draco', 'jsm/libs/basis']) {
+  await mkdir(resolve(out, file, '..'), { recursive: true });
+  await cp(join('submodules/three.js/examples', file), join(out, file), { recursive: true });
+}
+console.log(`SSR browser render server: ${out}`);

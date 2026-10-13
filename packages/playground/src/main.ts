@@ -63,11 +63,11 @@ for (const renderer of rendererNames)
 for (const experiment of hierarchyExperiments) option('experiment', experiment);
 const params = new URLSearchParams(location.search);
 select('scene').value =
-  params.get('scene') && listSceneNames().includes(params.get('scene')!) ? params.get('scene')! : 'cornell-box-basic';
+  params.get('scene') && listSceneNames().includes(params.get('scene')!) ? params.get('scene')! : 'diag-mirror';
 select('renderer').value =
   params.get('renderer') && rendererNames.includes(params.get('renderer') as RendererName)
     ? params.get('renderer')!
-    : 'three-new';
+    : 'three-dev';
 
 const stateIds = [
   'scene',
@@ -530,7 +530,7 @@ async function runBenchmark() {
   const compare = input('compare').checked;
   if (compare && config.experiment !== 'baseline')
     throw new Error('Stock comparison requires the baseline experiment; use the CLI for single experimental profiles');
-  const names: RendererName[] = compare ? ['three-current', 'three-new'] : [config.renderer];
+  const names: RendererName[] = compare ? ['three-gpu-pathtracer', 'three-dev'] : [config.renderer];
   const options: BenchmarkOptions = {
     protocol: select('protocol').value as BenchmarkOptions['protocol'],
     durationMs: value('duration') * 1000,
@@ -609,8 +609,8 @@ async function runBenchmark() {
       }
     if (compare) {
       const comparison = compareEntries(
-        next.entries.find((entry) => entry.renderer === 'three-current')!,
-        next.entries.find((entry) => entry.renderer === 'three-new')!,
+        next.entries.find((entry) => entry.renderer === 'three-gpu-pathtracer')!,
+        next.entries.find((entry) => entry.renderer === 'three-dev')!,
       );
       next.comparisons = [comparison];
       message(

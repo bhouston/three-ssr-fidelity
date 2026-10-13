@@ -6,6 +6,7 @@ import { defineConfig, normalizePath } from 'vite';
 
 const stockRequire = createRequire(new URL('../renderers/package.json', import.meta.url));
 // Vite module ids use forward slashes on every platform, including Windows.
+const devRoot = normalizePath(dirname(dirname(stockRequire.resolve('three-dev'))));
 const stockRoot = normalizePath(dirname(dirname(stockRequire.resolve('three-r186'))));
 
 const source = (name: string) => fileURLToPath(new URL(`../${name}/src/index.ts`, import.meta.url));
@@ -16,10 +17,13 @@ export default defineConfig({
       name: 'stock-three-self-imports',
       enforce: 'pre',
       resolveId(id) {
+        if (id === 'three-dev' || id.startsWith('three-dev/'))
+          return normalizePath(id === 'three-dev' ? join(devRoot, 'build/three.module.js') : stockRequire.resolve(id));
         if (id !== 'three-r186' && !id.startsWith('three-r186/')) return;
         return normalizePath(id === 'three-r186' ? join(stockRoot, 'build/three.module.js') : stockRequire.resolve(id));
       },
       transform(code, id) {
+        if (id.startsWith(devRoot + '/')) return code.replace(/(from\s*['"])three(?=\/|['"])/g, '$1three-dev');
         if (!id.startsWith(stockRoot + '/')) return;
         // Preserve the npm package's self imports and their Vite dependency version.
         // Using the same specifier as application imports avoids duplicate TSL stacks.
@@ -62,7 +66,7 @@ export default defineConfig({
     },
   },
   // Keep one TSL stack per Three.js version; prebundling can embed additional runtime copies.
-  optimizeDeps: { exclude: ['three', 'three-r186', 'three-mesh-bvh', 'three-gpu-pathtracer'] },
+  optimizeDeps: { exclude: ['three-dev', 'three', 'three-r186', 'three-mesh-bvh', 'three-gpu-pathtracer'] },
   publicDir: fileURLToPath(new URL('../../submodules/three.js/examples/', import.meta.url)),
   server: {
     host: '127.0.0.1',

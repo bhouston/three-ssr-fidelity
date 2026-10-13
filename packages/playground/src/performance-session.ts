@@ -90,6 +90,18 @@ export async function createPerformanceSession(
     // GPU query readbacks schedule promises and polling per frame. Keep the standard
     // frame-rate test limited to CPU frame boundaries and the renderer's own work.
     const rendererBackend = current.renderer as { backend?: { device?: unknown }; getContext?: () => unknown };
+    if (!rendererBackend.backend?.device && rendererBackend.getContext) {
+      const gl = rendererBackend.getContext() as WebGLRenderingContext;
+      const extension = gl.getExtension('WEBGL_debug_renderer_info');
+      adapterInfo = { description: extension ? String(gl.getParameter(extension.UNMASKED_RENDERER_WEBGL)) : '' };
+    }
+    const identity = JSON.stringify(adapterInfo ?? {});
+    if (
+      !adapterInfo ||
+      !Object.values(adapterInfo).some(Boolean) ||
+      /swiftshader|llvmpipe|lavapipe|softpipe|software|basic render/i.test(identity)
+    )
+      throw new Error(`Physical GPU required; selected adapter: ${identity}`);
     reporter.environment({
       api: rendererBackend.backend?.device ? 'webgpu' : rendererBackend.getContext ? 'webgl2' : 'other',
       canvasSize: { width: config.width, height: config.height },

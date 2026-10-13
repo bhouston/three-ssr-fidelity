@@ -20,7 +20,7 @@ function LiveViewer() {
       location.search,
       scenes,
       liveRendererPresets.map((preset) => preset.id),
-      { scene: 'cornell-box-basic', renderer: 'three-current', run: false },
+      { scene: 'diag-mirror', renderer: 'three-dev', run: false },
     ),
   );
   const url = useRef(initial);

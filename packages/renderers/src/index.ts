@@ -1,3 +1,4 @@
+import { createDevRenderer } from './three-dev.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
 import { createRenderer as createPathTracerRenderer } from 'fidelity-kit-three-gpu-pathtracer';
 import { createWebGPUPathTracerRenderer } from './pathtracer-webgpu.js';
@@ -68,6 +69,8 @@ export function createRenderer(
     });
   };
   switch (name) {
+    case 'three-dev':
+      return instrument(createDevRenderer(canvas, setup, options));
     case 'three-gpu-pathtracer-webgpu-experimental':
       return instrument(createWebGPUPathTracerRenderer(canvas, setup, options));
     case 'vxgi-light-bake':

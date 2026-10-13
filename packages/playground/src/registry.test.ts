@@ -9,6 +9,7 @@ import { performanceConfiguration } from './performance-config';
 describe('shared project registry', () => {
   it('registers every runtime scene with its canonical fidelity dimensions', () => {
     const suite = parseRegistry(registry);
+    expect(suite.scenes.length).toBeLessThanOrEqual(20);
     expect(suite.scenes.map((scene) => scene.id).toSorted()).toEqual(listSceneNames().toSorted());
     for (const scene of suite.scenes) {
       const definition = getScene(scene.id);
@@ -25,10 +26,10 @@ describe('shared project registry', () => {
       for (const entry of performance.entries) expect(() => performanceConfiguration(entry.params ?? {})).not.toThrow();
     }
   });
-  it('covers all browser configurations on the four representative scenes except deliberate exclusions', () => {
+  it('covers all browser configurations on every curated SSR scene', () => {
     const suite = parseRegistry(registry);
     const entries = performanceSuite(suite, 'representative').entries;
-    const scenes = ['model-breakfast-room-w', 'cornell-box-basic', 'higharc_dogwood', 'model-coffee-maker'];
+    const scenes = suite.scenes.map((scene) => scene.id);
     const expected = scenes.flatMap((scene) =>
       suite.renderers
         .filter(
@@ -43,7 +44,7 @@ describe('shared project registry', () => {
     expect(new Set(entries.map((entry) => `${entry.scene.id}/${entry.renderer.id}`)).size).toBe(entries.length);
     expect(
       entries.every(
-        (entry) => entry.durationMs === 10000 && entry.params?.width === 1920 && entry.params?.height === 1080,
+        (entry) => entry.durationMs === 10000 && entry.params?.width === 480 && entry.params?.height === 360,
       ),
     ).toBe(true);
   });
