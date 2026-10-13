@@ -261,7 +261,7 @@ try {
       capture,
       '--missing-only',
       '--scenes',
-      'cornell-box-basi?',
+      'diag-mirro?',
       '--renderers',
       `?${smokeRenderer.slice(1)}`,
       '--executable-path',
