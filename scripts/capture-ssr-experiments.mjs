@@ -5,9 +5,15 @@ import { existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { parseRegistry, rendererParams, rendererUrl } from '../submodules/fidelity-kit/packages/cli/dist/registry.js';
 import { selectNames } from '../submodules/fidelity-kit/packages/cli/dist/select.js';
+import { execFileSync } from 'node:child_process';
 const require = createRequire(new URL('../submodules/fidelity-kit/packages/cli/package.json', import.meta.url));
 const puppeteer = require('puppeteer');
 const sharp = require('sharp');
+const sourceCommit = (
+  process.platform === 'win32'
+    ? execFileSync('cmd.exe', ['/d', '/s', '/c', 'git-dedup.cmd rev-parse HEAD'], { encoding: 'utf8' })
+    : execFileSync('git-dedup', ['rev-parse', 'HEAD'], { encoding: 'utf8' })
+).trim();
 const { values } = parseArgs({
   options: {
     registry: { type: 'string', default: 'registry.json' },
@@ -40,6 +46,7 @@ const browser = await puppeteer.launch({
   args: [
     '--disable-software-rasterizer',
     '--enable-unsafe-webgpu',
+    '--enable-webgpu-developer-features',
     '--disable-gpu-vsync',
     '--disable-frame-rate-limit',
     ...(process.platform === 'win32' ? ['--use-angle=d3d11'] : []),
@@ -111,7 +118,10 @@ try {
         if (!stats.channels.slice(0, 3).some((channel) => channel.stdev > 5)) throw new Error('Flat capture');
         await mkdir(dirname(file), { recursive: true });
         await sharp(png).avif({ quality: 90, chromaSubsampling: '4:4:4' }).toFile(file);
+        const previous = rows.findIndex((row) => row.scene === scene.id && row.renderer === renderer.id);
+        if (previous >= 0) rows.splice(previous, 1);
         rows.push({
+          sourceCommit,
           scene: scene.id,
           renderer: renderer.id,
           frames: 64,
