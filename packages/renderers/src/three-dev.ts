@@ -2,6 +2,8 @@
 import * as Fork from 'three';
 import {
   AmbientLightNode,
+  BackSide,
+  MeshBasicNodeMaterial,
   DirectionalLightNode,
   HemisphereLightNode,
   LightProbeNode,
@@ -49,7 +51,9 @@ const forkLights: [AnyNode, AnyNode][] = [
   [LightProbeNode, Fork.LightProbe],
 ];
 
-function createPipeline(renderer: WebGPURenderer, setup: SceneInstance): RenderPipeline {
+export type DevSSRVariant = { name: string; stochastic: boolean; ssrFactory?: AnyNode; backDepth?: boolean };
+
+function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant: DevSSRVariant): RenderPipeline {
   const { scene, camera, effects } = setup as AnyNode as {
     scene: AnyNode;
     camera: AnyNode;
@@ -78,14 +82,22 @@ function createPipeline(renderer: WebGPURenderer, setup: SceneInstance): RenderP
   let composite: AnyNode = scenePassColor;
   if (effects.ssr) {
     const params = effects.ssr;
+    let backDepthNode: AnyNode = null;
+    if (variant.backDepth) {
+      const backPass = pass(scene, camera);
+      backPass.overrideMaterial = new MeshBasicNodeMaterial({ side: BackSide });
+      backPass.transparent = true;
+      backDepthNode = backPass.getTextureNode('depth');
+    }
     scenePass.getTexture('metalrough').type = UnsignedByteType;
     const scenePassMetalRough: AnyNode = scenePass.getTextureNode('metalrough');
-    const ssrPass: AnyNode = ssr(scenePassColor, scenePassDepth, sceneNormal, {
+    const ssrPass: AnyNode = (variant.ssrFactory ?? ssr)(scenePassColor, scenePassDepth, sceneNormal, {
       metalnessNode: scenePassMetalRough.r,
       roughnessNode: scenePassMetalRough.g,
       camera,
       binaryRefine: true,
-      stochastic: true,
+      stochastic: variant.stochastic,
+      backDepthNode,
       reflectNonMetals: true,
     });
     ssrPass.maxDistance.value = params.maxDistance;
@@ -105,6 +117,7 @@ export async function createDevRenderer(
   canvas: HTMLCanvasElement,
   sceneSetup: SceneInstance,
   { width, height, trackTimestamp = false }: RendererOptions,
+  variant: DevSSRVariant = { name: 'three-dev', stochastic: true },
 ): Promise<LiveRenderer> {
   const setup = { ...sceneSetup, effects: { ...sceneSetup.effects, ssgi: undefined } };
   const { camera, effects } = setup;
@@ -132,7 +145,7 @@ export async function createDevRenderer(
     },
   });
 
-  const renderPipeline = createPipeline(renderer, setup);
+  const renderPipeline = createPipeline(renderer, setup, variant);
   let frames = 0;
   const handle: LiveRenderer = {
     name: 'three-dev',

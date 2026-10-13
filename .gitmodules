@@ -36,3 +36,6 @@
 [submodule "submodules/three-dev"]
 	path = submodules/three-dev
 	url = https://github.com/mrdoob/three.js.git
+[submodule "submodules/three-pr34"]
+	path = submodules/three-pr34
+	url = https://github.com/bhouston/three.js.git

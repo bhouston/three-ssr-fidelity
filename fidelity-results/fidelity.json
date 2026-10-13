@@ -14,16 +14,168 @@
       "reference": false,
       "enabled": true,
       "category": "SSR"
+    },
+    {
+      "id": "three-dev-mirror",
+      "label": "Dev mirror control · dielectrics enabled",
+      "reference": false,
+      "enabled": true,
+      "category": "Controls"
+    },
+    {
+      "id": "three-dev-pr28-normal-bias",
+      "label": "PR #28 · normal bias (GGX)",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-dev-pr29-ray-guard",
+      "label": "PR #29 · ray-length guard (GGX)",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-dev-pr30-sampling-docs",
+      "label": "PR #30 · sampling documentation (GGX)",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-dev-pr32-dielectric",
+      "label": "PR #32 · dielectric mirror Fresnel",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-dev-pr33-back-depth",
+      "label": "PR #33 · back-face depth (GGX)",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-dev-pr34-radiance-hook",
+      "label": "PR #34 · radiance API (stock provider)",
+      "reference": false,
+      "enabled": true,
+      "category": "Independent PRs"
+    },
+    {
+      "id": "three-ssr-full",
+      "label": "Full reflection pipeline",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-additive-env",
+      "label": "Full pipeline · add environment again",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-capped-march",
+      "label": "Linear march · cap at 32 steps",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-hiz",
+      "label": "Full pipeline · uncapped linear march",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-distance-fade",
+      "label": "Full pipeline · restore distance fade",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-back-depth",
+      "label": "Full pipeline · omit back depth",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-filter",
+      "label": "Full pipeline · omit reflection filter",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-hit-specular",
+      "label": "Full pipeline · omit hit specular",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-biased-lobe",
+      "label": "Full pipeline · mirror bias 0.5",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-short-rays",
+      "label": "Full pipeline · authored ray reach",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
     }
   ],
   "comparisonPresets": [
     {
       "id": "ssr",
-      "name": "Stochastic SSR fidelity",
+      "name": "Stochastic SSR baseline",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
+    },
+    {
+      "id": "ssr-proposals",
+      "name": "Independent SSR PRs",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-dev",
+        "three-dev-mirror",
+        "three-dev-pr28-normal-bias",
+        "three-dev-pr29-ray-guard",
+        "three-dev-pr30-sampling-docs",
+        "three-dev-pr32-dielectric",
+        "three-dev-pr33-back-depth",
+        "three-dev-pr34-radiance-hook"
+      ]
+    },
+    {
+      "id": "ssr-contributions",
+      "name": "Full pipeline and feature-removal comparisons",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-dev",
+        "three-ssr-full",
+        "three-ssr-additive-env",
+        "three-ssr-capped-march",
+        "three-ssr-no-hiz",
+        "three-ssr-distance-fade",
+        "three-ssr-no-back-depth",
+        "three-ssr-no-filter",
+        "three-ssr-no-hit-specular",
+        "three-ssr-biased-lobe",
+        "three-ssr-short-rays"
+      ]
     }
   ]
 }

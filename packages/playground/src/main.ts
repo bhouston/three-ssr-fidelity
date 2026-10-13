@@ -17,7 +17,6 @@ import {
   createRenderer,
   createRendererFrameDriver,
   createRendererStartupProfiler,
-  hierarchyExperiments,
   rendererNames,
 } from '@three-fidelity/renderers';
 import type { HierarchyExperiment, LiveRenderer, RendererName } from '@three-fidelity/renderers';
@@ -60,7 +59,7 @@ for (const renderer of rendererNames)
     renderer,
     renderer === 'vxgi' ? 'Voxel Cone Tracing' : renderer === 'vxgi-light-bake' ? 'Baked Voxel Cone Tracing' : renderer,
   );
-for (const experiment of hierarchyExperiments) option('experiment', experiment);
+for (const experiment of ['baseline']) option('experiment', experiment);
 const params = new URLSearchParams(location.search);
 select('scene').value =
   params.get('scene') && listSceneNames().includes(params.get('scene')!) ? params.get('scene')! : 'diag-mirror';

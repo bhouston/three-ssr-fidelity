@@ -1,3 +1,7 @@
+import { ssrExperimentProfiles, isSSRExperiment } from './ssr-experiments.js';
+import { stockSSRFactories } from './ssr-pr/index.js';
+import { createThreeNewRenderer } from './three-new.js';
+import { createRadianceHookRenderer } from './three-pr34.js';
 import { createDevRenderer } from './three-dev.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
 import { createRenderer as createPathTracerRenderer } from 'fidelity-kit-three-gpu-pathtracer';
@@ -61,6 +65,28 @@ export function createRenderer(
       };
     });
   };
+  if (isSSRExperiment(name)) {
+    const profile = ssrExperimentProfiles[name];
+    if (profile.kind === 'stock')
+      return instrument(
+        createDevRenderer(canvas, setup, options, {
+          name,
+          stochastic: profile.stochastic,
+          ssrFactory: profile.proposal === null ? undefined : stockSSRFactories[profile.proposal],
+          backDepth: profile.proposal === 33,
+        }),
+      );
+    if (profile.kind === 'hook') return instrument(createRadianceHookRenderer(canvas, setup, options));
+    return instrument(
+      createThreeNewRenderer(
+        canvas,
+        { ...setup, effects: { ...setup.effects, ssgi: undefined } },
+        options,
+        undefined,
+        profile.contribution,
+      ),
+    );
+  }
   switch (name) {
     case 'three-dev':
       return instrument(createDevRenderer(canvas, setup, options));

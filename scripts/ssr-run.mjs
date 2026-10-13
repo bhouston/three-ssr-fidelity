@@ -4,7 +4,8 @@ import { resolve, sep, extname } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const mode = process.argv[2];
-if (!['render', 'benchmark'].includes(mode)) throw new Error('Expected render or benchmark');
+if (!['render', 'benchmark', 'experiments'].includes(mode))
+  throw new Error('Expected render, benchmark or experiments');
 const extra = process.argv.slice(3);
 if (extra.some((arg) => /allow-software|swiftshader|llvmpipe|lavapipe/i.test(arg)))
   throw new Error('Software rendering is not supported');
@@ -31,14 +32,16 @@ const server = createServer(async (request, response) => {
 });
 await new Promise((done) => server.listen(0, '127.0.0.1', done));
 const args = [
-  resolve('submodules/fidelity-kit/packages/cli/dist/bin.js'),
-  mode,
+  resolve(
+    mode === 'experiments' ? 'scripts/capture-ssr-experiments.mjs' : 'submodules/fidelity-kit/packages/cli/dist/bin.js',
+  ),
+  ...(mode === 'experiments' ? [] : [mode]),
   '--registry',
   'registry.json',
   '--root-url',
   `http://127.0.0.1:${server.address().port}/`,
   '--out',
-  mode === 'render' ? 'fidelity-results' : 'performance-results',
+  mode === 'benchmark' ? 'performance-results' : 'fidelity-results',
 ];
 if (mode === 'benchmark') args.push('--collection', 'default', '--new-run', '--vsync', 'off');
 if (process.env.CHROME_EXECUTABLE) args.push('--executable-path', process.env.CHROME_EXECUTABLE);

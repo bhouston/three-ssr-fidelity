@@ -2,9 +2,11 @@ import { describe, expect, it } from 'vitest';
 import { performanceConfiguration, performanceRendererNames } from './performance-config';
 
 describe('performance renderer contract', () => {
-  it('exposes only the two SSR comparison renderers', () => {
+  it('exposes the baseline, reference and individual SSR experiments', () => {
     expect(performanceConfiguration({}).renderer).toBe('three-dev');
-    expect(performanceRendererNames).toEqual(['three-dev', 'three-gpu-pathtracer']);
+    expect(performanceRendererNames).toContain('three-dev-pr28-normal-bias');
+    expect(performanceRendererNames).toContain('three-ssr-full');
+    expect(performanceRendererNames).not.toContain('three-new');
     expect(performanceRendererNames).toContain('three-gpu-pathtracer');
   });
   it('rejects external renderers, Blender and invalid experiment combinations', () => {

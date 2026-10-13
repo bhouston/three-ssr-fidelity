@@ -1,37 +1,8 @@
-# Complex scene fixtures
+# Retained complex-scene assets
 
-These models retain their original materials, cameras, scene hierarchy, and material
-texture coordinates. `scripts/preunwrap-scenes.mjs` adds a scene-wide, nonoverlapping
-`TEXCOORD_1` lightmap atlas, duplicates shared mesh instances so each has a unique
-atlas region, and removes zero-area geometry triangles. Geometry is recompressed
-with Draco using lossless floating-point attributes after unwrapping. Existing
-textures are retained without recompression. A uniform power-of-two scale applied
-only to xatlas input avoids its absolute tiny-triangle cutoff. Any remaining
-collapsed UV triangles retain their original geometry and receive separate padded
-islands in a reserved atlas strip; the manifest records these repairs.
+These fixtures were imported by three-fidelity and are not selected by the active ten-scene SSR suite. The active textured scene is the upstream steampunk camera; synthetic reflection diagnostics load no external models.
 
-Each glTF scene includes `extras.lightmapAtlas = { version: 1, size: 2048, padding }`.
-Native packing uses eight pixels of padding; scenes requiring a repair strip record
-the conservative minimum of seven pixels after rescaling. This metadata identifies
-the common atlas resolution and minimum chart padding. An arbitrary
-secondary UV channel without this metadata is not necessarily a scene-wide atlas.
-The generation manifest records input/output SHA-256 hashes and geometry validation
-counts. Charts allocate space according to local dimensions and the maximum world
-scale of each node, matching glTF Transform's scene grouping.
-
-Regenerate from the sibling project's populated submodules:
-
-```sh
-node scripts/preunwrap-scenes.mjs ../three-gpu-pathtracer-fidelity/submodules
-```
-
-The script isolates each model in its own process to avoid shared native atlas
-state affecting results, and removes unused geometry accessors before writing.
-It uses the reusable [glTF Transform SDK](https://gltf-transform.dev/)
-`unwrap()` transform and [watlas](https://github.com/toji/watlas)'s xatlas packing.
-The equivalent glTF Transform CLI supports `unwrap --texcoord 1 --group-by scene`;
-this script also handles instances, fixes degenerate geometry, controls packing,
-and writes the atlas metadata used by the baker.
+The retained fixtures preserve original materials and cameras. Preprocessing added a scene-wide secondary-UV lightmap atlas, split shared mesh instances, repaired degenerate UV islands and recompressed geometry with Draco. Textures were retained. The generation manifest records hashes, atlas padding and validation results. Regeneration is handled by `scripts/preunwrap-scenes.mjs` with populated source asset submodules.
 
 ## Attribution and licenses
 
