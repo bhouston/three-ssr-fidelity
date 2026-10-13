@@ -139,15 +139,14 @@
     {
       "id": "ssr",
       "name": "Stochastic SSR baseline",
-      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev"
-      ]
+      ],
+      "ref": "three-gpu-pathtracer"
     },
     {
       "id": "ssr-proposals",
       "name": "Independent SSR PRs",
-      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-dev-mirror",
@@ -157,12 +156,12 @@
         "three-dev-pr32-dielectric",
         "three-dev-pr33-back-depth",
         "three-dev-pr34-radiance-hook"
-      ]
+      ],
+      "ref": "three-gpu-pathtracer"
     },
     {
       "id": "ssr-contributions",
       "name": "Full pipeline and feature-removal comparisons",
-      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-ssr-full",
@@ -175,7 +174,8 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
-      ]
+      ],
+      "ref": "three-gpu-pathtracer"
     }
   ]
 }

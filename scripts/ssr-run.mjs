@@ -43,7 +43,11 @@ const args = [
   '--out',
   mode === 'benchmark' ? 'performance-results' : 'fidelity-results',
 ];
-if (mode === 'benchmark') args.push('--collection', 'default', '--new-run', '--vsync', 'off');
+if (mode === 'benchmark') {
+  if (!extra.some((argument) => argument === '--collection' || argument.startsWith('--collection=')))
+    args.push('--collection', 'default');
+  args.push('--new-run', '--vsync', 'off');
+}
 if (process.env.CHROME_EXECUTABLE) args.push('--executable-path', process.env.CHROME_EXECUTABLE);
 args.push(...extra);
 try {
