@@ -1,5 +1,5 @@
 {
-  "title": "three-fidelity",
+  "title": "three-ssr-fidelity",
   "renderers": [
     {
       "id": "three-gpu-pathtracer",
@@ -9,254 +9,173 @@
       "category": "References"
     },
     {
-      "id": "blender",
-      "label": "Blender Cycles",
-      "reference": true,
-      "enabled": true,
-      "category": "References"
-    },
-    {
-      "id": "three-current",
-      "label": "Three Base",
+      "id": "three-dev",
+      "label": "Three.js dev · stochastic GGX SSR",
       "reference": false,
       "enabled": true,
-      "category": "Screen-space"
+      "category": "SSR"
     },
     {
-      "id": "three-new",
-      "label": "SSGI + SSR",
-      "reference": false,
-      "enabled": false,
-      "category": "Screen-space"
-    },
-    {
-      "id": "three-new-ssr-hiz-tight",
-      "label": "Tight Hi-Z SSR",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssr-radiance-mips",
-      "label": "SSR Radiance Mips",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-radiance-mips",
-      "label": "GI Radiance Mips",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-hierarchy-combined",
-      "label": "Combined Hierarchy",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssr-temporal-validated",
-      "label": "Validated SSR History",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssr-temporal-gaussian",
-      "label": "Gaussian SSR Clipping",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-half",
-      "label": "Half-Resolution SSGI",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-third",
-      "label": "Third-Resolution SSGI",
+      "id": "three-dev-mirror",
+      "label": "Dev mirror control · dielectrics enabled",
       "reference": false,
       "enabled": true,
-      "category": "Experiments"
+      "category": "Controls"
     },
     {
-      "id": "three-new-light-probe",
-      "label": "SH Light Probes",
-      "reference": false,
-      "enabled": false,
-      "category": "Baked lighting and probes"
-    },
-    {
-      "id": "three-new-light-probe-ddgi",
-      "label": "DDGI Light Probes",
+      "id": "three-dev-pr28-normal-bias",
+      "label": "PR #28 · normal bias (GGX)",
       "reference": false,
       "enabled": true,
-      "category": "Baked lighting and probes"
+      "category": "Independent PRs"
     },
     {
-      "id": "three-new-light-bake",
-      "label": "Progressive BVH Lightmaps",
+      "id": "three-dev-pr29-ray-guard",
+      "label": "PR #29 · ray-length guard (GGX)",
       "reference": false,
       "enabled": true,
-      "category": "Baked lighting and probes"
+      "category": "Independent PRs"
     },
     {
-      "id": "three-new-vpl",
-      "label": "Virtual Point Lights (RIS)",
+      "id": "three-dev-pr30-sampling-docs",
+      "label": "PR #30 · sampling documentation (GGX)",
       "reference": false,
       "enabled": true,
-      "category": "Baked lighting and probes"
+      "category": "Independent PRs"
     },
     {
-      "id": "three-new-vpl-shadow-maps",
-      "label": "VPL Shadow Maps (Experimental)",
+      "id": "three-dev-pr32-dielectric",
+      "label": "PR #32 · dielectric mirror Fresnel",
       "reference": false,
       "enabled": true,
-      "category": "Baked lighting and probes"
+      "category": "Independent PRs"
     },
     {
-      "id": "three-new-ssgi-early-exit",
-      "label": "ssgi-early-exit",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-reuse-texels",
-      "label": "ssgi-reuse-texels",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-redundant-work",
-      "label": "ssgi-redundant-work",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-4x32",
-      "label": "ssgi-4x32",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-8x16",
-      "label": "ssgi-8x16",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-4x16",
-      "label": "ssgi-4x16",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-6x32",
-      "label": "ssgi-6x32",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-8x24",
-      "label": "ssgi-8x24",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-6x24",
-      "label": "ssgi-6x24",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-7x32",
-      "label": "ssgi-7x32",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "three-new-ssgi-8x28",
-      "label": "ssgi-8x28",
-      "reference": false,
-      "enabled": false,
-      "category": "Experiments"
-    },
-    {
-      "id": "vxgi",
-      "label": "Voxel Cone Tracing",
+      "id": "three-dev-pr33-back-depth",
+      "label": "PR #33 · back-face depth (GGX)",
       "reference": false,
       "enabled": true,
-      "category": "Experiments"
+      "category": "Independent PRs"
     },
     {
-      "id": "vxgi-light-bake",
-      "label": "Baked Voxel Cone Tracing",
+      "id": "three-dev-pr34-radiance-hook",
+      "label": "PR #34 · radiance API (stock provider)",
       "reference": false,
       "enabled": true,
-      "category": "Experiments"
+      "category": "Independent PRs"
     },
     {
-      "id": "three-gpu-pathtracer-webgpu-experimental",
-      "label": "WebGPU pathtracer (experimental)",
+      "id": "three-ssr-full",
+      "label": "Full reflection pipeline",
       "reference": false,
-      "enabled": false,
-      "category": "Experiments"
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-additive-env",
+      "label": "Full pipeline · add environment again",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-capped-march",
+      "label": "Linear march · cap at 32 steps",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-hiz",
+      "label": "Full pipeline · uncapped linear march",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-distance-fade",
+      "label": "Full pipeline · restore distance fade",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-back-depth",
+      "label": "Full pipeline · omit back depth",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-filter",
+      "label": "Full pipeline · omit reflection filter",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-no-hit-specular",
+      "label": "Full pipeline · omit hit specular",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-biased-lobe",
+      "label": "Full pipeline · mirror bias 0.5",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-ssr-short-rays",
+      "label": "Full pipeline · authored ray reach",
+      "reference": false,
+      "enabled": true,
+      "category": "Conditional comparisons"
     }
   ],
   "comparisonPresets": [
     {
-      "id": "screen-space",
-      "name": "Screen-space fidelity",
+      "id": "ssr",
+      "name": "Stochastic SSR baseline",
       "renderers": [
-        "three-current",
-        "three-new"
+        "three-dev"
       ],
       "ref": "three-gpu-pathtracer"
     },
     {
-      "id": "path-tracers",
-      "name": "Path-tracer fidelity",
+      "id": "ssr-proposals",
+      "name": "Independent SSR PRs",
       "renderers": [
-        "three-gpu-pathtracer",
-        "three-gpu-pathtracer-webgpu-experimental"
-      ],
-      "ref": "blender"
-    },
-    {
-      "id": "lighting",
-      "name": "Lighting research",
-      "renderers": [
-        "three-new-light-probe",
-        "three-new-light-probe-ddgi",
-        "three-new-light-bake",
-        "three-new-vpl",
-        "three-new-vpl-shadow-maps",
-        "vxgi",
-        "vxgi-light-bake"
+        "three-dev",
+        "three-dev-mirror",
+        "three-dev-pr28-normal-bias",
+        "three-dev-pr29-ray-guard",
+        "three-dev-pr30-sampling-docs",
+        "three-dev-pr32-dielectric",
+        "three-dev-pr33-back-depth",
+        "three-dev-pr34-radiance-hook"
       ],
       "ref": "three-gpu-pathtracer"
-    }
-  ],
-  "outputs": [
+    },
     {
-      "id": "beauty",
-      "label": "Beauty"
+      "id": "ssr-contributions",
+      "name": "Full pipeline and feature-removal comparisons",
+      "renderers": [
+        "three-dev",
+        "three-ssr-full",
+        "three-ssr-additive-env",
+        "three-ssr-capped-march",
+        "three-ssr-no-hiz",
+        "three-ssr-distance-fade",
+        "three-ssr-no-back-depth",
+        "three-ssr-no-filter",
+        "three-ssr-no-hit-specular",
+        "three-ssr-biased-lobe",
+        "three-ssr-short-rays"
+      ],
+      "ref": "three-gpu-pathtracer"
     }
   ]
 }

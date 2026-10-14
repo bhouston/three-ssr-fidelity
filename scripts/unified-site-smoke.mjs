@@ -12,7 +12,7 @@ const sharp = require('sharp');
 const work = await mkdtemp(join(tmpdir(), 'unified-kit-'));
 const site = join(work, 'site');
 const cli = resolve('submodules/fidelity-kit/packages/cli/dist/bin.js');
-const smokeRenderer = process.env.SMOKE_RENDERER ?? 'three-current';
+const smokeRenderer = process.env.SMOKE_RENDERER ?? 'three-dev';
 const liveFixture = process.env.SMOKE_LIVE_FIXTURE;
 const uiOnly = process.env.SMOKE_UI_ONLY === 'true';
 let cube;
@@ -148,8 +148,9 @@ try {
     );
     console.log('Hardware adapters:', hardware);
   }
-  assert.equal(await page.$eval('h1', (element) => element.textContent), 'three-fidelity');
+  assert.equal(await page.$eval('h1', (element) => element.textContent), 'three-ssr-fidelity');
   assert.ok(await page.$eval('figure img', (image) => image.naturalWidth > 0));
+  if (process.env.SMOKE_SCREENSHOT) await page.screenshot({ path: process.env.SMOKE_SCREENSHOT, fullPage: true });
   assert.equal(
     await page.$$eval('h2', (elements) => elements.map((e) => e.textContent).join(',')),
     'Fidelity,Performance,Live',
@@ -163,7 +164,7 @@ try {
   await page.goto(detail, { waitUntil: 'networkidle0' });
   await page.waitForSelector('.performance-report .detail');
   assert.ok(new URL(page.url()).searchParams.get('result'));
-  await page.goto(website + `?view=live&renderer=${smokeRenderer}&scene=cornell-box-basic`, {
+  await page.goto(website + `?view=live&renderer=${smokeRenderer}&scene=diag-mirror`, {
     waitUntil: 'networkidle0',
   });
   console.log(
@@ -202,7 +203,7 @@ try {
   console.log('Checking live canvas screenshot');
   const image = await (await renderFrame.$('canvas')).screenshot({ type: 'png' });
   assert.ok((await sharp(image).stats()).channels.some((channel) => channel.stdev > 10));
-  await page.select('select[aria-label="Scene"]', 'cornell-box-basic-oblique');
+  await page.select('select[aria-label="Scene"]', 'diag-rough-30');
   console.log('Checking live scene reset');
   assert.equal(await page.$eval('iframe', (frame) => frame.src), original);
   await page.click('button');
@@ -220,7 +221,7 @@ try {
     const capture = join(work, 'fidelity');
     const captureRegistry = JSON.parse(await readFile('registry.json', 'utf8'));
     // A correctness capture needs two samples; the published reference target is 4096.
-    const captureScene = captureRegistry.scenes.find((scene) => scene.id === 'cornell-box-basic');
+    const captureScene = captureRegistry.scenes.find((scene) => scene.id === 'diag-mirror');
     captureScene.fidelity.width = 320;
     captureScene.fidelity.height = 180;
     const captureRenderer = captureRegistry.renderers.find((renderer) => renderer.id === smokeRenderer);
@@ -236,7 +237,7 @@ try {
       '--out',
       capture,
       '--scene',
-      'cornell-box-basic',
+      'diag-mirror',
       '--renderer',
       smokeRenderer,
       '--frames',
@@ -245,12 +246,12 @@ try {
       chrome,
     ]);
     assert.ok(
-      (await sharp(join(capture, `cornell-box-basic/beauty/${smokeRenderer}.avif`)).stats()).channels.some(
+      (await sharp(join(capture, `diag-mirror/beauty/${smokeRenderer}.avif`)).stats()).channels.some(
         (channel) => channel.stdev > 10,
       ),
     );
     console.log('Checking combined render filters preserve existing captures without starting Chrome');
-    const capturedFile = join(capture, `cornell-box-basic/beauty/${smokeRenderer}.avif`);
+    const capturedFile = join(capture, `diag-mirror/beauty/${smokeRenderer}.avif`);
     const beforeSkip = await stat(capturedFile);
     const skipped = await execute([
       'render',
@@ -260,7 +261,7 @@ try {
       capture,
       '--missing-only',
       '--scenes',
-      'cornell-box-basi?',
+      'diag-mirro?',
       '--renderers',
       `?${smokeRenderer.slice(1)}`,
       '--executable-path',
@@ -274,7 +275,7 @@ try {
         defaults: { capture: true, vsync: 'off', initTimeoutMs: process.platform === 'linux' ? 300000 : 60000 },
         entries: [
           {
-            scene: 'cornell-box-basic',
+            scene: 'diag-mirror',
             renderer: smokeRenderer,
             durationMs: 5000,
             params: { width: 320, height: 180 },

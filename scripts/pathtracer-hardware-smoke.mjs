@@ -54,7 +54,7 @@ try {
   );
   console.log('Hardware:', hardware);
   await probe.close();
-  for (const renderer of ['three-gpu-pathtracer', 'three-gpu-pathtracer-webgpu-experimental']) {
+  for (const renderer of ['three-gpu-pathtracer', 'three-dev']) {
     const page = await browser.newPage();
     await page.setViewport({ width: 32, height: 32 });
     const url = new URL('http://127.0.0.1:' + server.address().port + '/performance.html');
@@ -63,10 +63,11 @@ try {
       'fidelityKitParams',
       JSON.stringify({
         renderer,
-        scene: 'cornell-box-basic',
+        scene: 'diag-mirror',
         width: 32,
         height: 32,
-        samples: 2,
+        samples: renderer === 'three-gpu-pathtracer' ? 2 : 0,
+        frames: 2,
         noiseThreshold: 0,
         minSamples: 2,
         seed: 1,
@@ -79,13 +80,15 @@ try {
       error: window.__fidelityKitError,
     }));
     assert.equal(status.error, undefined);
-    assert.equal(status.capture.samples, 2);
+    if (renderer === 'three-gpu-pathtracer') assert.equal(status.capture.samples, 2);
+    assert.equal(status.capture.width, 32);
+    assert.equal(status.capture.height, 32);
     const stats = await sharp(await (await page.$('canvas')).screenshot()).stats();
     assert.ok(
       stats.channels.slice(0, 3).some((channel) => channel.stdev > 10),
       'Empty or flat capture',
     );
-    console.log(renderer + ': two GPU-completed samples, non-flat capture');
+    console.log(renderer + ': two GPU-completed frames, non-flat capture');
     await page.close();
   }
 } finally {

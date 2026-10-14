@@ -3,7 +3,7 @@
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { listSceneNames } from '../packages/scenes/dist/index.js';
-const rendererNames = ['three-gpu-pathtracer', 'three-gpu-pathtracer-webgpu-experimental'];
+const rendererNames = ['three-gpu-pathtracer', 'three-dev'];
 import { selectNames } from '../packages/cli/dist/select.js';
 const DEFAULT_MAX_SAMPLES = 4096,
   DEFAULT_MIN_SAMPLES = 128,
@@ -20,7 +20,7 @@ function number(value, fallback, name, max, integer = false) {
 
 export function batchTasks(options = {}) {
   const scenes = selectNames(listSceneNames(), options.scenes ?? '*', 'scene');
-  const renderers = selectNames([...rendererNames, 'blender'], options.renderers ?? '*', 'renderer');
+  const renderers = selectNames(rendererNames, options.renderers ?? '*', 'renderer');
   const samples = number(options.samples, DEFAULT_MAX_SAMPLES, 'samples', 4096, true);
   if (samples < 1) throw new Error('Invalid samples');
   const minSamples = number(options['min-samples'], DEFAULT_MIN_SAMPLES, 'min-samples', 4096, true);

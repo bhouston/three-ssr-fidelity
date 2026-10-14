@@ -1,7 +1,7 @@
-# TRAA shader loops
+# Temporal antialiasing for SSR experiments
 
-TRAANode.js and TAAUtils.js are vendored from the MIT-licensed [three.js fork](https://github.com/bhouston/three.js/tree/83c310af72715ae558beea12d169f00c62ea48eb/examples/jsm/tsl), commit `83c310af72715ae558beea12d169f00c62ea48eb`.
+This directory supplies the final TRAA resolve used by the full reflection pipeline and its feature-removal comparisons in three-ssr-fidelity. The stock dev and independent PR renderers use their pinned upstream TRAA.
 
-The local changes replace the JavaScript loops that generate the 3×3 depth neighborhood and eight variance-clipping neighbors with TSL `Loop` nodes. The depth traversal and variance accumulation order are preserved. Shader-local variables store the center texel before either neighborhood loop, each variance neighbor before it contributes to both moments, the reprojected view-space depth before perspective conversion, and the motion factor reused across branches. The remaining TRAA behavior follows the fork, including progressive accumulation.
+TRAANode.js and TAAUtils.js come from the MIT-licensed [Three.js fork](https://github.com/bhouston/three.js/tree/83c310af72715ae558beea12d169f00c62ea48eb/examples/jsm/tsl), commit `83c310af72715ae558beea12d169f00c62ea48eb`. Local changes express neighborhood traversal with TSL loops while preserving traversal order and progressive accumulation.
 
-`clipAABB`, `flickerReduction`, and `subpixelCorrection` already use TSL function layouts, so each has a reusable shader function. The other depth and variance helpers have one call site each in the resolve shader; function layouts would not eliminate duplicated bodies there.
+TRAA remains enabled when the dedicated reflection filter is removed, so that comparison isolates the reflection filter rather than final antialiasing.

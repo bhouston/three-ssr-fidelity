@@ -149,8 +149,9 @@ test('default renderer selection excludes experimental and disabled configuratio
   expect(jobs.length).toBeGreaterThan(0);
   expect(jobs.map((job) => job.renderer)).not.toContain('three-gpu-pathtracer-webgpu-experimental');
   expect(jobs.map((job) => job.hierarchyExperiment)).not.toContain('ssr-radiance-mips');
-  await render('--renderers', 'three-gpu-pathtracer-webgpu-experimental');
-  expect(jobs.at(-1)?.renderer).toBe('three-gpu-pathtracer-webgpu-experimental');
+  await expect(render('--renderers', 'three-gpu-pathtracer-webgpu-experimental')).rejects.toThrow(
+    'No renderer matches',
+  );
 });
 
 test('renderer globs and comma-separated names select complete configurations once', async () => {
@@ -167,11 +168,6 @@ test('renderer globs and comma-separated names select complete configurations on
       ['three-new', 'ssgi-third'],
       ['three-new', 'ssr-temporal-validated'],
       ['three-new', 'ssr-temporal-gaussian'],
-      ['three-new-light-bake', undefined],
-      ['three-new-vpl', undefined],
-      ['three-new-vpl-shadow-maps', undefined],
-      ['three-new-light-probe', undefined],
-      ['three-new-light-probe-ddgi', undefined],
       ['blender', undefined],
     ].toSorted(),
   );

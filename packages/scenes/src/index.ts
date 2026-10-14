@@ -1,21 +1,12 @@
 import { browserAssetUrl } from './asset-paths.js';
 import { loadBrowserLDraw, loadBrowserCollada } from './legacy-browser.js';
-import { pathtracerScenes } from './pathtracer/index.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
-import { gltfScenes } from './gltf-scenes.js';
-import { complexModelScenes } from './complex-models.js';
-import { higharcScenes } from './higharc.js';
 import { RGBAKTX2Loader } from './ktx2.js';
-import { giDiagnosticScenes } from './gi-diagnostics.js';
-import { visibleWallScenes } from './gi-visible-walls.js';
-import { mirrorSunScenes } from './mirror-sun.js';
-import { ssgiScenes } from './ssgi.js';
 import { ssrScenes } from './ssr.js';
 import { ssrDiagnosticScenes } from './ssr-diagnostics.js';
-import { traaDiagnosticScenes } from './traa-diagnostics.js';
 import type { SceneContext, SceneDefinition } from './types.js';
 
 export type * from './types.js';
@@ -23,19 +14,22 @@ export * from './lifecycle.js';
 export { ANIMATED_POSE_TIME } from './ssgi.js';
 
 const scenes = new Map<string, SceneDefinition>(
-  [
-    ...ssgiScenes,
-    ...mirrorSunScenes,
-    ...ssrScenes,
-    ...higharcScenes,
-    ...gltfScenes,
-    ...complexModelScenes,
-    ...giDiagnosticScenes,
-    ...visibleWallScenes,
-    ...ssrDiagnosticScenes,
-    ...traaDiagnosticScenes,
-    ...pathtracerScenes,
-  ].map((scene) => [scene.name, scene]),
+  [...ssrScenes, ...ssrDiagnosticScenes]
+    .filter((scene) =>
+      [
+        'diag-mirror',
+        'diag-rough-30',
+        'diag-dielectric-30',
+        'diag-grazing',
+        'diag-offscreen',
+        'diag-occlusion',
+        'diag-wall',
+        'diag-sphere',
+        'diag-metal-hit',
+        'steampunk-camera',
+      ].includes(scene.name),
+    )
+    .map((scene) => [scene.name, scene]),
 );
 
 export function listSceneNames(): string[] {

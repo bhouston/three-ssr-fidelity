@@ -1,10 +1,10 @@
+import { ssrExperimentProfiles, isSSRExperiment } from './ssr-experiments.js';
+import { stockSSRFactories } from './ssr-pr/index.js';
+import { createThreeNewRenderer } from './three-new.js';
+import { createRadianceHookRenderer } from './three-pr34.js';
+import { createDevRenderer } from './three-dev.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
 import { createRenderer as createPathTracerRenderer } from 'fidelity-kit-three-gpu-pathtracer';
-import { createWebGPUPathTracerRenderer } from './pathtracer-webgpu.js';
-import { createCurrentRenderer } from './three-current.js';
-import { createVXGIRenderer } from './vxgi.js';
-import { createVXGILightBakeRenderer } from './vxgi-light-bake.js';
-import { createThreeNewRenderer } from './three-new.js';
 import { hierarchyExperiments, ssrTemporalProfiles } from './types.js';
 import { createRendererProfiler } from './profiling.js';
 import type { LiveRenderer, RendererName, RendererOptions } from './types.js';
@@ -13,8 +13,6 @@ export * from './types.js';
 export * from './helpers.js';
 export * from './profiling.js';
 export * from './startup.js';
-export { createThreeNewRenderer } from './three-new.js';
-export { createCurrentRenderer } from './three-current.js';
 
 export function createRenderer(
   name: RendererName,
@@ -67,13 +65,31 @@ export function createRenderer(
       };
     });
   };
+  if (isSSRExperiment(name)) {
+    const profile = ssrExperimentProfiles[name];
+    if (profile.kind === 'stock')
+      return instrument(
+        createDevRenderer(canvas, setup, options, {
+          name,
+          stochastic: profile.stochastic,
+          ssrFactory: profile.proposal === null ? undefined : stockSSRFactories[profile.proposal],
+          backDepth: profile.proposal === 33,
+        }),
+      );
+    if (profile.kind === 'hook') return instrument(createRadianceHookRenderer(canvas, setup, options));
+    return instrument(
+      createThreeNewRenderer(
+        canvas,
+        { ...setup, effects: { ...setup.effects, ssgi: undefined } },
+        options,
+        undefined,
+        profile.contribution,
+      ),
+    );
+  }
   switch (name) {
-    case 'three-gpu-pathtracer-webgpu-experimental':
-      return instrument(createWebGPUPathTracerRenderer(canvas, setup, options));
-    case 'vxgi-light-bake':
-      return instrument(createVXGILightBakeRenderer(canvas, setup, options));
-    case 'vxgi':
-      return instrument(createVXGIRenderer(canvas, setup, options));
+    case 'three-dev':
+      return instrument(createDevRenderer(canvas, setup, options));
     case 'three-gpu-pathtracer':
       return instrument(
         createPathTracerRenderer({
@@ -88,21 +104,6 @@ export function createRenderer(
           gradientBackground: setup.gradientBackground,
         }),
       );
-    // unmodified three.js r186 from npm, not the fork (see three-current.ts)
-    case 'three-current':
-      return instrument(createCurrentRenderer(canvas, setup, options));
-    case 'three-new-vpl':
-      return instrument(createThreeNewRenderer(canvas, setup, options, 'vpl'));
-    case 'three-new-vpl-shadow-maps':
-      return instrument(createThreeNewRenderer(canvas, setup, options, 'vpl-shadow-maps'));
-    case 'three-new-light-bake':
-      return instrument(createThreeNewRenderer(canvas, setup, options, 'light-bake'));
-    case 'three-new-light-probe-ddgi':
-      return instrument(createThreeNewRenderer(canvas, setup, options, 'light-probe-ddgi'));
-    case 'three-new-light-probe':
-      return instrument(createThreeNewRenderer(canvas, setup, options, 'light-probe'));
-    case 'three-new':
-      return instrument(createThreeNewRenderer(canvas, setup, options));
     default:
       throw new Error(`Unknown renderer "${name}"`);
   }

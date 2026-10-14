@@ -1,8 +1,16 @@
+import { ssrExperimentProfiles } from './ssr-experiments.js';
+import type { SSRExperimentName } from './ssr-experiments.js';
+export type { SSRContribution } from './ssr-experiments.js';
 import type { PerspectiveCamera, WebGLRenderer } from 'three';
 import type { WebGPURenderer } from 'three/webgpu';
 import type { LivePipeline } from '@three-fidelity/runtime';
 
-export const rendererNames = [
+export const rendererNames: readonly RendererName[] = [
+  'three-dev',
+  'three-gpu-pathtracer',
+  ...(Object.keys(ssrExperimentProfiles) as SSRExperimentName[]),
+];
+const legacyRendererNames = [
   'vxgi',
   'vxgi-light-bake',
   'three-new',
@@ -15,7 +23,7 @@ export const rendererNames = [
   'three-gpu-pathtracer',
   'three-gpu-pathtracer-webgpu-experimental',
 ] as const;
-export type RendererName = (typeof rendererNames)[number];
+export type RendererName = 'three-dev' | SSRExperimentName | (typeof legacyRendererNames)[number];
 
 /** Scenes a renderer deliberately skips; the CLI writes a "Disabled" placeholder image for each. */
 export const disabledScenes: Partial<Record<RendererName, readonly string[]>> = {};

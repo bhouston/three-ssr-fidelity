@@ -1,0 +1,44 @@
+[
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "0ae774fc4166d27f3f5bb607670b96ee468c8f05",
+    "number": 28,
+    "title": "SSRNode: Reduce self-intersections with a depth-scaled normal bias.",
+    "url": "https://github.com/bhouston/three.js/pull/28"
+  },
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "09e722e06965a8d7a17c62fe6c1966e725d63106",
+    "number": 29,
+    "title": "SSRNode: Reject invalid reflection rays and bound grazing ray lengths.",
+    "url": "https://github.com/bhouston/three.js/pull/29"
+  },
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "74e9118304f4d2ee61ce38c12e0e18a38670be17",
+    "number": 30,
+    "title": "SSRNode: Clarify mirror-biased sampling.",
+    "url": "https://github.com/bhouston/three.js/pull/30"
+  },
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "aeb001ebddda5846472fa97d381d039e74e91c5e",
+    "number": 32,
+    "title": "SSRNode: Fix opt-in dielectric reflections in mirror mode",
+    "url": "https://github.com/bhouston/three.js/pull/32"
+  },
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "fee6cb7c6c00a10ca7b5f0de55b8beba25a6c4cd",
+    "number": 33,
+    "title": "SSRNode: Add optional back-face depth hit validation",
+    "url": "https://github.com/bhouston/three.js/pull/33"
+  },
+  {
+    "baseRefOid": "e615266e7647f0a062219d55e79913237594b6b7",
+    "headRefOid": "471dc4479621c2007af2e32820d1291dff147f21",
+    "number": 34,
+    "title": "NodeMaterial: Allow replacing indirect specular radiance",
+    "url": "https://github.com/bhouston/three.js/pull/34"
+  }
+]

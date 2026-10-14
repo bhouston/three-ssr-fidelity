@@ -1,0 +1,1380 @@
+{
+  "reference": "three-gpu-pathtracer",
+  "frames": 64,
+  "seed": 1,
+  "scenes": [
+    "diag-mirror",
+    "diag-rough-30",
+    "diag-dielectric-30",
+    "diag-grazing",
+    "diag-offscreen",
+    "diag-occlusion",
+    "diag-wall",
+    "diag-sphere",
+    "diag-metal-hit",
+    "steampunk-camera"
+  ],
+  "comparisons": [
+    {
+      "renderer": "three-dev-mirror",
+      "name": "Dev mirror control · dielectrics enabled",
+      "kind": "stock",
+      "control": "three-dev",
+      "meanDeltaDb": 0.0458136584481867,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.610404155753848,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 0.261671815298822,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.333972186964946,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 0.1762755828985938,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 33.67560812575559,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": -1.4546181272612273,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.669725269264955,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": 0.08755991350394154,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.400881154965226,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 0.24073331668600062,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.906829710674195,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 0.4773261022535422,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.23042277405616,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": -0.054911791391262454,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.335597527627783,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0.014003160362833,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.273057613009193,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": 0.09548441158911203,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 19.256649506343667,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": 0.6146122005415116,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr28-normal-bias",
+      "name": "PR #28 · normal bias (GGX)",
+      "kind": "stock",
+      "control": "three-dev",
+      "meanDeltaDb": -0.007588917985861698,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.35371985258832,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 0.004987512133293848,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.18670566813715,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 0.02900906407079873,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 35.15251526050418,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": 0.022289007487366064,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.5709616819587,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": -0.011203673802313574,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.163648743877364,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 0.003500905598137649,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.425345474134282,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": -0.004158134286370796,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.293371659014387,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 0.00803709356696558,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.32287138651392,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0.0012770192489703902,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.168518976675713,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": -0.0090542247443679,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 18.52146355667106,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": -0.12057374913109697,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr29-ray-guard",
+      "name": "PR #29 · ray-length guard (GGX)",
+      "kind": "stock",
+      "control": "three-dev",
+      "meanDeltaDb": -0.000012359316533050447,
+      "identicalScenes": 9,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.348732340455026,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.157696604066352,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 35.130226253016815,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.582165355761013,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.160147838279226,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.429503608420653,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.28533456544742,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.32159436726495,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.17757320142008,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 18.641913712636825,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": -0.00012359316533050446,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr30-sampling-docs",
+      "name": "PR #30 · sampling documentation (GGX)",
+      "kind": "stock",
+      "control": "three-dev",
+      "meanDeltaDb": 0,
+      "identicalScenes": 10,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.348732340455026,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.157696604066352,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 35.130226253016815,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.582165355761013,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.160147838279226,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.429503608420653,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.28533456544742,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.32159436726495,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.17757320142008,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 18.642037305802155,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr32-dielectric",
+      "name": "PR #32 · dielectric mirror Fresnel",
+      "kind": "stock",
+      "control": "three-dev-mirror",
+      "meanDeltaDb": -0.08283512140288281,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.560448973771642,
+          "controlPsnrDb": 24.610404155753848,
+          "candidateDeltaDb": -0.04995518198220594,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.25429991635309,
+          "controlPsnrDb": 26.333972186964946,
+          "candidateDeltaDb": -0.07967227061185511,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 34.63367641523254,
+          "controlPsnrDb": 33.67560812575559,
+          "candidateDeltaDb": 0.9580682894769552,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.646193799689847,
+          "controlPsnrDb": 23.669725269264955,
+          "candidateDeltaDb": -0.023531469575107877,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.346063801254928,
+          "controlPsnrDb": 19.400881154965226,
+          "candidateDeltaDb": -0.05481735371029828,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.784336266249536,
+          "controlPsnrDb": 24.906829710674195,
+          "candidateDeltaDb": -0.12249344442465926,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 17.857876874937663,
+          "controlPsnrDb": 19.23042277405616,
+          "candidateDeltaDb": -1.3725458991184958,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.29363227348484,
+          "controlPsnrDb": 21.335597527627783,
+          "candidateDeltaDb": -0.041965254142944275,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.237751084941255,
+          "controlPsnrDb": 26.273057613009193,
+          "candidateDeltaDb": -0.0353065280679381,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 19.25051740447139,
+          "controlPsnrDb": 19.256649506343667,
+          "candidateDeltaDb": -0.006132101872278639,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr33-back-depth",
+      "name": "PR #33 · back-face depth (GGX)",
+      "kind": "stock",
+      "control": "three-dev",
+      "meanDeltaDb": -0.37278442270643986,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 23.953649912981607,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": -0.3950824274734188,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 25.525389542885385,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": -0.6323070611809669,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 34.89573903085003,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": -0.2344872221667842,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.29216080856549,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": -0.2900045471955224,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 18.839497930366022,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": -0.3206499079132037,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.50217530324276,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 0.07267169482210534,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.294569211347703,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 0.00923464590028189,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.44924905334589,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0.1276546860809411,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 24.88136936201264,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": -1.2962038394074398,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 17.873367057271764,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": -0.7686702485303911,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-dev-pr34-radiance-hook",
+      "name": "PR #34 · radiance API (stock provider)",
+      "kind": "hook",
+      "control": "three-dev",
+      "meanDeltaDb": 0,
+      "identicalScenes": 10,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 24.348732340455026,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 26.157696604066352,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 35.130226253016815,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 23.582165355761013,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 19.160147838279226,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 24.429503608420653,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.28533456544742,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 21.32159436726495,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 26.17757320142008,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 18.642037305802155,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": 0,
+          "identicalAvif": true
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-full",
+      "name": "Full reflection pipeline",
+      "kind": "contribution",
+      "control": "three-dev",
+      "meanDeltaDb": 7.875402900090114,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.569853793346276,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": 12.22112145289125,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 37.100637251526415,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": 10.942940647460063,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.34345584364334,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": 5.213229590626526,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.1862259957236,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": 10.60406063996259,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.9843657776638,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": 10.824217939384575,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.61190725142831,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": 12.18240364300766,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.079482428988292,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": 3.7941478635408714,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.584867594229188,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": 3.2632732269642375,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.74212332254588,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": 5.564550121125798,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 22.78612118173973,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": 4.144083875937575,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-additive-env",
+      "name": "Full pipeline · add environment again",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -14.638084614026488,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 15.645113187166446,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -20.92474060617983,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 15.743529971042435,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -21.35710728048398,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 24.963329020677918,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -15.380126822965423,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 16.85781215175638,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -17.328413843967223,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 15.96380539331711,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -14.020560384346691,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 15.951900655266847,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -20.660006596161466,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 14.338950889075166,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": -8.740531539913126,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 17.72306218685936,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -6.861805407369829,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 14.919342071411382,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -16.822781251134497,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 18.501348773996916,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -4.284772407742814,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-capped-march",
+      "name": "Linear march · cap at 32 steps",
+      "kind": "contribution",
+      "control": "three-ssr-no-hiz",
+      "meanDeltaDb": -1.7945056419901075,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 32.53909301884412,
+          "controlPsnrDb": 36.00397116659495,
+          "candidateDeltaDb": -3.464878147750831,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 35.714445892930414,
+          "controlPsnrDb": 36.62361222145327,
+          "candidateDeltaDb": -0.9091663285228577,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 39.97816309151463,
+          "controlPsnrDb": 40.200230278873086,
+          "candidateDeltaDb": -0.222067187358455,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 31.434590336835555,
+          "controlPsnrDb": 33.99063045697917,
+          "candidateDeltaDb": -2.5560401201436136,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 28.151629140403852,
+          "controlPsnrDb": 29.71779972163452,
+          "candidateDeltaDb": -1.5661705812306685,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 33.18912180322724,
+          "controlPsnrDb": 36.45433632362728,
+          "candidateDeltaDb": -3.2652145204000433,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 22.235025198309593,
+          "controlPsnrDb": 23.454425508069463,
+          "candidateDeltaDb": -1.2194003097598696,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 23.49909997564753,
+          "controlPsnrDb": 24.457732735342873,
+          "candidateDeltaDb": -0.9586327596953446,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 28.75294555556044,
+          "controlPsnrDb": 31.38058800236134,
+          "candidateDeltaDb": -2.6276424468008983,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 21.65118108949189,
+          "controlPsnrDb": 22.807025107730382,
+          "candidateDeltaDb": -1.1558440182384935,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-no-hiz",
+      "name": "Full pipeline · uncapped linear march",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.1898688918168503,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.00397116659495,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -0.5658826267513248,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 36.62361222145327,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -0.47702503007314334,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.200230278873086,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -0.14322556477025472,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 33.99063045697917,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -0.1955955387444348,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.71779972163452,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.26656605602927996,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.45433632362728,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -0.1575709278010322,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.454425508069463,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": 0.3749430790811701,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.457732735342873,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.12713485888631482,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.38058800236134,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -0.36153532018454015,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 22.807025107730382,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": 0.020903925990651828,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-distance-fade",
+      "name": "Full pipeline · restore distance fade",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -1.0365610026406835,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 34.64588225715607,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -1.9239715361902086,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 35.95950450805182,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -1.1411327434745928,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.12182247638658,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -0.2216333672567572,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 33.14199043142665,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -1.0442355642969545,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.199341942526637,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.7850238351371637,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 34.872152833831045,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -1.7397544175972683,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 21.818344832154644,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": -1.261137596833649,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.054897385110777,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.5299702091184102,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.645585512672344,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -0.096537809873535,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 21.163908235111435,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -1.622212946628295,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-no-back-depth",
+      "name": "Full pipeline · omit back depth",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.7387043157128271,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 34.150724319736916,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -2.4191294736093596,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 34.919070506202054,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -2.1815667453243606,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 39.726287675853825,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -0.6171681677895151,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.126940940543065,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -0.05928505518053839,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 28.67827861232552,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -1.3060871653382797,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.60427626055896,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -0.007630990869351706,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.113233803309086,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": 0.03375137432079356,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.37028408329062,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.2145835109385672,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.754971945562787,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": 0.012848623016907368,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 22.15792913632373,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -0.6281920454160002,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-no-filter",
+      "name": "Full pipeline · omit reflection filter",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.559402544705011,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.57253837499289,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": 0.0026845816466121164,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 36.810347357822934,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -0.2902898937034806,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.28564601687387,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -0.05780982676947133,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.294956476749064,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": 0.10873048102546079,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.9507768945993,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.0335888830644997,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.66615497035666,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": 0.05424771892834457,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.066825853512416,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": -0.012656575475876508,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.580514070784645,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.004353523444542873,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 28.525133938800526,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -3.2169893837453536,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 20.642121039292427,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -2.144000142447304,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-no-hit-specular",
+      "name": "Full pipeline · omit hit specular",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.46079757054543186,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.52853440294856,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -0.04131939039771737,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 37.0854879525791,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -0.015149298947314094,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.36812982997701,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": 0.02467398633366713,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.24299063973202,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": 0.05676464400841752,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.93473813669801,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.04962764096579164,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.6144619727011,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": 0.0025547212727872193,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.065235235710325,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": -0.014247193277967085,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.591285702035147,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": 0.00641810780595975,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 28.88575367277887,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -2.856369649767011,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 21.06444719022038,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -1.7216739915193493,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-biased-lobe",
+      "name": "Full pipeline · mirror bias 0.5",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.2332932640788023,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.51140920607918,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -0.05844458726709689,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 36.13707950197145,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -0.9635577495549654,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 39.996709474010316,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": -0.3467463696330242,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.16965571779172,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -0.01657027793188348,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.959274488972504,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.0250912886912964,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.53534112124753,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -0.07656613018078673,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.06386628269859,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": -0.01561614628970176,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.56109211961577,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.023775474613419334,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.503996281080433,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": -0.2381270414654466,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 22.217683606579328,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -0.5684375751604023,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-ssr-short-rays",
+      "name": "Full pipeline · authored ray reach",
+      "kind": "contribution",
+      "control": "three-ssr-full",
+      "meanDeltaDb": -0.039191159390862394,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 36.55794559617877,
+          "controlPsnrDb": 36.569853793346276,
+          "candidateDeltaDb": -0.01190819716750724,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 37.09356795158157,
+          "controlPsnrDb": 37.100637251526415,
+          "candidateDeltaDb": -0.0070692999448453975,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 40.34917382010795,
+          "controlPsnrDb": 40.34345584364334,
+          "candidateDeltaDb": 0.0057179764646093645,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 34.17035202330649,
+          "controlPsnrDb": 34.1862259957236,
+          "candidateDeltaDb": -0.015873972417111304,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 29.974425900764658,
+          "controlPsnrDb": 29.9843657776638,
+          "candidateDeltaDb": -0.009939876899142774,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 36.576124109763164,
+          "controlPsnrDb": 36.61190725142831,
+          "candidateDeltaDb": -0.03578314166514929,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 23.081548736887445,
+          "controlPsnrDb": 23.079482428988292,
+          "candidateDeltaDb": 0.0020663078991525197,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 24.584714117484864,
+          "controlPsnrDb": 24.584867594229188,
+          "candidateDeltaDb": -0.0001534767443231999,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 31.750800527852284,
+          "controlPsnrDb": 31.74212332254588,
+          "candidateDeltaDb": 0.008677205306405256,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 22.45847606299902,
+          "controlPsnrDb": 22.78612118173973,
+          "candidateDeltaDb": -0.3276451187407119,
+          "identicalAvif": false
+        }
+      ]
+    }
+  ],
+  "sourceReport": "https://github.com/bhouston/three-fidelity/blob/8a797865611/docs/research/SSR-CONTRIBUTIONS.md"
+}

@@ -90,6 +90,18 @@ export async function createPerformanceSession(
     // GPU query readbacks schedule promises and polling per frame. Keep the standard
     // frame-rate test limited to CPU frame boundaries and the renderer's own work.
     const rendererBackend = current.renderer as { backend?: { device?: unknown }; getContext?: () => unknown };
+    if (!rendererBackend.backend?.device && rendererBackend.getContext) {
+      const gl = rendererBackend.getContext() as WebGLRenderingContext;
+      const extension = gl.getExtension('WEBGL_debug_renderer_info');
+      adapterInfo = { description: extension ? String(gl.getParameter(extension.UNMASKED_RENDERER_WEBGL)) : '' };
+    }
+    const identity = JSON.stringify(adapterInfo ?? {});
+    if (
+      !adapterInfo ||
+      !Object.values(adapterInfo).some(Boolean) ||
+      /swiftshader|llvmpipe|lavapipe|softpipe|software|basic render/i.test(identity)
+    )
+      throw new Error(`Physical GPU required; selected adapter: ${identity}`);
     reporter.environment({
       api: rendererBackend.backend?.device ? 'webgpu' : rendererBackend.getContext ? 'webgl2' : 'other',
       canvasSize: { width: config.width, height: config.height },
@@ -150,7 +162,11 @@ export async function createPerformanceSession(
             if (!context) throw new Error('Capture readback context unavailable');
             return runtime.captureProgressive(
               {
-                draw: () => draw(),
+                // Submit a bounded batch, then drain it through captureProgressive's complete().
+                // Avoid a browser timer and GPU fence round trip for every individual sample.
+                draw: () => {
+                  for (let index = 0; index < 32 && current.frames < samples; index++) draw();
+                },
                 complete,
                 completed: () => current.getCompletedSamples?.() ?? current.frames,
                 limit: current.setSampleLimit?.bind(current),
