@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 3,
+  "runId": "01M4W1AE2FJDA6RNXPNR4JYFGE",
+  "screenshot": true,
+  "throughput": {
+    "completedFrames": 7392,
+    "elapsed": 10.009615000002087
+  },
+  "networkProfile": {
+    "name": "unthrottled",
+    "latency": 0,
+    "downloadBytesPerSec": -1,
+    "uploadBytesPerSec": -1
+  },
+  "downloads": [
+    {
+      "phase": "load",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4401/performance.html?performanceKitRunId=01M4W1AE2FJDA6RNXPNR4JYFGE&performanceKitEntryId=steampunk-camera--three-dev-pr28-normal-bias&performanceKitDurationMs=10000&performanceKitParams=%7B%22renderer%22%3A%22three-dev-pr28-normal-bias%22%2C%22scene%22%3A%22steampunk-camera%22%2C%22width%22%3A480%2C%22height%22%3A360%7D&performanceKitOrigin=http%3A%2F%2Flocalhost%3A4400",
+          "category": "document",
+          "initiatorType": "navigation",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 524,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-BsaoClz2.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 1288,
+          "encodedBodySize": 988,
+          "decodedBodySize": 988,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/preload-helper-DLr8UypG.js",
+          "category": "script",
+          "initiatorType": "other",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 2207,
+          "encodedBodySize": 1907,
+          "decodedBodySize": 1907,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/host-CuBhi785.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 17216,
+          "encodedBodySize": 16916,
+          "decodedBodySize": 16916,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/telemetry-DTARCKl_.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 967,
+          "encodedBodySize": 667,
+          "decodedBodySize": 667,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-session-Dm-Hkzb8.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 4665,
+          "encodedBodySize": 4365,
+          "decodedBodySize": 4365,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/rolldown-runtime-BpQH8Ho1.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0009749999940395355,
+          "responseStart": 0.0036299999952316285,
+          "responseEnd": 0.004259999997913837,
+          "transferSize": 527,
+          "encodedBodySize": 227,
+          "decodedBodySize": 227,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-B6aSaTZK.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.001334999993443489,
+          "responseStart": 0.004739999994635582,
+          "responseEnd": 0.005334999993443489,
+          "transferSize": 17102,
+          "encodedBodySize": 16802,
+          "decodedBodySize": 16802,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-config-BqY6RQ7w.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0014049999937415123,
+          "responseStart": 0.006669999994337559,
+          "responseEnd": 0.006924999997019767,
+          "transferSize": 1233,
+          "encodedBodySize": 933,
+          "decodedBodySize": 933,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-DSGNPUSb.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0008149999976158142,
+          "responseStart": 0.0031999999955296516,
+          "responseEnd": 0.0045599999949336055,
+          "transferSize": 234880,
+          "encodedBodySize": 234580,
+          "decodedBodySize": 234580,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/SkeletonUtils-DIrC4bh3.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0011499999985098838,
+          "responseStart": 0.004929999999701977,
+          "responseEnd": 0.0056049999967217445,
+          "transferSize": 358493,
+          "encodedBodySize": 358193,
+          "decodedBodySize": 358193,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/three.core-Db1a1Q9U.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0010749999955296516,
+          "responseStart": 0.004064999997615814,
+          "responseEnd": 0.005114999994635582,
+          "transferSize": 262699,
+          "encodedBodySize": 262399,
+          "decodedBodySize": 262399,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-rdUQrxV9.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0012349999994039536,
+          "responseStart": 0.0075,
+          "responseEnd": 0.010639999993145466,
+          "transferSize": 3301991,
+          "encodedBodySize": 3301691,
+          "decodedBodySize": 3301691,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/models/gltf/steampunk_camera.glb",
+          "category": "model",
+          "initiatorType": "fetch",
+          "startTime": 0.15357000000029802,
+          "responseStart": 0.15638999999314546,
+          "responseEnd": 0.16019999999552964,
+          "transferSize": 3946724,
+          "encodedBodySize": 3946424,
+          "decodedBodySize": 3946424,
+          "sizeKnown": true
+        }
+      ],
+      "byCategory": {
+        "script": 4203268,
+        "wasm": 0,
+        "model": 3946724,
+        "texture": 0,
+        "document": 824,
+        "other": 0
+      },
+      "totalTransferBytes": 8150816,
+      "totalDecodedBytes": 8146616,
+      "unknownSizeCount": 0
+    },
+    {
+      "phase": "post-load",
+      "resources": [],
+      "byCategory": {
+        "script": 0,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 0,
+        "other": 0
+      },
+      "totalTransferBytes": 0,
+      "totalDecodedBytes": 0,
+      "unknownSizeCount": 0
+    }
+  ],
+  "suiteName": "three-ssr-fidelity / experiments",
+  "entry": {
+    "id": "steampunk-camera--three-dev-pr28-normal-bias",
+    "name": "PR #28 · normal bias (GGX) · Steampunk camera Â· authored roughness",
+    "renderer": {
+      "id": "three-dev-pr28-normal-bias",
+      "name": "PR #28 · normal bias (GGX)"
+    },
+    "scene": {
+      "id": "steampunk-camera",
+      "name": "Steampunk camera Â· authored roughness"
+    },
+    "url": "performance.html"
+  },
+  "config": {
+    "duration": 10,
+    "vsync": "off"
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "gpuTimestampsAvailable": false,
+    "crossOriginIsolated": true,
+    "devicePixelRatio": 1,
+    "host": {
+      "os": "win32 10.0.26200",
+      "cpu": "AMD Ryzen 9 5950X 16-Core Processor            ",
+      "machineId": "build001"
+    },
+    "chromeFlags": [
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--disable-backgrounding-occluded-windows",
+      "--enable-unsafe-webgpu",
+      "--enable-webgpu-developer-features",
+      "--site-per-process",
+      "--disable-gpu-vsync",
+      "--disable-frame-rate-limit"
+    ],
+    "gpuAdapter": {
+      "vendor": "nvidia",
+      "architecture": "pascal",
+      "description": "NVIDIA GeForce GTX 1050"
+    },
+    "api": "webgpu",
+    "canvasSize": {
+      "width": 480,
+      "height": 360
+    }
+  },
+  "status": "ok",
+  "statistics": {
+    "frameCount": 7392,
+    "intervalCount": 0,
+    "cpuSampleCount": 0,
+    "gpuSampleCount": 0,
+    "initMaxBlockDuration": 0.20504500000178816,
+    "initBlockedDuration": 0.2859350000023842,
+    "phaseDurations": {
+      "load": 0.20047999999672175,
+      "unknown": 0.0007749999985098011,
+      "process": 0.14286500000208613,
+      "compile": 0.401039999999106
+    },
+    "averageFps": 738.4899419206891,
+    "worstResponsiveness": 0.19859499999880786,
+    "initDuration": 0.7451599999964237,
+    "unaccountedDuration": 0.0007749999985098011
+  },
+  "timeline": {
+    "maxTime": 11.776109999999404,
+    "renderStart": 0.7451599999964237,
+    "ready": 0.7451599999964237,
+    "runStart": 1.7664049999937415,
+    "runEnd": 11.776109999999404,
+    "frameTimes": [],
+    "cpuDurations": [],
+    "gpuDurations": [],
+    "frameIndices": [],
+    "watchdogTimes": [
+      0.0003549999967217445,
+      0.017054999999701975,
+      0.03325999999791384,
+      0.05008499999344349,
+      0.06619999999552965,
+      0.15378999999910592,
+      0.17987999999523163,
+      0.19692499999701976,
+      0.2132799999937415,
+      0.22944999999552965,
+      0.24588999999314545,
+      0.2621849999949336,
+      0.2790499999970198,
+      0.49364499999582767,
+      0.509804999999702,
+      0.5266749999970197,
+      0.5430899999961257,
+      0.5593549999967218,
+      0.576164999999106,
+      0.5927549999952316,
+      0.6102399999946356,
+      0.6263499999940395,
+      0.6425199999958277,
+      0.6586299999952316,
+      0.6747249999940396,
+      0.690820000000298,
+      0.7069199999943375,
+      0.723179999999702,
+      0.7393849999979138
+    ],
+    "watchdogIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "watchdogPeriod": 0.016,
+    "phases": [
+      {
+        "phase": "load",
+        "start": 0,
+        "duration": 0.20047999999672175
+      },
+      {
+        "phase": "unknown",
+        "start": 0.20047999999672175,
+        "duration": 0.00002499999850988366
+      },
+      {
+        "phase": "process",
+        "start": 0.20050499999523164,
+        "duration": 0.14286500000208613
+      },
+      {
+        "phase": "compile",
+        "start": 0.34336999999731777,
+        "duration": 0.401039999999106
+      },
+      {
+        "phase": "unknown",
+        "start": 0.7444099999964238,
+        "duration": 0.0007499999999999174
+      }
+    ],
+    "blocks": [
+      {
+        "start": 0.07289999999850988,
+        "duration": 0.08089000000059604,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      },
+      {
+        "start": 0.2885999999940395,
+        "duration": 0.20504500000178816,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      }
+    ]
+  },
+  "measuredIntervals": [],
+  "timing": {
+    "harness": {
+      "iframeCreated": 0.000369999997317791,
+      "runEndObserved": 11.783254999995231,
+      "captureSent": 11.784664999999105,
+      "teardown": 11.813859999999403
+    },
+    "reporter": {
+      "navigationStart": 0,
+      "ready": 0.7451599999964237,
+      "renderStart": 0.7451599999964237,
+      "runStart": 1.7664049999937415,
+      "runEnd": 11.776109999999404
+    }
+  }
+}
