@@ -7,6 +7,7 @@ import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { RGBAKTX2Loader } from './ktx2.js';
 import { ssrScenes } from './ssr.js';
 import { ssrDiagnosticScenes } from './ssr-diagnostics.js';
+import { ssgiScenes } from './ssgi.js';
 import type { SceneContext, SceneDefinition } from './types.js';
 
 export type * from './types.js';
@@ -14,7 +15,7 @@ export * from './lifecycle.js';
 export { ANIMATED_POSE_TIME } from './ssgi.js';
 
 const scenes = new Map<string, SceneDefinition>(
-  [...ssrScenes, ...ssrDiagnosticScenes]
+  [...ssrScenes, ...ssrDiagnosticScenes, ...ssgiScenes]
     .filter((scene) =>
       [
         'diag-mirror',
@@ -27,6 +28,8 @@ const scenes = new Map<string, SceneDefinition>(
         'diag-sphere',
         'diag-metal-hit',
         'steampunk-camera',
+        'cornell-box-metallic',
+        'cornell-box-mirror',
       ].includes(scene.name),
     )
     .map((scene) => [scene.name, scene]),
