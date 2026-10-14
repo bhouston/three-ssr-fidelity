@@ -1,6 +1,6 @@
 # SSR renderer comparisons
 
-The ten-scene registry is shared by fidelity-kit capture, performance and live views.
+The twelve-scene registry is shared by fidelity-kit capture, performance and live views.
 The path-tracer reference uses 4096 samples. Screen-space captures use native scene
 dimensions, seed 1 and 64 completed frames, with SSGI disabled and TRAA retained.
 
@@ -67,6 +67,21 @@ the actual WebGPU adapter, rejects software fallbacks and shader errors, and rec
 capture provenance in `SWARM_ARTIFACTS` when set. Reuse the committed path-tracer
 references unless scene content or cameras change. Regenerate them with `pnpm render`
 when needed.
+
+The Cornell reflection scenes preserve three-fidelity's authored geometry, camera and
+materials: `cornell-box-metallic` has a cone and perfect mirror sphere;
+`cornell-box-mirror` has two boxes and a planar mirror back wall. Both use 640×480
+captures with the same 64-frame SSR and 4096-sample reference budgets. To regenerate
+all fidelity images for these scenes:
+
+```powershell
+pnpm render --scenes cornell-box-metallic,cornell-box-mirror --renderers three-gpu-pathtracer
+pnpm render:experiments --scenes cornell-box-metallic,cornell-box-mirror
+pnpm exec fidelity-kit process fidelity-results --performance-root performance-results
+```
+
+SSGI remains disabled by the SSR adapters, so these Cornell comparisons measure
+reflections with direct lighting rather than the source project's SSGI pipeline.
 
 The opt-in performance collection is available through
 `pnpm performance:run --collection experiments`. Fidelity scores alone establish no
