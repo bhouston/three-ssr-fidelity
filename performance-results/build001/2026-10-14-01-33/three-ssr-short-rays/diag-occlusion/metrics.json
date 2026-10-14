@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 3,
+  "runId": "01M4W3BD77VCXTJP8F3ZAV4S0C",
+  "screenshot": true,
+  "throughput": {
+    "completedFrames": 3872,
+    "elapsed": 10.02232499999553
+  },
+  "networkProfile": {
+    "name": "unthrottled",
+    "latency": 0,
+    "downloadBytesPerSec": -1,
+    "uploadBytesPerSec": -1
+  },
+  "downloads": [
+    {
+      "phase": "load",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4401/performance.html?performanceKitRunId=01M4W3BD77VCXTJP8F3ZAV4S0C&performanceKitEntryId=diag-occlusion--three-ssr-short-rays&performanceKitDurationMs=10000&performanceKitParams=%7B%22renderer%22%3A%22three-ssr-short-rays%22%2C%22scene%22%3A%22diag-occlusion%22%2C%22width%22%3A480%2C%22height%22%3A360%7D&performanceKitOrigin=http%3A%2F%2Flocalhost%3A4400",
+          "category": "document",
+          "initiatorType": "navigation",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 524,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-BsaoClz2.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 1288,
+          "encodedBodySize": 988,
+          "decodedBodySize": 988,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/preload-helper-DLr8UypG.js",
+          "category": "script",
+          "initiatorType": "other",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 2207,
+          "encodedBodySize": 1907,
+          "decodedBodySize": 1907,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/host-CuBhi785.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 17216,
+          "encodedBodySize": 16916,
+          "decodedBodySize": 16916,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/telemetry-DTARCKl_.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 967,
+          "encodedBodySize": 667,
+          "decodedBodySize": 667,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-session-Dm-Hkzb8.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 4665,
+          "encodedBodySize": 4365,
+          "decodedBodySize": 4365,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/rolldown-runtime-BpQH8Ho1.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0009099999964237213,
+          "responseStart": 0.0029600000008940695,
+          "responseEnd": 0.003625,
+          "transferSize": 527,
+          "encodedBodySize": 227,
+          "decodedBodySize": 227,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-config-BqY6RQ7w.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0013250000029802322,
+          "responseStart": 0.005780000001192093,
+          "responseEnd": 0.0059450000002980235,
+          "transferSize": 1233,
+          "encodedBodySize": 933,
+          "decodedBodySize": 933,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-B6aSaTZK.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.001219999998807907,
+          "responseStart": 0.005615000002086162,
+          "responseEnd": 0.006064999997615814,
+          "transferSize": 17102,
+          "encodedBodySize": 16802,
+          "decodedBodySize": 16802,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-DSGNPUSb.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0007749999985098839,
+          "responseStart": 0.00275,
+          "responseEnd": 0.004384999997913837,
+          "transferSize": 234880,
+          "encodedBodySize": 234580,
+          "decodedBodySize": 234580,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/three.core-Db1a1Q9U.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.000994999997317791,
+          "responseStart": 0.0031049999967217444,
+          "responseEnd": 0.0045,
+          "transferSize": 262699,
+          "encodedBodySize": 262399,
+          "decodedBodySize": 262399,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/SkeletonUtils-DIrC4bh3.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0010600000023841857,
+          "responseStart": 0.005219999998807907,
+          "responseEnd": 0.00625,
+          "transferSize": 358493,
+          "encodedBodySize": 358193,
+          "decodedBodySize": 358193,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-rdUQrxV9.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.001130000002682209,
+          "responseStart": 0.007704999998211861,
+          "responseEnd": 0.011034999996423722,
+          "transferSize": 3301991,
+          "encodedBodySize": 3301691,
+          "decodedBodySize": 3301691,
+          "sizeKnown": true
+        }
+      ],
+      "byCategory": {
+        "script": 4203268,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 824,
+        "other": 0
+      },
+      "totalTransferBytes": 4204092,
+      "totalDecodedBytes": 4200192,
+      "unknownSizeCount": 0
+    },
+    {
+      "phase": "post-load",
+      "resources": [],
+      "byCategory": {
+        "script": 0,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 0,
+        "other": 0
+      },
+      "totalTransferBytes": 0,
+      "totalDecodedBytes": 0,
+      "unknownSizeCount": 0
+    }
+  ],
+  "suiteName": "three-ssr-fidelity / experiments",
+  "entry": {
+    "id": "diag-occlusion--three-ssr-short-rays",
+    "name": "Full pipeline · authored ray reach · Diag Occlusion",
+    "renderer": {
+      "id": "three-ssr-short-rays",
+      "name": "Full pipeline · authored ray reach"
+    },
+    "scene": {
+      "id": "diag-occlusion",
+      "name": "Diag Occlusion"
+    },
+    "url": "performance.html"
+  },
+  "config": {
+    "duration": 10,
+    "vsync": "off"
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "gpuTimestampsAvailable": false,
+    "crossOriginIsolated": true,
+    "devicePixelRatio": 1,
+    "host": {
+      "os": "win32 10.0.26200",
+      "cpu": "AMD Ryzen 9 5950X 16-Core Processor            ",
+      "machineId": "build001"
+    },
+    "chromeFlags": [
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--disable-backgrounding-occluded-windows",
+      "--enable-unsafe-webgpu",
+      "--enable-webgpu-developer-features",
+      "--site-per-process",
+      "--disable-gpu-vsync",
+      "--disable-frame-rate-limit"
+    ],
+    "gpuAdapter": {
+      "vendor": "nvidia",
+      "architecture": "pascal",
+      "description": "NVIDIA GeForce GTX 1050"
+    },
+    "api": "webgpu",
+    "canvasSize": {
+      "width": 480,
+      "height": 360
+    }
+  },
+  "status": "ok",
+  "statistics": {
+    "frameCount": 3872,
+    "intervalCount": 0,
+    "cpuSampleCount": 0,
+    "gpuSampleCount": 0,
+    "initMaxBlockDuration": 0.10799499999731776,
+    "initBlockedDuration": 0.19707999999821182,
+    "phaseDurations": {
+      "load": 0.1615899999961257,
+      "unknown": 0.0008100000023842646,
+      "process": 0.20123499999940392,
+      "compile": 0.08718500000238416
+    },
+    "averageFps": 386.33750152801144,
+    "worstResponsiveness": 0.10799499999731778,
+    "initDuration": 0.45082000000029804,
+    "unaccountedDuration": 0.0008100000023842646
+  },
+  "timeline": {
+    "maxTime": 11.47489999999851,
+    "renderStart": 0.45082000000029804,
+    "ready": 0.45082000000029804,
+    "runStart": 1.452515000000596,
+    "runEnd": 11.47489999999851,
+    "frameTimes": [],
+    "cpuDurations": [],
+    "gpuDurations": [],
+    "frameIndices": [],
+    "watchdogTimes": [
+      0.00033500000089406966,
+      0.01692499999701977,
+      0.0333399999961257,
+      0.049875,
+      0.06598499999940395,
+      0.16454999999701977,
+      0.1815949999988079,
+      0.19819500000029802,
+      0.2143699999973178,
+      0.23096000000089406,
+      0.24707999999821187,
+      0.26410000000149014,
+      0.2809949999973178,
+      0.29800999999791383,
+      0.31485999999940395,
+      0.43885499999672173
+    ],
+    "watchdogIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "watchdogPeriod": 0.016,
+    "phases": [
+      {
+        "phase": "load",
+        "start": 0,
+        "duration": 0.1615899999961257
+      },
+      {
+        "phase": "unknown",
+        "start": 0.1615899999961257,
+        "duration": 0.000025000005960479355
+      },
+      {
+        "phase": "process",
+        "start": 0.16161500000208617,
+        "duration": 0.20123499999940392
+      },
+      {
+        "phase": "unknown",
+        "start": 0.3628500000014901,
+        "duration": 0.000004999995231680376
+      },
+      {
+        "phase": "compile",
+        "start": 0.36285499999672177,
+        "duration": 0.08718500000238416
+      },
+      {
+        "phase": "unknown",
+        "start": 0.45003999999910593,
+        "duration": 0.0007800000011921049
+      }
+    ],
+    "blocks": [
+      {
+        "start": 0.0754649999961257,
+        "duration": 0.08908500000089407,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      },
+      {
+        "start": 0.33085999999940396,
+        "duration": 0.10799499999731776,
+        "sources": [
+          "watchdog"
+        ]
+      }
+    ]
+  },
+  "measuredIntervals": [],
+  "timing": {
+    "harness": {
+      "iframeCreated": 0.0003499999940395355,
+      "runEndObserved": 11.48229999999702,
+      "captureSent": 11.483579999998211,
+      "teardown": 11.497229999996721
+    },
+    "reporter": {
+      "navigationStart": 0,
+      "ready": 0.45082000000029804,
+      "renderStart": 0.45082000000029804,
+      "runStart": 1.452515000000596,
+      "runEnd": 11.47489999999851
+    }
+  }
+}
