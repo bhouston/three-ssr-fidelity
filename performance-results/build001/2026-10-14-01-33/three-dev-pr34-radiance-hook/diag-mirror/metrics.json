@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 3,
+  "runId": "01M4W1WS6ZX4W3FWGC85KWKMXV",
+  "screenshot": true,
+  "throughput": {
+    "completedFrames": 9920,
+    "elapsed": 10.00072500000149
+  },
+  "networkProfile": {
+    "name": "unthrottled",
+    "latency": 0,
+    "downloadBytesPerSec": -1,
+    "uploadBytesPerSec": -1
+  },
+  "downloads": [
+    {
+      "phase": "load",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4401/performance.html?performanceKitRunId=01M4W1WS6ZX4W3FWGC85KWKMXV&performanceKitEntryId=diag-mirror--three-dev-pr34-radiance-hook&performanceKitDurationMs=10000&performanceKitParams=%7B%22renderer%22%3A%22three-dev-pr34-radiance-hook%22%2C%22scene%22%3A%22diag-mirror%22%2C%22width%22%3A480%2C%22height%22%3A360%7D&performanceKitOrigin=http%3A%2F%2Flocalhost%3A4400",
+          "category": "document",
+          "initiatorType": "navigation",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 524,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-BsaoClz2.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 1288,
+          "encodedBodySize": 988,
+          "decodedBodySize": 988,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/preload-helper-DLr8UypG.js",
+          "category": "script",
+          "initiatorType": "other",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 2207,
+          "encodedBodySize": 1907,
+          "decodedBodySize": 1907,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/host-CuBhi785.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 17216,
+          "encodedBodySize": 16916,
+          "decodedBodySize": 16916,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/telemetry-DTARCKl_.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 967,
+          "encodedBodySize": 667,
+          "decodedBodySize": 667,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-session-Dm-Hkzb8.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0,
+          "responseStart": 0,
+          "responseEnd": 0,
+          "transferSize": 4665,
+          "encodedBodySize": 4365,
+          "decodedBodySize": 4365,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/rolldown-runtime-BpQH8Ho1.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0010350000038743018,
+          "responseStart": 0.0026200000047683714,
+          "responseEnd": 0.00395499999821186,
+          "transferSize": 527,
+          "encodedBodySize": 227,
+          "decodedBodySize": 227,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/favicon.ico",
+          "category": "other",
+          "initiatorType": "other",
+          "startTime": 0.0028849999979138376,
+          "responseStart": 0.006094999998807907,
+          "responseEnd": 0.0063900000005960465,
+          "transferSize": 309,
+          "encodedBodySize": 9,
+          "decodedBodySize": 9,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/performance-config-BqY6RQ7w.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0014900000020861626,
+          "responseStart": 0.005890000000596046,
+          "responseEnd": 0.0061900000050663945,
+          "transferSize": 1233,
+          "encodedBodySize": 933,
+          "decodedBodySize": 933,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-B6aSaTZK.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0014149999991059303,
+          "responseStart": 0.005704999998211861,
+          "responseEnd": 0.006270000003278256,
+          "transferSize": 17102,
+          "encodedBodySize": 16802,
+          "decodedBodySize": 16802,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-DSGNPUSb.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0008700000047683716,
+          "responseStart": 0.002969999998807907,
+          "responseEnd": 0.004740000002086162,
+          "transferSize": 234880,
+          "encodedBodySize": 234580,
+          "decodedBodySize": 234580,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/SkeletonUtils-DIrC4bh3.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0012150000035762787,
+          "responseStart": 0.005384999997913837,
+          "responseEnd": 0.00646000000089407,
+          "transferSize": 358493,
+          "encodedBodySize": 358193,
+          "decodedBodySize": 358193,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/three.core-Db1a1Q9U.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0011200000047683716,
+          "responseStart": 0.003785000003874302,
+          "responseEnd": 0.004865000002086162,
+          "transferSize": 262699,
+          "encodedBodySize": 262399,
+          "decodedBodySize": 262399,
+          "sizeKnown": true
+        },
+        {
+          "url": "http://127.0.0.1:4401/assets/src-rdUQrxV9.js",
+          "category": "script",
+          "initiatorType": "script",
+          "startTime": 0.0013150000050663948,
+          "responseStart": 0.00825,
+          "responseEnd": 0.011890000000596047,
+          "transferSize": 3301991,
+          "encodedBodySize": 3301691,
+          "decodedBodySize": 3301691,
+          "sizeKnown": true
+        }
+      ],
+      "byCategory": {
+        "script": 4203268,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 824,
+        "other": 309
+      },
+      "totalTransferBytes": 4204401,
+      "totalDecodedBytes": 4200201,
+      "unknownSizeCount": 0
+    },
+    {
+      "phase": "post-load",
+      "resources": [],
+      "byCategory": {
+        "script": 0,
+        "wasm": 0,
+        "model": 0,
+        "texture": 0,
+        "document": 0,
+        "other": 0
+      },
+      "totalTransferBytes": 0,
+      "totalDecodedBytes": 0,
+      "unknownSizeCount": 0
+    }
+  ],
+  "suiteName": "three-ssr-fidelity / experiments",
+  "entry": {
+    "id": "diag-mirror--three-dev-pr34-radiance-hook",
+    "name": "PR #34 · radiance API (stock provider) · Diag Mirror",
+    "renderer": {
+      "id": "three-dev-pr34-radiance-hook",
+      "name": "PR #34 · radiance API (stock provider)"
+    },
+    "scene": {
+      "id": "diag-mirror",
+      "name": "Diag Mirror"
+    },
+    "url": "performance.html"
+  },
+  "config": {
+    "duration": 10,
+    "vsync": "off"
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "gpuTimestampsAvailable": false,
+    "crossOriginIsolated": true,
+    "devicePixelRatio": 1,
+    "host": {
+      "os": "win32 10.0.26200",
+      "cpu": "AMD Ryzen 9 5950X 16-Core Processor            ",
+      "machineId": "build001"
+    },
+    "chromeFlags": [
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--disable-backgrounding-occluded-windows",
+      "--enable-unsafe-webgpu",
+      "--enable-webgpu-developer-features",
+      "--site-per-process",
+      "--disable-gpu-vsync",
+      "--disable-frame-rate-limit"
+    ],
+    "gpuAdapter": {
+      "vendor": "nvidia",
+      "architecture": "pascal",
+      "description": "NVIDIA GeForce GTX 1050"
+    },
+    "api": "webgpu",
+    "canvasSize": {
+      "width": 480,
+      "height": 360
+    }
+  },
+  "status": "ok",
+  "statistics": {
+    "frameCount": 9920,
+    "intervalCount": 0,
+    "cpuSampleCount": 0,
+    "gpuSampleCount": 0,
+    "initMaxBlockDuration": 0.08657999999821187,
+    "initBlockedDuration": 0.1632149999961257,
+    "phaseDurations": {
+      "load": 0.1599699999988079,
+      "unknown": 0.0007500000000000284,
+      "process": 0.12521500000357627,
+      "compile": 0.4407449999973178
+    },
+    "averageFps": 991.9280852136743,
+    "worstResponsiveness": 0.08110500000417233,
+    "initDuration": 0.726679999999702,
+    "unaccountedDuration": 0.0007500000000000284
+  },
+  "timeline": {
+    "maxTime": 11.730134999997913,
+    "renderStart": 0.726679999999702,
+    "ready": 0.726679999999702,
+    "runStart": 1.729359999999404,
+    "runEnd": 11.730134999997913,
+    "frameTimes": [],
+    "cpuDurations": [],
+    "gpuDurations": [],
+    "frameIndices": [],
+    "watchdogTimes": [
+      0.00037000000476837156,
+      0.01704500000178814,
+      0.03329500000178814,
+      0.04938000000268221,
+      0.06602499999850989,
+      0.1631300000026822,
+      0.17960500000417232,
+      0.19625999999791383,
+      0.21244500000029803,
+      0.22919500000029802,
+      0.24532000000029802,
+      0.3232599999979138,
+      0.33942999999970197,
+      0.35610999999940396,
+      0.37320000000298026,
+      0.3894600000008941,
+      0.4059050000011921,
+      0.4228000000044703,
+      0.4394250000044703,
+      0.45556000000238417,
+      0.4725650000050664,
+      0.4886700000017881,
+      0.5052749999985099,
+      0.5213999999985098,
+      0.5386750000044703,
+      0.5547950000017882,
+      0.5716200000047684,
+      0.588125,
+      0.6046700000017882,
+      0.6207599999979139,
+      0.6370050000026822,
+      0.6540249999985099,
+      0.6701150000020861,
+      0.6864250000044704,
+      0.7025450000017881,
+      0.719234999999404
+    ],
+    "watchdogIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "watchdogPeriod": 0.016,
+    "phases": [
+      {
+        "phase": "load",
+        "start": 0,
+        "duration": 0.1599699999988079
+      },
+      {
+        "phase": "unknown",
+        "start": 0.1599699999988079,
+        "duration": 0.000015000000596065988
+      },
+      {
+        "phase": "process",
+        "start": 0.15998499999940397,
+        "duration": 0.12521500000357627
+      },
+      {
+        "phase": "compile",
+        "start": 0.28520000000298024,
+        "duration": 0.4407449999973178
+      },
+      {
+        "phase": "unknown",
+        "start": 0.725945000000298,
+        "duration": 0.0007349999994039624
+      }
+    ],
+    "blocks": [
+      {
+        "start": 0.07655000000447035,
+        "duration": 0.08657999999821187,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      },
+      {
+        "start": 0.246625,
+        "duration": 0.07663499999791382,
+        "sources": [
+          "loaf",
+          "watchdog"
+        ]
+      }
+    ]
+  },
+  "measuredIntervals": [],
+  "timing": {
+    "harness": {
+      "iframeCreated": 0.0003900000005960464,
+      "runEndObserved": 11.737615000002085,
+      "captureSent": 11.742880000002682,
+      "teardown": 11.761094999998807
+    },
+    "reporter": {
+      "navigationStart": 0,
+      "ready": 0.726679999999702,
+      "renderStart": 0.726679999999702,
+      "runStart": 1.729359999999404,
+      "runEnd": 11.730134999997913
+    }
+  }
+}
