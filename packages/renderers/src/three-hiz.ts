@@ -87,7 +87,7 @@ function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant:
       camera,
       binaryRefine: true,
       stochastic: variant.stochastic,
-      hiZNode: variant.traversal === 'linear' ? null : hiZ(scenePassDepth),
+      hiZ: variant.traversal === 'linear' ? null : hiZ(scenePassDepth),
       hiZEnabled: variant.traversal !== 'linear',
       hiZTraversal: variant.traversal === 'adaptive' ? 'adaptive' : 'conservative',
       reflectNonMetals: true,

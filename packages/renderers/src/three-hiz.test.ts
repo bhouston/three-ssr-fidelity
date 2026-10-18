@@ -57,7 +57,7 @@ it('shares scene depth with the hierarchy and omits hierarchy work for linear co
     if (profile.traversal === 'linear') expect(hiZ).not.toHaveBeenCalled();
     else {
       expect(hiZ).toHaveBeenCalledExactlyOnceWith(call[1]);
-      expect(call[3]).toHaveProperty('hiZNode', vi.mocked(hiZ).mock.results[0]!.value);
+      expect(call[3]).toHaveProperty('hiZ', vi.mocked(hiZ).mock.results[0]!.value);
     }
     live.dispose();
   }
