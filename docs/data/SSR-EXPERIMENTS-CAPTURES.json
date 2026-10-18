@@ -4136,5 +4136,1733 @@
     ],
     "errors": [],
     "capturedAt": "2026-10-14T12:03:15.763Z"
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-mirror",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:25.935Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-mirror",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:27.719Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-mirror",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:28.740Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-mirror",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:29.904Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-rough-30",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:30.878Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-rough-30",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:31.833Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-rough-30",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:32.838Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-rough-30",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:33.812Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-dielectric-30",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:34.967Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-dielectric-30",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:35.915Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-dielectric-30",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:36.829Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-dielectric-30",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:37.782Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-grazing",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:38.729Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-grazing",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:39.785Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-grazing",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:40.706Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-grazing",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:41.696Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-offscreen",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:42.676Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-offscreen",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:43.654Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-offscreen",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:44.590Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-offscreen",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:45.590Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-occlusion",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:46.534Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-occlusion",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:47.528Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-occlusion",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:48.470Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-occlusion",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:49.410Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-wall",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:50.328Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-wall",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:51.279Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-wall",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:52.260Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-wall",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:53.213Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-sphere",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:54.145Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-sphere",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:55.106Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-sphere",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:56.095Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-sphere",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:57.061Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-metal-hit",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:58.077Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-metal-hit",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:59.072Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-metal-hit",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:53:59.973Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "diag-metal-hit",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 480,
+    "height": 360,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:00.979Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "steampunk-camera",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:03.016Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "steampunk-camera",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:04.511Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "steampunk-camera",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:05.856Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "steampunk-camera",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:07.160Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-metallic",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:09.253Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-metallic",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:10.829Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-metallic",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:12.107Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-metallic",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:13.285Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-mirror",
+    "renderer": "three-pr72-ggx-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:14.392Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-mirror",
+    "renderer": "three-pr72-ggx-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:15.501Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-mirror",
+    "renderer": "three-pr72-power-raw",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:16.488Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
+  },
+  {
+    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "scene": "cornell-box-mirror",
+    "renderer": "three-pr72-power-recurrent",
+    "frames": 64,
+    "seed": 1,
+    "width": 640,
+    "height": 480,
+    "adapters": [
+      {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti",
+        "fallback": false
+      }
+    ],
+    "errors": [],
+    "capturedAt": "2026-10-18T01:54:17.571Z",
+    "rendererSource": {
+      "repository": "bhouston/three.js",
+      "pullRequest": 72,
+      "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+      "runtime": "submodules/three-pr72",
+      "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+      "steps": 16,
+      "rays": 1,
+      "seed": 1,
+      "resolutionScale": 1,
+      "radianceClamp": false,
+      "cameraJitter": false,
+      "reach": "authored effects.ssr.maxDistance in view/world units",
+      "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+      "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+    }
   }
 ]

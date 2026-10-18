@@ -18,6 +18,382 @@
   ],
   "comparisons": [
     {
+      "renderer": "three-pr72-ggx-raw",
+      "name": "PR #72 control · GGX raw",
+      "kind": "projected",
+      "control": "three-dev",
+      "meanDeltaDb": -2.9916457363523477,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 19.136316397983162,
+          "controlPsnrDb": 24.348732340455026,
+          "candidateDeltaDb": -5.212415942471864,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 19.851339634895876,
+          "controlPsnrDb": 26.157696604066352,
+          "candidateDeltaDb": -6.306356969170476,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 28.78777921364959,
+          "controlPsnrDb": 35.130226253016815,
+          "candidateDeltaDb": -6.342447039367226,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 21.825482630280895,
+          "controlPsnrDb": 23.582165355761013,
+          "candidateDeltaDb": -1.7566827254801183,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 18.793751413407474,
+          "controlPsnrDb": 19.160147838279226,
+          "candidateDeltaDb": -0.36639642487175195,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 20.853589884051132,
+          "controlPsnrDb": 24.429503608420653,
+          "candidateDeltaDb": -3.5759137243695207,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.000403206652194,
+          "controlPsnrDb": 19.28533456544742,
+          "candidateDeltaDb": -0.2849313587952267,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 18.386192093746043,
+          "controlPsnrDb": 21.32159436726495,
+          "candidateDeltaDb": -2.935402273518907,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 19.207723752846636,
+          "controlPsnrDb": 26.17757320142008,
+          "candidateDeltaDb": -6.969849448573445,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 17.21325013047174,
+          "controlPsnrDb": 18.642037305802155,
+          "candidateDeltaDb": -1.4287871753304167,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-metallic",
+          "candidatePsnrDb": 14.027124524390901,
+          "controlPsnrDb": 14.104162177969005,
+          "candidateDeltaDb": -0.07703765357810433,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-mirror",
+          "candidatePsnrDb": 12.845970152773292,
+          "controlPsnrDb": 13.489498253474414,
+          "candidateDeltaDb": -0.643528100701122,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-pr72-ggx-recurrent",
+      "name": "PR #72 control · GGX recurrent",
+      "kind": "projected",
+      "control": "three-pr72-ggx-raw",
+      "meanDeltaDb": 0.06482814192848485,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 19.032319199923805,
+          "controlPsnrDb": 19.136316397983162,
+          "candidateDeltaDb": -0.10399719805935703,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 19.74589167542194,
+          "controlPsnrDb": 19.851339634895876,
+          "candidateDeltaDb": -0.10544795947393482,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 28.657115654609065,
+          "controlPsnrDb": 28.78777921364959,
+          "candidateDeltaDb": -0.1306635590405243,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 21.68750214942723,
+          "controlPsnrDb": 21.825482630280895,
+          "candidateDeltaDb": -0.13798048085366332,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 18.654390547501084,
+          "controlPsnrDb": 18.793751413407474,
+          "candidateDeltaDb": -0.13936086590639007,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 20.801948897776587,
+          "controlPsnrDb": 20.853589884051132,
+          "candidateDeltaDb": -0.0516409862745455,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.77555190908111,
+          "controlPsnrDb": 19.000403206652194,
+          "candidateDeltaDb": 0.7751487024289148,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 18.771498110854626,
+          "controlPsnrDb": 18.386192093746043,
+          "candidateDeltaDb": 0.3853060171085829,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 19.090428248462356,
+          "controlPsnrDb": 19.207723752846636,
+          "candidateDeltaDb": -0.11729550438428049,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 17.33705434133887,
+          "controlPsnrDb": 17.21325013047174,
+          "candidateDeltaDb": 0.12380421086713156,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-metallic",
+          "candidatePsnrDb": 14.063916291487327,
+          "controlPsnrDb": 14.027124524390901,
+          "candidateDeltaDb": 0.0367917670964264,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-mirror",
+          "candidatePsnrDb": 13.08924371240675,
+          "controlPsnrDb": 12.845970152773292,
+          "candidateDeltaDb": 0.2432735596334581,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-pr72-power-raw",
+      "name": "PR #72 experiment · biased power lobe raw",
+      "kind": "projected",
+      "control": "three-pr72-ggx-raw",
+      "meanDeltaDb": -0.6773445313662839,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 18.024110742319188,
+          "controlPsnrDb": 19.136316397983162,
+          "candidateDeltaDb": -1.1122056556639741,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 19.323142115100215,
+          "controlPsnrDb": 19.851339634895876,
+          "candidateDeltaDb": -0.5281975197956612,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 28.392258957129215,
+          "controlPsnrDb": 28.78777921364959,
+          "candidateDeltaDb": -0.39552025652037415,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 20.02862581723197,
+          "controlPsnrDb": 21.825482630280895,
+          "candidateDeltaDb": -1.796856813048926,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 17.925107131747787,
+          "controlPsnrDb": 18.793751413407474,
+          "candidateDeltaDb": -0.8686442816596873,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 19.55914696703555,
+          "controlPsnrDb": 20.853589884051132,
+          "candidateDeltaDb": -1.2944429170155836,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 18.86353254294668,
+          "controlPsnrDb": 19.000403206652194,
+          "candidateDeltaDb": -0.13687066370551548,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 18.560352498719762,
+          "controlPsnrDb": 18.386192093746043,
+          "candidateDeltaDb": 0.1741604049737191,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 18.139073611882804,
+          "controlPsnrDb": 19.207723752846636,
+          "candidateDeltaDb": -1.0686501409638325,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 16.963602789373386,
+          "controlPsnrDb": 17.21325013047174,
+          "candidateDeltaDb": -0.24964734109835263,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-metallic",
+          "candidatePsnrDb": 13.983485073488593,
+          "controlPsnrDb": 14.027124524390901,
+          "candidateDeltaDb": -0.04363945090230814,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-mirror",
+          "candidatePsnrDb": 12.038350411778381,
+          "controlPsnrDb": 12.845970152773292,
+          "candidateDeltaDb": -0.8076197409949106,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
+      "renderer": "three-pr72-power-recurrent",
+      "name": "PR #72 experiment · biased power lobe recurrent",
+      "kind": "projected",
+      "control": "three-pr72-ggx-recurrent",
+      "meanDeltaDb": -0.5929326804630085,
+      "identicalScenes": 0,
+      "scenes": [
+        {
+          "scene": "diag-mirror",
+          "candidatePsnrDb": 18.103879376234744,
+          "controlPsnrDb": 19.032319199923805,
+          "candidateDeltaDb": -0.928439823689061,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-rough-30",
+          "candidatePsnrDb": 19.30289738503352,
+          "controlPsnrDb": 19.74589167542194,
+          "candidateDeltaDb": -0.44299429038841964,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-dielectric-30",
+          "candidatePsnrDb": 28.333843934702333,
+          "controlPsnrDb": 28.657115654609065,
+          "candidateDeltaDb": -0.32327171990673165,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-grazing",
+          "candidatePsnrDb": 20.223645142626545,
+          "controlPsnrDb": 21.68750214942723,
+          "candidateDeltaDb": -1.463857006800687,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-offscreen",
+          "candidatePsnrDb": 18.324122620135284,
+          "controlPsnrDb": 18.654390547501084,
+          "candidateDeltaDb": -0.33026792736579935,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-occlusion",
+          "candidatePsnrDb": 19.638311486702932,
+          "controlPsnrDb": 20.801948897776587,
+          "candidateDeltaDb": -1.1636374110736547,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-wall",
+          "candidatePsnrDb": 19.252816866009706,
+          "controlPsnrDb": 19.77555190908111,
+          "candidateDeltaDb": -0.5227350430714033,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-sphere",
+          "candidatePsnrDb": 18.845933091068638,
+          "controlPsnrDb": 18.771498110854626,
+          "candidateDeltaDb": 0.0744349802140114,
+          "identicalAvif": false
+        },
+        {
+          "scene": "diag-metal-hit",
+          "candidatePsnrDb": 18.321411368021934,
+          "controlPsnrDb": 19.090428248462356,
+          "candidateDeltaDb": -0.7690168804404216,
+          "identicalAvif": false
+        },
+        {
+          "scene": "steampunk-camera",
+          "candidatePsnrDb": 17.06577311076193,
+          "controlPsnrDb": 17.33705434133887,
+          "candidateDeltaDb": -0.271281230576939,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-metallic",
+          "candidatePsnrDb": 14.002154955827367,
+          "controlPsnrDb": 14.063916291487327,
+          "candidateDeltaDb": -0.06176133565996089,
+          "identicalAvif": false
+        },
+        {
+          "scene": "cornell-box-mirror",
+          "candidatePsnrDb": 12.176879235609714,
+          "controlPsnrDb": 13.08924371240675,
+          "candidateDeltaDb": -0.9123644767970358,
+          "identicalAvif": false
+        }
+      ]
+    },
+    {
       "renderer": "three-dev-mirror",
       "name": "Dev mirror control · dielectrics enabled",
       "kind": "stock",
@@ -1616,5 +1992,26 @@
       ]
     }
   ],
+  "powerLobeSource": {
+    "repository": "bhouston/three.js",
+    "pullRequest": 72,
+    "commit": "fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34",
+    "runtime": "submodules/three-pr72",
+    "estimator": "Biased power-lobe half-vector sampler with projected stepping",
+    "steps": 16,
+    "rays": 1,
+    "seed": 1,
+    "resolutionScale": 1,
+    "radianceClamp": false,
+    "cameraJitter": false,
+    "reach": "authored effects.ssr.maxDistance in view/world units",
+    "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
+    "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
+    "denoiser": "existing temporal specular + recurrent specular, independently selected"
+  },
+  "filterOnlyMeanDeltaDb": {
+    "ggx": 0.06482814192848485,
+    "power": 0.14923999283176018
+  },
   "sourceReport": "https://github.com/bhouston/three-fidelity/blob/8a797865611/docs/research/SSR-CONTRIBUTIONS.md"
 }

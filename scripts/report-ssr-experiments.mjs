@@ -38,6 +38,15 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles)) {
     scenes,
   });
 }
+const powerLobeSource = JSON.parse(await readFile('packages/renderers/src/ssr-pr/power-lobe-source.json', 'utf8'));
+const filterDelta = (estimator) =>
+  registry.scenes.reduce(
+    (sum, scene) =>
+      sum + score(scene.id, `three-pr72-${estimator}-recurrent`) - score(scene.id, `three-pr72-${estimator}-raw`),
+    0,
+  ) / registry.scenes.length;
+const powerRaw = comparisons.find((row) => row.renderer === 'three-pr72-power-raw');
+const powerRecurrent = comparisons.find((row) => row.renderer === 'three-pr72-power-recurrent');
 await mkdir('docs/data', { recursive: true });
 await writeFile(
   'docs/data/SSR-EXPERIMENTS.json',
@@ -48,6 +57,8 @@ await writeFile(
       seed: 1,
       scenes: registry.scenes.map((s) => s.id),
       comparisons,
+      powerLobeSource,
+      filterOnlyMeanDeltaDb: { ggx: filterDelta('ggx'), power: filterDelta('power') },
       sourceReport: 'https://github.com/bhouston/three-fidelity/blob/8a797865611/docs/research/SSR-CONTRIBUTIONS.md',
     },
     null,
@@ -67,6 +78,11 @@ const proposal33 = comparisons.find((row) => row.renderer === 'three-dev-pr33-ba
 const dielectric = proposal32.scenes.find((row) => row.scene === 'diag-dielectric-30');
 const wall = proposal32.scenes.find((row) => row.scene === 'diag-wall');
 const observations = `PR #32 improves the intended dielectric diagnostic by ${dielectric.candidateDeltaDb.toFixed(4)} dB but changes the wall scene by ${wall.candidateDeltaDb.toFixed(4)} dB; its mean is ${proposal32.meanDeltaDb.toFixed(4)} dB. Treat it as a targeted flag-behavior fix with composition regressions, not a broad fidelity improvement. Standalone PR #33 in GGX mode averages ${proposal33.meanDeltaDb.toFixed(4)} dB; this suite supports keeping it experimental. Its effect is distinct from removing back depth from the full pipeline. The mirror-control row compares sampling modes and is not an independent PR result.`;
+const powerObservations = `The opt-in PR #72 group is pinned to ${powerLobeSource.commit} and shares its runtime/composition settings. Power minus matched GGX averages ${powerRaw.meanDeltaDb.toFixed(4)} dB raw and ${powerRecurrent.meanDeltaDb.toFixed(4)} dB with the existing recurrent filter. Filter-only changes, holding the estimator fixed, average ${filterDelta('ggx').toFixed(4)} dB for GGX and ${filterDelta('power').toFixed(4)} dB for power. These are separate comparisons; no new denoiser was introduced. The GGX raw versus older three-dev row includes runtime/composition changes and is not a matched estimator comparison. Power is deliberately biased; these full-frame static scores establish neither unbiased energy nor motion/performance superiority.`;
 const report = `# Captured SSR comparisons\n\n${registry.scenes.length} scenes, seed 1, 64 completed frames, 4096-sample path-traced references. Actual adapter provenance is retained in [capture records](data/SSR-EXPERIMENTS-CAPTURES.json).\n\nPositive values mean the candidate scores higher than its matched control. For feature-removal comparisons, a negative value measures a conditional penalty: restoring that feature provides the opposite signed benefit within this full pipeline. The capped march uses uncapped linear marching as its control; both disable Hi-Z. These deltas are not additive or predictions for standalone PRs.\n\n${table.join('\n')}\n\n${observations}\n\nPR #30 changes documentation only. PR #34 adds an unused radiance API in the stock-provider capture; a radiance-producing provider is required to realize integration gains. Compare PR #32 with the mirror control, since it does not alter stochastic GGX. No throughput claim is inferred from image quality.\n\nInspect scene-level scores and difference images in the viewer before deciding on a merge. Full-frame RGB8 PSNR can hide local regressions; this is one GPU, one static pose and one seed per scene. [Per-scene scores](data/SSR-EXPERIMENTS.json) and [renderer definitions](SSR-EXPERIMENTS.md) retain the matched controls and source pins.\n`;
-await writeFile('docs/SSR-EXPERIMENT-RESULTS.md', report);
+await writeFile(
+  'docs/SSR-EXPERIMENT-RESULTS.md',
+  report +
+    `\n## Experimental power-lobe results\n\n${powerObservations}\n\nColumns below are reference, GGX raw, GGX recurrent, power raw and power recurrent. Power's roughness diagnostic shows structured bands/speckles; recurrent filtering smooths them while softening detail. The Cornell images also expose the common missing diffuse indirect lighting with SSGI disabled; this is not a measure of SSR alone over the whole image.\n\n![Roughness comparison](images/power-lobe-roughness.png)\n\n![Metal-hit comparison](images/power-lobe-metal-hit.png)\n\n![Cornell mirror comparison](images/power-lobe-cornell-mirror.png)\n`,
+);
 console.log(table.join('\n'));
