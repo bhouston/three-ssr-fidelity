@@ -1,15 +1,15 @@
 import { expect, it, vi } from 'vitest';
 import { NoToneMapping, PerspectiveCamera, Scene, Vector3 } from 'three';
 import { createHiZRenderer } from './three-hiz.js';
-import { ssr } from 'three/addons/tsl/display/SSRNode.js';
-// @ts-expect-error The fork's HiZ addon is newer than @types/three.
-import { hiZ } from 'three/addons/tsl/display/HiZNode.js';
+import { ssr } from 'three-hiz/addons/tsl/display/SSRNode.js';
+import { hiZ } from '#hiz';
 import { ssrExperimentProfiles } from './ssr-experiments.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
-vi.mock('three/webgpu', async (original) => ({
-  ...(await original<typeof import('three/webgpu')>()),
+vi.mock('three-hiz/webgpu', async (original) => ({
+  ...(await original<typeof import('three-hiz/webgpu')>()),
   WebGPURenderer: class {
     shadowMap = { enabled: false };
+    library = { addLight: vi.fn() };
     async init() {}
     dispose() {}
   },
@@ -18,11 +18,11 @@ vi.mock('three/webgpu', async (original) => ({
   },
 }));
 vi.mock('./helpers.js', () => ({ configureRenderer: vi.fn(), prepareScene: () => () => {}, setRenderSize: vi.fn() }));
-vi.mock('three/addons/tsl/display/SSRNode.js', async (original) => {
+vi.mock('three-hiz/addons/tsl/display/SSRNode.js', async (original) => {
   const actual = await original<{ ssr: typeof ssr }>();
   return { ...actual, ssr: vi.fn(actual.ssr) };
 });
-vi.mock('three/addons/tsl/display/HiZNode.js', async (original) => {
+vi.mock('#hiz', async (original) => {
   const actual = await original<{ hiZ: typeof hiZ }>();
   return { ...actual, hiZ: vi.fn(actual.hiZ) };
 });
@@ -46,7 +46,7 @@ it('shares scene depth with the hierarchy and omits hierarchy work for linear co
       {} as HTMLCanvasElement,
       setup,
       { width: 480, height: 360 },
-      { name, ...profile },
+      { ...profile, name },
     );
     const call = vi.mocked(ssr).mock.calls[0]!;
     expect(vi.mocked(ssr).mock.results[0]!.value).toMatchObject({

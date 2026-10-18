@@ -39,3 +39,7 @@
 [submodule "submodules/three-pr34"]
 	path = submodules/three-pr34
 	url = https://github.com/bhouston/three.js.git
+[submodule "submodules/three-hiz"]
+	path = submodules/three-hiz
+	url = https://github.com/bhouston/three.js.git
+	branch = adaptive-hi-z-ssr

@@ -68,7 +68,7 @@ export function createRenderer(
   };
   if (isSSRExperiment(name)) {
     const profile = ssrExperimentProfiles[name];
-    if (profile.kind === 'hiz') return instrument(createHiZRenderer(canvas, setup, options, { name, ...profile }));
+    if (profile.kind === 'hiz') return instrument(createHiZRenderer(canvas, setup, options, { ...profile, name }));
     if (profile.kind === 'stock')
       return instrument(
         createDevRenderer(canvas, setup, options, {

@@ -1,5 +1,18 @@
+import * as Fork from 'three';
 // Matched fork controls: only Hi-Z traversal differs within each sampling mode.
-import { PMREMGenerator, RenderPipeline, UnsignedByteType, WebGPURenderer } from 'three/webgpu';
+import {
+  AmbientLightNode,
+  DirectionalLightNode,
+  HemisphereLightNode,
+  LightProbeNode,
+  PointLightNode,
+  RectAreaLightNode,
+  SpotLightNode,
+  PMREMGenerator,
+  RenderPipeline,
+  UnsignedByteType,
+  WebGPURenderer,
+} from 'three-hiz/webgpu';
 import {
   color,
   metalness,
@@ -14,17 +27,26 @@ import {
   unpackRGBToNormal,
   vec2,
   velocity,
-} from 'three/tsl';
-// @ts-expect-error The fork's HiZ addon is newer than @types/three.
-import { hiZ } from 'three/addons/tsl/display/HiZNode.js';
-import { ssr } from 'three/addons/tsl/display/SSRNode.js';
-import { traa } from 'three/addons/tsl/display/TRAANode.js';
+} from 'three-hiz/tsl';
+import { hiZ } from '#hiz';
+import { ssr } from 'three-hiz/addons/tsl/display/SSRNode.js';
+import { traa } from 'three-hiz/addons/tsl/display/TRAANode.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
 import type { LiveRenderer, RendererOptions } from './types.js';
 import { configureRenderer, prepareScene, setRenderSize } from './helpers.js';
 
 // oxlint-disable-next-line typescript/no-explicit-any
 type AnyNode = any;
+const forkLights: [AnyNode, AnyNode][] = [
+  [PointLightNode, Fork.PointLight],
+  [DirectionalLightNode, Fork.DirectionalLight],
+  [SpotLightNode, Fork.SpotLight],
+  [AmbientLightNode, Fork.AmbientLight],
+  [HemisphereLightNode, Fork.HemisphereLight],
+  [RectAreaLightNode, Fork.RectAreaLight],
+  [LightProbeNode, Fork.LightProbe],
+];
+
 export type HiZSSRVariant = {
   name: string;
   stochastic: boolean;
@@ -103,6 +125,7 @@ export async function createHiZRenderer(
     trackTimestamp,
     requiredLimits: { maxColorAttachmentBytesPerSample: 64 },
   } as AnyNode);
+  for (const [lightNode, light] of forkLights) renderer.library.addLight(lightNode, light);
   renderer.shadowMap.enabled = true;
   configureRenderer(renderer, effects);
   await renderer.init();
