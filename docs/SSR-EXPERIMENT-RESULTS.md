@@ -6,10 +6,10 @@ Positive values mean the candidate scores higher than its matched control. For f
 
 | Renderer                     | Matched control          | Mean PSNR change (dB) | Identical scenes |
 | ---------------------------- | ------------------------ | --------------------: | ---------------: |
-| three-pr72-ggx-raw           | three-dev                |               -2.9916 |             0/12 |
-| three-pr72-ggx-recurrent     | three-pr72-ggx-raw       |                0.0648 |             0/12 |
-| three-pr72-power-raw         | three-pr72-ggx-raw       |               -0.6773 |             0/12 |
-| three-pr72-power-recurrent   | three-pr72-ggx-recurrent |               -0.5929 |             0/12 |
+| three-pr72-ggx-raw           | three-dev                |                0.1643 |             0/12 |
+| three-pr72-ggx-recurrent     | three-pr72-ggx-raw       |                0.1907 |             0/12 |
+| three-pr72-power-raw         | three-pr72-ggx-raw       |               -1.5922 |             0/12 |
+| three-pr72-power-recurrent   | three-pr72-ggx-recurrent |               -1.5079 |             0/12 |
 | three-dev-mirror             | three-dev                |               -0.0578 |             0/12 |
 | three-dev-pr28-normal-bias   | three-dev                |               -0.0062 |             0/12 |
 | three-dev-pr29-ray-guard     | three-dev                |               -0.0000 |            11/12 |
@@ -36,7 +36,7 @@ Inspect scene-level scores and difference images in the viewer before deciding o
 
 ## Experimental power-lobe results
 
-The opt-in PR #72 group is pinned to fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34 and shares its runtime/composition settings. Power minus matched GGX averages -0.6773 dB raw and -0.5929 dB with the existing recurrent filter. Filter-only changes, holding the estimator fixed, average 0.0648 dB for GGX and 0.1492 dB for power. These are separate comparisons; no new denoiser was introduced. The GGX raw versus older three-dev row includes runtime/composition changes and is not a matched estimator comparison. Power is deliberately biased; these full-frame static scores establish neither unbiased energy nor motion/performance superiority.
+The opt-in PR #72 group is pinned to fe44dbcdb0cc6a9ffe119b17f6d1e9f305c5ce34 and shares its runtime/composition settings. Power minus matched GGX averages -1.5922 dB raw and -1.5079 dB with the existing recurrent filter. Filter-only changes, holding the estimator fixed, average 0.1907 dB for GGX and 0.2750 dB for power. These are separate comparisons; no new denoiser was introduced. The GGX raw versus older three-dev row includes runtime/composition changes and is not a matched estimator comparison. Power is deliberately biased; these full-frame static scores establish neither unbiased energy nor motion/performance superiority.
 
 Columns below are reference, GGX raw, GGX recurrent, power raw and power recurrent. Power's roughness diagnostic shows structured bands/speckles; recurrent filtering smooths them while softening detail. The Cornell images also expose the common missing diffuse indirect lighting with SSGI disabled; this is not a measure of SSR alone over the whole image.
 

@@ -13,5 +13,6 @@
   "reach": "authored effects.ssr.maxDistance in view/world units",
   "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
   "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-  "denoiser": "existing temporal specular + recurrent specular, independently selected"
+  "denoiser": "existing temporal specular + recurrent specular, independently selected",
+  "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
 }

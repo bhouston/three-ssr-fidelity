@@ -4138,7 +4138,7 @@
     "capturedAt": "2026-10-14T12:03:15.763Z"
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-mirror",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4154,7 +4154,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:25.935Z",
+    "capturedAt": "2026-10-18T02:11:43.681Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4170,11 +4170,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-mirror",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4190,7 +4191,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:27.719Z",
+    "capturedAt": "2026-10-18T02:11:46.183Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4206,11 +4207,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-mirror",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4226,7 +4228,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:28.740Z",
+    "capturedAt": "2026-10-18T02:11:47.445Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4242,11 +4244,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-mirror",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4262,7 +4265,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:29.904Z",
+    "capturedAt": "2026-10-18T02:11:48.742Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4278,11 +4281,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-rough-30",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4298,7 +4302,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:30.878Z",
+    "capturedAt": "2026-10-18T02:11:49.768Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4314,11 +4318,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-rough-30",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4334,7 +4339,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:31.833Z",
+    "capturedAt": "2026-10-18T02:11:50.758Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4350,11 +4355,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-rough-30",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4370,7 +4376,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:32.838Z",
+    "capturedAt": "2026-10-18T02:11:51.684Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4386,11 +4392,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-rough-30",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4406,7 +4413,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:33.812Z",
+    "capturedAt": "2026-10-18T02:11:52.720Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4422,11 +4429,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-dielectric-30",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4442,7 +4450,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:34.967Z",
+    "capturedAt": "2026-10-18T02:11:53.903Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4458,11 +4466,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-dielectric-30",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4478,7 +4487,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:35.915Z",
+    "capturedAt": "2026-10-18T02:11:54.925Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4494,11 +4503,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-dielectric-30",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4514,7 +4524,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:36.829Z",
+    "capturedAt": "2026-10-18T02:11:55.911Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4530,11 +4540,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-dielectric-30",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4550,7 +4561,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:37.782Z",
+    "capturedAt": "2026-10-18T02:11:56.926Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4566,11 +4577,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-grazing",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4586,7 +4598,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:38.729Z",
+    "capturedAt": "2026-10-18T02:11:57.895Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4602,11 +4614,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-grazing",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4622,7 +4635,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:39.785Z",
+    "capturedAt": "2026-10-18T02:11:58.900Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4638,11 +4651,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-grazing",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4658,7 +4672,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:40.706Z",
+    "capturedAt": "2026-10-18T02:11:59.881Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4674,11 +4688,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-grazing",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4694,7 +4709,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:41.696Z",
+    "capturedAt": "2026-10-18T02:12:00.936Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4710,11 +4725,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-offscreen",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4730,7 +4746,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:42.676Z",
+    "capturedAt": "2026-10-18T02:12:01.966Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4746,11 +4762,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-offscreen",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4766,7 +4783,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:43.654Z",
+    "capturedAt": "2026-10-18T02:12:02.994Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4782,11 +4799,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-offscreen",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4802,7 +4820,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:44.590Z",
+    "capturedAt": "2026-10-18T02:12:03.991Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4818,11 +4836,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-offscreen",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4838,7 +4857,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:45.590Z",
+    "capturedAt": "2026-10-18T02:12:04.959Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4854,11 +4873,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-occlusion",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -4874,7 +4894,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:46.534Z",
+    "capturedAt": "2026-10-18T02:12:05.889Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4890,11 +4910,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-occlusion",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -4910,7 +4931,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:47.528Z",
+    "capturedAt": "2026-10-18T02:12:06.915Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4926,11 +4947,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-occlusion",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -4946,7 +4968,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:48.470Z",
+    "capturedAt": "2026-10-18T02:12:07.888Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4962,11 +4984,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-occlusion",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -4982,7 +5005,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:49.410Z",
+    "capturedAt": "2026-10-18T02:12:08.948Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -4998,11 +5021,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-wall",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5018,7 +5042,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:50.328Z",
+    "capturedAt": "2026-10-18T02:12:09.947Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5034,11 +5058,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-wall",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5054,7 +5079,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:51.279Z",
+    "capturedAt": "2026-10-18T02:12:11.007Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5070,11 +5095,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-wall",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5090,7 +5116,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:52.260Z",
+    "capturedAt": "2026-10-18T02:12:12.035Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5106,11 +5132,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-wall",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5126,7 +5153,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:53.213Z",
+    "capturedAt": "2026-10-18T02:12:13.040Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5142,11 +5169,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-sphere",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5162,7 +5190,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:54.145Z",
+    "capturedAt": "2026-10-18T02:12:14.077Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5178,11 +5206,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-sphere",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5198,7 +5227,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:55.106Z",
+    "capturedAt": "2026-10-18T02:12:15.141Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5214,11 +5243,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-sphere",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5234,7 +5264,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:56.095Z",
+    "capturedAt": "2026-10-18T02:12:16.144Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5250,11 +5280,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-sphere",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5270,7 +5301,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:57.061Z",
+    "capturedAt": "2026-10-18T02:12:17.195Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5286,11 +5317,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-metal-hit",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5306,7 +5338,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:58.077Z",
+    "capturedAt": "2026-10-18T02:12:18.145Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5322,11 +5354,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-metal-hit",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5342,7 +5375,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:59.072Z",
+    "capturedAt": "2026-10-18T02:12:19.103Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5358,11 +5391,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-metal-hit",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5378,7 +5412,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:53:59.973Z",
+    "capturedAt": "2026-10-18T02:12:20.023Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5394,11 +5428,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "diag-metal-hit",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5414,7 +5449,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:00.979Z",
+    "capturedAt": "2026-10-18T02:12:21.081Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5430,11 +5465,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "steampunk-camera",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5450,7 +5486,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:03.016Z",
+    "capturedAt": "2026-10-18T02:12:23.032Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5466,11 +5502,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "steampunk-camera",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5486,7 +5523,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:04.511Z",
+    "capturedAt": "2026-10-18T02:12:24.500Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5502,11 +5539,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "steampunk-camera",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5522,7 +5560,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:05.856Z",
+    "capturedAt": "2026-10-18T02:12:25.843Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5538,11 +5576,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "steampunk-camera",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5558,7 +5597,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:07.160Z",
+    "capturedAt": "2026-10-18T02:12:27.142Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5574,11 +5613,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-metallic",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5594,7 +5634,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:09.253Z",
+    "capturedAt": "2026-10-18T02:12:29.234Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5610,11 +5650,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-metallic",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5630,7 +5671,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:10.829Z",
+    "capturedAt": "2026-10-18T02:12:30.821Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5646,11 +5687,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-metallic",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5666,7 +5708,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:12.107Z",
+    "capturedAt": "2026-10-18T02:12:32.127Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5682,11 +5724,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-metallic",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5702,7 +5745,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:13.285Z",
+    "capturedAt": "2026-10-18T02:12:33.272Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5718,11 +5761,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-mirror",
     "renderer": "three-pr72-ggx-raw",
     "frames": 64,
@@ -5738,7 +5782,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:14.392Z",
+    "capturedAt": "2026-10-18T02:12:34.404Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5754,11 +5798,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-mirror",
     "renderer": "three-pr72-ggx-recurrent",
     "frames": 64,
@@ -5774,7 +5819,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:15.501Z",
+    "capturedAt": "2026-10-18T02:12:35.571Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5790,11 +5835,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-mirror",
     "renderer": "three-pr72-power-raw",
     "frames": 64,
@@ -5810,7 +5856,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:16.488Z",
+    "capturedAt": "2026-10-18T02:12:36.645Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5826,11 +5872,12 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   },
   {
-    "sourceCommit": "556c5e440bd49c9f459fba7c7d2474908f1da1a0",
+    "sourceCommit": "d3cb3cfe2677a1de18a19a9dbd16e279f525e904",
     "scene": "cornell-box-mirror",
     "renderer": "three-pr72-power-recurrent",
     "frames": 64,
@@ -5846,7 +5893,7 @@
       }
     ],
     "errors": [],
-    "capturedAt": "2026-10-18T01:54:17.571Z",
+    "capturedAt": "2026-10-18T02:12:37.751Z",
     "rendererSource": {
       "repository": "bhouston/three.js",
       "pullRequest": 72,
@@ -5862,7 +5909,8 @@
       "reach": "authored effects.ssr.maxDistance in view/world units",
       "thickness": "authored effects.ssr.thickness; native stock and projected slab tests differ",
       "environment": "shared 512x256 linear HDR equirectangular bake from authored environment; 256-pixel cube",
-      "denoiser": "existing temporal specular + recurrent specular, independently selected"
+      "denoiser": "existing temporal specular + recurrent specular, independently selected",
+      "environmentConvention": "TSL equirectDirection / equirectUV; hardware-verified asymmetric cardinal directions and linear HDR"
     }
   }
 ]

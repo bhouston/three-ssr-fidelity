@@ -24,6 +24,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: node submodules/fidelity-kit/scripts/install-test-browser.mjs
+      - name: Verify SSR environment direction and linear HDR on hardware
+        run: node scripts/verify-ssr-environment.mjs
       - name: Verify completed path-tracer samples on hardware
         run: node scripts/pathtracer-hardware-smoke.mjs
       - name: Verify unified live, capture and completed-frame throughput

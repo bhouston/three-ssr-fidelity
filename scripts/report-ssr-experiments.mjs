@@ -1,12 +1,15 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
 import { ssrExperimentProfiles } from '../packages/renderers/src/ssr-experiments.ts';
 const registry = JSON.parse(await readFile('registry.json', 'utf8'));
+const require = createRequire(new URL('../submodules/fidelity-kit/packages/cli/package.json', import.meta.url));
+const sharp = require('sharp');
 const reference = 'three-gpu-pathtracer';
-const index = JSON.parse(await readFile('fidelity-results/index.json', 'utf8'));
+const comparisonIndex = JSON.parse(await readFile('fidelity-results/index.json', 'utf8'));
 const score = (scene, renderer) => {
   const key = `${scene}/beauty/${renderer}.vs-${reference}.metrics.json`;
-  const value = index.metrics[key]?.psnr;
+  const value = comparisonIndex.metrics[key]?.psnr;
   if (!Number.isFinite(value)) throw new Error(`Missing finite score: ${key}`);
   return value;
 };
@@ -79,6 +82,35 @@ const dielectric = proposal32.scenes.find((row) => row.scene === 'diag-dielectri
 const wall = proposal32.scenes.find((row) => row.scene === 'diag-wall');
 const observations = `PR #32 improves the intended dielectric diagnostic by ${dielectric.candidateDeltaDb.toFixed(4)} dB but changes the wall scene by ${wall.candidateDeltaDb.toFixed(4)} dB; its mean is ${proposal32.meanDeltaDb.toFixed(4)} dB. Treat it as a targeted flag-behavior fix with composition regressions, not a broad fidelity improvement. Standalone PR #33 in GGX mode averages ${proposal33.meanDeltaDb.toFixed(4)} dB; this suite supports keeping it experimental. Its effect is distinct from removing back depth from the full pipeline. The mirror-control row compares sampling modes and is not an independent PR result.`;
 const powerObservations = `The opt-in PR #72 group is pinned to ${powerLobeSource.commit} and shares its runtime/composition settings. Power minus matched GGX averages ${powerRaw.meanDeltaDb.toFixed(4)} dB raw and ${powerRecurrent.meanDeltaDb.toFixed(4)} dB with the existing recurrent filter. Filter-only changes, holding the estimator fixed, average ${filterDelta('ggx').toFixed(4)} dB for GGX and ${filterDelta('power').toFixed(4)} dB for power. These are separate comparisons; no new denoiser was introduced. The GGX raw versus older three-dev row includes runtime/composition changes and is not a matched estimator comparison. Power is deliberately biased; these full-frame static scores establish neither unbiased energy nor motion/performance superiority.`;
+await mkdir('docs/images', { recursive: true });
+const previewMethods = [
+  reference,
+  'three-pr72-ggx-raw',
+  'three-pr72-ggx-recurrent',
+  'three-pr72-power-raw',
+  'three-pr72-power-recurrent',
+];
+const labels = ['Reference (4096 spp)', 'GGX raw', 'GGX recurrent', 'Power raw (biased)', 'Power recurrent (biased)'];
+const header = Buffer.from(
+  `<svg width="1920" height="32"><rect width="100%" height="100%" fill="#222"/>${labels.map((label, index) => `<text x="${index * 384 + 8}" y="22" fill="white" font-family="sans-serif" font-size="17">${label}</text>`).join('')}</svg>`,
+);
+for (const [scene, name] of [
+  ['diag-rough-30', 'roughness'],
+  ['diag-metal-hit', 'metal-hit'],
+  ['cornell-box-mirror', 'cornell-mirror'],
+]) {
+  const images = await Promise.all(
+    previewMethods.map(async (method, index) => ({
+      input: await sharp(`fidelity-results/${scene}/beauty/${method}.avif`).resize(384, 288).png().toBuffer(),
+      left: index * 384,
+      top: 32,
+    })),
+  );
+  await sharp({ create: { width: 1920, height: 320, channels: 4, background: '#222' } })
+    .composite([{ input: header, left: 0, top: 0 }, ...images])
+    .png()
+    .toFile(`docs/images/power-lobe-${name}.png`);
+}
 const report = `# Captured SSR comparisons\n\n${registry.scenes.length} scenes, seed 1, 64 completed frames, 4096-sample path-traced references. Actual adapter provenance is retained in [capture records](data/SSR-EXPERIMENTS-CAPTURES.json).\n\nPositive values mean the candidate scores higher than its matched control. For feature-removal comparisons, a negative value measures a conditional penalty: restoring that feature provides the opposite signed benefit within this full pipeline. The capped march uses uncapped linear marching as its control; both disable Hi-Z. These deltas are not additive or predictions for standalone PRs.\n\n${table.join('\n')}\n\n${observations}\n\nPR #30 changes documentation only. PR #34 adds an unused radiance API in the stock-provider capture; a radiance-producing provider is required to realize integration gains. Compare PR #32 with the mirror control, since it does not alter stochastic GGX. No throughput claim is inferred from image quality.\n\nInspect scene-level scores and difference images in the viewer before deciding on a merge. Full-frame RGB8 PSNR can hide local regressions; this is one GPU, one static pose and one seed per scene. [Per-scene scores](data/SSR-EXPERIMENTS.json) and [renderer definitions](SSR-EXPERIMENTS.md) retain the matched controls and source pins.\n`;
 await writeFile(
   'docs/SSR-EXPERIMENT-RESULTS.md',
