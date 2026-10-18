@@ -16,6 +16,62 @@
       "category": "SSR"
     },
     {
+      "id": "three-hiz-mirror-adaptive-coarse",
+      "label": "Fork mirror · adaptive mip 1",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-adaptive-coarse",
+      "label": "Fork ggx · adaptive mip 1",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-linear",
+      "label": "Fork mirror · linear",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-conservative",
+      "label": "Fork mirror · conservative",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-adaptive",
+      "label": "Fork mirror · adaptive",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-linear",
+      "label": "Fork ggx · linear",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-conservative",
+      "label": "Fork ggx · conservative",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-adaptive",
+      "label": "Fork ggx · adaptive",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
       "id": "three-dev-mirror",
       "label": "Dev mirror control · dielectrics enabled",
       "reference": false,
@@ -133,48 +189,6 @@
       "reference": false,
       "enabled": true,
       "category": "Conditional comparisons"
-    },
-    {
-      "id": "three-hiz-mirror-linear",
-      "label": "Fork mirror · linear",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
-    },
-    {
-      "id": "three-hiz-mirror-conservative",
-      "label": "Fork mirror · conservative",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
-    },
-    {
-      "id": "three-hiz-mirror-adaptive",
-      "label": "Fork mirror · adaptive",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
-    },
-    {
-      "id": "three-hiz-ggx-linear",
-      "label": "Fork ggx · linear",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
-    },
-    {
-      "id": "three-hiz-ggx-conservative",
-      "label": "Fork ggx · conservative",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
-    },
-    {
-      "id": "three-hiz-ggx-adaptive",
-      "label": "Fork ggx · adaptive",
-      "reference": false,
-      "enabled": true,
-      "category": "Hi-Z traversal"
     }
   ],
   "comparisonPresets": [
@@ -224,6 +238,7 @@
       "name": "Hi-Z mirror vs linear",
       "ref": "three-hiz-mirror-linear",
       "renderers": [
+        "three-hiz-mirror-adaptive-coarse",
         "three-hiz-mirror-linear",
         "three-hiz-mirror-conservative",
         "three-hiz-mirror-adaptive"
@@ -234,6 +249,7 @@
       "name": "Hi-Z ggx vs linear",
       "ref": "three-hiz-ggx-linear",
       "renderers": [
+        "three-hiz-ggx-adaptive-coarse",
         "three-hiz-ggx-linear",
         "three-hiz-ggx-conservative",
         "three-hiz-ggx-adaptive"
@@ -244,6 +260,8 @@
       "name": "Hi-Z vs pathtracer",
       "ref": "three-gpu-pathtracer",
       "renderers": [
+        "three-hiz-mirror-adaptive-coarse",
+        "three-hiz-ggx-adaptive-coarse",
         "three-hiz-mirror-linear",
         "three-hiz-mirror-conservative",
         "three-hiz-mirror-adaptive",

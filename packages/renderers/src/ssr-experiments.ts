@@ -21,6 +21,7 @@ type ContributionProfile = { kind: 'contribution'; name: string; contribution: S
 type HookProfile = { kind: 'hook'; name: string; comparator: string };
 type HiZProfile = {
   kind: 'hiz';
+  minMip?: number;
   name: string;
   traversal: 'linear' | 'conservative' | 'adaptive';
   stochastic: boolean;
@@ -30,6 +31,23 @@ type Profile = StockProfile | ContributionProfile | HookProfile | HiZProfile;
 
 /** Standalone proposals and conditional ablations have deliberately separate comparison controls. */
 export const ssrExperimentProfiles = {
+  'three-hiz-mirror-adaptive-coarse': {
+    kind: 'hiz',
+    name: 'Fork mirror · adaptive mip 1',
+    traversal: 'adaptive',
+    minMip: 1,
+    stochastic: false,
+    comparator: 'three-hiz-mirror-linear',
+  },
+  'three-hiz-ggx-adaptive-coarse': {
+    kind: 'hiz',
+    name: 'Fork ggx · adaptive mip 1',
+    traversal: 'adaptive',
+    minMip: 1,
+    stochastic: true,
+    comparator: 'three-hiz-ggx-linear',
+  },
+
   'three-hiz-mirror-linear': {
     kind: 'hiz',
     name: 'Fork mirror · linear',

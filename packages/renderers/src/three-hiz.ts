@@ -25,7 +25,12 @@ import { configureRenderer, prepareScene, setRenderSize } from './helpers.js';
 
 // oxlint-disable-next-line typescript/no-explicit-any
 type AnyNode = any;
-export type HiZSSRVariant = { name: string; stochastic: boolean; traversal: 'linear' | 'conservative' | 'adaptive' };
+export type HiZSSRVariant = {
+  name: string;
+  stochastic: boolean;
+  traversal: 'linear' | 'conservative' | 'adaptive';
+  minMip?: number;
+};
 
 function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant: HiZSSRVariant): RenderPipeline {
   const { scene, camera, effects } = setup as AnyNode as {
@@ -69,6 +74,7 @@ function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant:
       hiZTraversal: variant.traversal === 'adaptive' ? 'adaptive' : 'conservative',
       reflectNonMetals: true,
     } as AnyNode);
+    ssrPass.hiZMinMip.value = variant.minMip ?? 0;
     ssrPass.maxDistance.value = params.maxDistance;
     if (params.quality !== undefined) ssrPass.quality.value = params.quality;
     if (params.blurQuality !== undefined) ssrPass.blurQuality = params.blurQuality;

@@ -1,8 +1,8 @@
 # Hi-Z traversal comparisons
 
-Six fork renderers compare linear marching, conservative Hi-Z, and adaptive cell traversal in both mirror and stochastic GGX modes. All variants share one scene pass, material inputs, camera, resolution, binary refinement, denoising and 64-frame capture history. Each hierarchy reads the exact same depth node supplied to SSR. Linear variants do not build a hierarchy. Adaptive traversal changes hit selection and work limits; it is an opt-in quality/performance tradeoff.
+Eight fork renderers compare linear marching, conservative Hi-Z, and adaptive cell traversal in both mirror and stochastic GGX modes, plus adaptive mip-1 variants that stop at a coarser hierarchy level. All variants share one scene pass, material inputs, camera, resolution, binary refinement, denoising and 64-frame capture history. Each hierarchy reads the exact same depth node supplied to SSR. Linear variants do not build a hierarchy. Adaptive traversal changes hit selection and work limits; it is an opt-in quality/performance tradeoff.
 
-The fixed `three-dev` and vendored experiment baselines remain independent. The `hiz-mirror` and `hiz-ggx` presets compare against the corresponding fork linear renderer; `hiz-pathtracer` compares all six against pathtraced references.
+The fixed `three-dev` and vendored experiment baselines remain independent. The `hiz-mirror` and `hiz-ggx` presets compare against the corresponding fork linear renderer; `hiz-pathtracer` compares all eight against pathtraced references.
 
 After installing and building the pinned code submodules, run from the repository root:
 
