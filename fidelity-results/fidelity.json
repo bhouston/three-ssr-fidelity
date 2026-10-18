@@ -16,6 +16,34 @@
       "category": "SSR"
     },
     {
+      "id": "three-pr72-ggx-raw",
+      "label": "PR #72 control · GGX raw",
+      "reference": false,
+      "enabled": false,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-ggx-recurrent",
+      "label": "PR #72 control · GGX recurrent",
+      "reference": false,
+      "enabled": false,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-raw",
+      "label": "PR #72 experiment · biased power lobe raw",
+      "reference": false,
+      "enabled": false,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-recurrent",
+      "label": "PR #72 experiment · biased power lobe recurrent",
+      "reference": false,
+      "enabled": false,
+      "category": "Experimental power lobe"
+    },
+    {
       "id": "three-hiz-mirror-adaptive-coarse",
       "label": "Fork mirror · adaptive mip 1",
       "reference": false,
@@ -231,6 +259,17 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
+      ]
+    },
+    {
+      "id": "ssr-power-lobe",
+      "name": "Experimental power lobe and matched GGX controls",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-pr72-ggx-raw",
+        "three-pr72-ggx-recurrent",
+        "three-pr72-power-raw",
+        "three-pr72-power-recurrent"
       ]
     },
     {

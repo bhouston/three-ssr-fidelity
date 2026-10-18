@@ -189,6 +189,9 @@ importers:
       three-pr34:
         specifier: link:../../submodules/three-pr34
         version: link:../../submodules/three-pr34
+      three-pr72:
+        specifier: link:../../submodules/three-pr72
+        version: link:../../submodules/three-pr72
       three-r186:
         specifier: npm:three@0.186.1
         version: three@0.186.1
@@ -203,6 +206,9 @@ importers:
         specifier: npm:@types/three@0.186.0
         version: '@types/three@0.186.0'
       '@types/three-pr34':
+        specifier: npm:@types/three@0.186.0
+        version: '@types/three@0.186.0'
+      '@types/three-pr72':
         specifier: npm:@types/three@0.186.0
         version: '@types/three@0.186.0'
       '@types/three-r186':

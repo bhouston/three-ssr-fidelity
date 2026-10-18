@@ -41,3 +41,5 @@ This differs from the separate 1920×1080, quality-1 demo benchmark, where adapt
 ![Representative visible quality changes](images/SSR-HIZ-WORST-CASES.png)
 
 [Per-scene throughput data](data/SSR-HIZ-PERFORMANCE.json) retain all completed-frame counts and measured durations. The suite uses one static pose and seed, one sequential timing window per variant/scene and one GPU/browser. The full raw run is committed under `performance-results/windows001/2026-10-18-02-02/`.
+
+The concurrent power-lobe integration (suite PR #10) uses its own `three-pr72` runtime and leaves these diagnostic scenes, shared helpers, original core and pathtraced reference images unchanged. Exact reference Git blob IDs are recorded in the capture provenance. The measurements above retain their original meaning after integration; no new rendering algorithm or reference was substituted.

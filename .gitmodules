@@ -43,3 +43,8 @@
 	path = submodules/three-hiz
 	url = https://github.com/bhouston/three.js.git
 	branch = adaptive-hi-z-ssr
+
+[submodule "submodules/three-pr72"]
+	path = submodules/three-pr72
+	url = https://github.com/bhouston/three.js.git
+	ignore = dirty

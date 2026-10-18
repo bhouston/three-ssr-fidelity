@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
-    "build": "pnpm build:fidelity-kit && tsc -b && pnpm build:three && pnpm build:pr34 && pnpm build:hiz && pnpm -r --if-present --filter \"@three-fidelity/*\" build",
+    "build": "pnpm build:fidelity-kit && tsc -b && pnpm build:three && pnpm build:pr34 && pnpm build:hiz && pnpm build:pr72 && pnpm -r --if-present --filter \"@three-fidelity/*\" build",
     "dev": "pnpm -r --parallel --stream dev",
     "tsc": "tsc -b && pnpm --filter @three-fidelity/playground tsc",
     "format": "oxfmt .",
@@ -35,7 +35,8 @@
     "performance:representative": "fidelity-kit benchmark --registry registry.json --collection representative --out performance-results --renderer-root render-site",
     "build:pr34": "node scripts/build-three-pr34.mjs",
     "render:experiments": "node scripts/ssr-run.mjs experiments",
-    "build:hiz": "node scripts/build-three-hiz.mjs"
+    "build:hiz": "node scripts/build-three-hiz.mjs",
+    "build:pr72": "node scripts/build-three-pr34.mjs three-pr72"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",

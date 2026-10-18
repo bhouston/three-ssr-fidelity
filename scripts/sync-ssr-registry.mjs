@@ -7,18 +7,20 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles))
     id,
     name: profile.name,
     reference: profile.kind === 'hiz' && profile.traversal === 'linear',
-    enabled: true,
+    enabled: profile.kind !== 'projected',
     params: { renderer: id },
     category:
-      profile.kind === 'hiz'
-        ? 'Hi-Z traversal'
-        : profile.kind === 'contribution'
-          ? 'Conditional comparisons'
-          : profile.kind === 'hook'
-            ? 'Independent PRs'
-            : profile.proposal === null
-              ? 'Controls'
-              : 'Independent PRs',
+      profile.kind === 'projected'
+        ? 'Experimental power lobe'
+        : profile.kind === 'hiz'
+          ? 'Hi-Z traversal'
+          : profile.kind === 'contribution'
+            ? 'Conditional comparisons'
+            : profile.kind === 'hook'
+              ? 'Independent PRs'
+              : profile.proposal === null
+                ? 'Controls'
+                : 'Independent PRs',
   });
 registry.comparisonPresets = [
   { id: 'ssr', name: 'Stochastic SSR baseline', ref: 'three-gpu-pathtracer', renderers: ['three-dev'] },
@@ -29,7 +31,7 @@ registry.comparisonPresets = [
     renderers: [
       'three-dev',
       ...Object.entries(ssrExperimentProfiles)
-        .filter(([, p]) => p.kind !== 'contribution' && p.kind !== 'hiz')
+        .filter(([, p]) => p.kind !== 'contribution' && p.kind !== 'hiz' && p.kind !== 'projected')
         .map(([id]) => id),
     ],
   },
@@ -45,6 +47,14 @@ registry.comparisonPresets = [
     ],
   },
 ];
+registry.comparisonPresets.push({
+  id: 'ssr-power-lobe',
+  name: 'Experimental power lobe and matched GGX controls',
+  ref: 'three-gpu-pathtracer',
+  renderers: Object.entries(ssrExperimentProfiles)
+    .filter(([, p]) => p.kind === 'projected')
+    .map(([id]) => id),
+});
 for (const mode of ['mirror', 'ggx'])
   registry.comparisonPresets.push({
     id: `hiz-${mode}`,

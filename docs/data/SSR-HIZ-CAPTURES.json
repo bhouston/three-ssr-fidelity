@@ -1448,5 +1448,17 @@
     }
   ],
   "equivalentRewordedSuiteCommit": "0bffa993b77d8beeed63cd7a53714c6ef9563767",
-  "suiteTree": "94657ee664e283cfa0167d681ceb632152c839ca"
+  "suiteTree": "94657ee664e283cfa0167d681ceb632152c839ca",
+  "mergedMainCommit": "cf8df74d6942ee3c99f99e1d994ecbf42f18f4af",
+  "referenceBlobs": {
+    "diag-rough-30": "0712f1a9a02f84f5e5cd1eaa210184965b7bd05b",
+    "diag-dielectric-30": "e090f22c023b7aeb4c2d0c2b72a2d233c5acb7e9",
+    "diag-grazing": "1381ad6382a5fae7c044478fda359f511de7eda8",
+    "diag-offscreen": "e30bf73be48ad41169b18f104103cbc0ddd0a512",
+    "diag-occlusion": "87f244f664c482c1199547ae6af5023a0a8ee4c2",
+    "diag-wall": "01b6e25b6ebc44d8bcf60a05245fc6280f1fbdb4",
+    "diag-sphere": "620b407d29174842d145f358b6af8348a6728285",
+    "diag-metal-hit": "87b937b787234677dd996b077eeb842b51a3a090",
+    "diag-mirror": "3cb72d397a0b7bc8293eeb7aab7fc1ad2da59238"
+  }
 }

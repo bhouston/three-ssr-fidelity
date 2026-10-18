@@ -36,6 +36,46 @@
       "category": "SSR"
     },
     {
+      "id": "three-pr72-ggx-raw",
+      "name": "PR #72 control · GGX raw",
+      "reference": false,
+      "enabled": false,
+      "params": {
+        "renderer": "three-pr72-ggx-raw"
+      },
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-ggx-recurrent",
+      "name": "PR #72 control · GGX recurrent",
+      "reference": false,
+      "enabled": false,
+      "params": {
+        "renderer": "three-pr72-ggx-recurrent"
+      },
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-raw",
+      "name": "PR #72 experiment · biased power lobe raw",
+      "reference": false,
+      "enabled": false,
+      "params": {
+        "renderer": "three-pr72-power-raw"
+      },
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-recurrent",
+      "name": "PR #72 experiment · biased power lobe recurrent",
+      "reference": false,
+      "enabled": false,
+      "params": {
+        "renderer": "three-pr72-power-recurrent"
+      },
+      "category": "Experimental power lobe"
+    },
+    {
       "id": "three-hiz-mirror-adaptive-coarse",
       "name": "Fork mirror · adaptive mip 1",
       "reference": false,
@@ -698,6 +738,42 @@
           }
         },
         {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-hiz-mirror-adaptive-coarse",
           "scene": "diag-mirror",
           "durationMs": 10000,
@@ -933,6 +1009,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-rough-30",
           "durationMs": 10000,
           "params": {
@@ -1176,6 +1288,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-dielectric-30",
           "durationMs": 10000,
           "params": {
@@ -1419,6 +1567,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-grazing",
           "durationMs": 10000,
           "params": {
@@ -1662,6 +1846,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-offscreen",
           "durationMs": 10000,
           "params": {
@@ -1905,6 +2125,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-occlusion",
           "durationMs": 10000,
           "params": {
@@ -2148,6 +2404,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-wall",
           "durationMs": 10000,
           "params": {
@@ -2391,6 +2683,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-sphere",
           "durationMs": 10000,
           "params": {
@@ -2634,6 +2962,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-metal-hit",
           "durationMs": 10000,
           "params": {
@@ -2877,6 +3241,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "steampunk-camera",
           "durationMs": 10000,
           "params": {
@@ -3120,6 +3520,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "cornell-box-metallic",
           "durationMs": 10000,
           "params": {
@@ -3363,6 +3799,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "cornell-box-mirror",
           "durationMs": 10000,
           "params": {
@@ -3624,6 +4096,42 @@
           }
         },
         {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-hiz-mirror-adaptive-coarse",
           "scene": "diag-mirror",
           "durationMs": 10000,
@@ -3859,6 +4367,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-rough-30",
           "durationMs": 10000,
           "params": {
@@ -4102,6 +4646,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-dielectric-30",
           "durationMs": 10000,
           "params": {
@@ -4345,6 +4925,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-grazing",
           "durationMs": 10000,
           "params": {
@@ -4588,6 +5204,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-offscreen",
           "durationMs": 10000,
           "params": {
@@ -4831,6 +5483,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-occlusion",
           "durationMs": 10000,
           "params": {
@@ -5074,6 +5762,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-wall",
           "durationMs": 10000,
           "params": {
@@ -5317,6 +6041,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-sphere",
           "durationMs": 10000,
           "params": {
@@ -5560,6 +6320,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "diag-metal-hit",
           "durationMs": 10000,
           "params": {
@@ -5803,6 +6599,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "steampunk-camera",
           "durationMs": 10000,
           "params": {
@@ -6046,6 +6878,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "cornell-box-metallic",
           "durationMs": 10000,
           "params": {
@@ -6289,6 +7157,42 @@
         },
         {
           "renderer": "three-dev",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-raw",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-ggx-recurrent",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-raw",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-pr72-power-recurrent",
           "scene": "cornell-box-mirror",
           "durationMs": 10000,
           "params": {
@@ -7214,6 +8118,17 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
+      ]
+    },
+    {
+      "id": "ssr-power-lobe",
+      "name": "Experimental power lobe and matched GGX controls",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-pr72-ggx-raw",
+        "three-pr72-ggx-recurrent",
+        "three-pr72-power-raw",
+        "three-pr72-power-recurrent"
       ]
     },
     {
