@@ -32,7 +32,7 @@ const scenes = selectNames(
   'scene',
 );
 const renderers = selectNames(
-  suite.renderers.filter((r) => !r.reference).map((r) => r.id),
+  suite.renderers.filter((r) => !r.reference || values.renderers !== undefined).map((r) => r.id),
   values.renderers ?? '*',
   'renderer',
 );
@@ -53,6 +53,7 @@ const browser = await puppeteer.launch({
   ],
   protocolTimeout: 300000,
 });
+const browserVersion = await browser.version();
 try {
   captures: for (const scene of suite.scenes.filter((s) => scenes.includes(s.id)))
     for (const renderer of suite.renderers.filter((r) => renderers.includes(r.id))) {
@@ -114,6 +115,11 @@ try {
         const canvas = await page.$('canvas');
         if (!canvas) throw new Error('Missing capture canvas');
         const png = await canvas.screenshot({ type: 'png' });
+        if (renderer.id.startsWith('three-hiz-')) {
+          const lossless = join(artifactRoot, 'hiz-captures', scene.id, `${renderer.id}.png`);
+          await mkdir(dirname(lossless), { recursive: true });
+          await writeFile(lossless, png);
+        }
         const stats = await sharp(png).stats();
         if (!stats.channels.slice(0, 3).some((channel) => channel.stdev > 5)) throw new Error('Flat capture');
         await mkdir(dirname(file), { recursive: true });
@@ -122,6 +128,7 @@ try {
         if (previous >= 0) rows.splice(previous, 1);
         rows.push({
           sourceCommit,
+          browserVersion,
           scene: scene.id,
           renderer: renderer.id,
           frames: 64,

@@ -1,0 +1,12 @@
+{
+  "scene": "diag-wall",
+  "renderer": "three-hiz-ggx-adaptive",
+  "reference": "three-gpu-pathtracer",
+  "encoding": "decoded AVIF quality 90 RGB8",
+  "mse": 789.8898167438272,
+  "psnrDb": 19.155138459287112,
+  "identical": false,
+  "changedChannelFraction": 0.5469483024691358,
+  "maxDelta": 126,
+  "deltaGain": 8
+}

@@ -1,0 +1,12 @@
+{
+  "scene": "diag-dielectric-30",
+  "renderer": "three-hiz-ggx-adaptive",
+  "reference": "three-hiz-ggx-linear",
+  "encoding": "lossless PNG RGB8",
+  "mse": 4.607804783950617,
+  "psnrDb": 41.49586289551917,
+  "identical": false,
+  "changedChannelFraction": 0.06724922839506173,
+  "maxDelta": 39,
+  "deltaGain": 8
+}

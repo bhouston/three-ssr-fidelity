@@ -1,9 +1,10 @@
+import { createProjectedSSRRenderer } from './three-pr72.js';
+import { createHiZRenderer } from './three-hiz.js';
 import { ssrExperimentProfiles, isSSRExperiment } from './ssr-experiments.js';
 import { stockSSRFactories } from './ssr-pr/index.js';
 import { createThreeNewRenderer } from './three-new.js';
 import { createRadianceHookRenderer } from './three-pr34.js';
 import { createDevRenderer } from './three-dev.js';
-import { createProjectedSSRRenderer } from './three-pr72.js';
 import type { SceneInstance } from '@three-fidelity/scenes';
 import { createRenderer as createPathTracerRenderer } from 'fidelity-kit-three-gpu-pathtracer';
 import { hierarchyExperiments, ssrTemporalProfiles } from './types.js';
@@ -69,6 +70,7 @@ export function createRenderer(
   if (isSSRExperiment(name)) {
     const profile = ssrExperimentProfiles[name];
     if (profile.kind === 'projected') return instrument(createProjectedSSRRenderer(canvas, setup, options, profile));
+    if (profile.kind === 'hiz') return instrument(createHiZRenderer(canvas, setup, options, { ...profile, name }));
     if (profile.kind === 'stock')
       return instrument(
         createDevRenderer(canvas, setup, options, {

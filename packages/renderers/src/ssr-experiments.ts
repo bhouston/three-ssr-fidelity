@@ -19,6 +19,14 @@ type StockProfile = {
 };
 type ContributionProfile = { kind: 'contribution'; name: string; contribution: SSRContribution; comparator: string };
 type HookProfile = { kind: 'hook'; name: string; comparator: string };
+type HiZProfile = {
+  kind: 'hiz';
+  minMip?: number;
+  name: string;
+  traversal: 'linear' | 'conservative' | 'adaptive';
+  stochastic: boolean;
+  comparator: string;
+};
 export type ProjectedProfile = {
   kind: 'projected';
   name: string;
@@ -26,7 +34,8 @@ export type ProjectedProfile = {
   denoise: boolean;
   comparator: string;
 };
-type Profile = StockProfile | ContributionProfile | HookProfile | ProjectedProfile;
+
+type Profile = StockProfile | ContributionProfile | HookProfile | HiZProfile | ProjectedProfile;
 
 /** Standalone proposals and conditional ablations have deliberately separate comparison controls. */
 export const ssrExperimentProfiles = {
@@ -58,6 +67,67 @@ export const ssrExperimentProfiles = {
     denoise: true,
     comparator: 'three-pr72-ggx-recurrent',
   },
+
+  'three-hiz-mirror-adaptive-coarse': {
+    kind: 'hiz',
+    name: 'Fork mirror · adaptive mip 1',
+    traversal: 'adaptive',
+    minMip: 1,
+    stochastic: false,
+    comparator: 'three-hiz-mirror-linear',
+  },
+  'three-hiz-ggx-adaptive-coarse': {
+    kind: 'hiz',
+    name: 'Fork ggx · adaptive mip 1',
+    traversal: 'adaptive',
+    minMip: 1,
+    stochastic: true,
+    comparator: 'three-hiz-ggx-linear',
+  },
+
+  'three-hiz-mirror-linear': {
+    kind: 'hiz',
+    name: 'Fork mirror · linear',
+    traversal: 'linear',
+    stochastic: false,
+    comparator: 'three-hiz-mirror-linear',
+  },
+  'three-hiz-mirror-conservative': {
+    kind: 'hiz',
+    name: 'Fork mirror · conservative',
+    traversal: 'conservative',
+    stochastic: false,
+    comparator: 'three-hiz-mirror-linear',
+  },
+  'three-hiz-mirror-adaptive': {
+    kind: 'hiz',
+    name: 'Fork mirror · adaptive',
+    traversal: 'adaptive',
+    stochastic: false,
+    comparator: 'three-hiz-mirror-linear',
+  },
+  'three-hiz-ggx-linear': {
+    kind: 'hiz',
+    name: 'Fork ggx · linear',
+    traversal: 'linear',
+    stochastic: true,
+    comparator: 'three-hiz-ggx-linear',
+  },
+  'three-hiz-ggx-conservative': {
+    kind: 'hiz',
+    name: 'Fork ggx · conservative',
+    traversal: 'conservative',
+    stochastic: true,
+    comparator: 'three-hiz-ggx-linear',
+  },
+  'three-hiz-ggx-adaptive': {
+    kind: 'hiz',
+    name: 'Fork ggx · adaptive',
+    traversal: 'adaptive',
+    stochastic: true,
+    comparator: 'three-hiz-ggx-linear',
+  },
+
   'three-dev-mirror': {
     kind: 'stock',
     name: 'Dev mirror control · dielectrics enabled',

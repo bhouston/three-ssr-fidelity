@@ -76,6 +76,86 @@
       "category": "Experimental power lobe"
     },
     {
+      "id": "three-hiz-mirror-adaptive-coarse",
+      "name": "Fork mirror · adaptive mip 1",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-mirror-adaptive-coarse"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-adaptive-coarse",
+      "name": "Fork ggx · adaptive mip 1",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-ggx-adaptive-coarse"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-linear",
+      "name": "Fork mirror · linear",
+      "reference": true,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-mirror-linear"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-conservative",
+      "name": "Fork mirror · conservative",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-mirror-conservative"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-adaptive",
+      "name": "Fork mirror · adaptive",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-mirror-adaptive"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-linear",
+      "name": "Fork ggx · linear",
+      "reference": true,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-ggx-linear"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-conservative",
+      "name": "Fork ggx · conservative",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-ggx-conservative"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-adaptive",
+      "name": "Fork ggx · adaptive",
+      "reference": false,
+      "enabled": true,
+      "params": {
+        "renderer": "three-hiz-ggx-adaptive"
+      },
+      "category": "Hi-Z traversal"
+    },
+    {
       "id": "three-dev-mirror",
       "name": "Dev mirror control · dielectrics enabled",
       "reference": false,
@@ -694,6 +774,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-mirror",
           "durationMs": 10000,
@@ -901,6 +1053,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-rough-30",
           "durationMs": 10000,
@@ -1108,6 +1332,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-dielectric-30",
           "durationMs": 10000,
@@ -1315,6 +1611,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-grazing",
           "durationMs": 10000,
@@ -1522,6 +1890,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-offscreen",
           "durationMs": 10000,
@@ -1721,6 +2161,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-occlusion",
           "durationMs": 10000,
           "params": {
@@ -1928,6 +2440,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-wall",
           "durationMs": 10000,
           "params": {
@@ -2135,6 +2719,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-sphere",
           "durationMs": 10000,
           "params": {
@@ -2342,6 +2998,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-metal-hit",
           "durationMs": 10000,
           "params": {
@@ -2549,6 +3277,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "steampunk-camera",
           "durationMs": 10000,
           "params": {
@@ -2756,6 +3556,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "cornell-box-metallic",
           "durationMs": 10000,
           "params": {
@@ -2963,6 +3835,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "cornell-box-mirror",
           "durationMs": 10000,
           "params": {
@@ -3188,6 +4132,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-mirror",
           "durationMs": 10000,
@@ -3395,6 +4411,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-rough-30",
           "durationMs": 10000,
@@ -3602,6 +4690,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-dielectric-30",
           "durationMs": 10000,
@@ -3809,6 +4969,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-grazing",
           "durationMs": 10000,
@@ -4016,6 +5248,78 @@
           }
         },
         {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
           "renderer": "three-dev-mirror",
           "scene": "diag-offscreen",
           "durationMs": 10000,
@@ -4215,6 +5519,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-occlusion",
           "durationMs": 10000,
           "params": {
@@ -4422,6 +5798,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-wall",
           "durationMs": 10000,
           "params": {
@@ -4629,6 +6077,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-sphere",
           "durationMs": 10000,
           "params": {
@@ -4836,6 +6356,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "diag-metal-hit",
           "durationMs": 10000,
           "params": {
@@ -5043,6 +6635,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "steampunk-camera",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "steampunk-camera",
           "durationMs": 10000,
           "params": {
@@ -5250,6 +6914,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "cornell-box-metallic",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "cornell-box-metallic",
           "durationMs": 10000,
           "params": {
@@ -5457,6 +7193,78 @@
         },
         {
           "renderer": "three-pr72-power-recurrent",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "cornell-box-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
           "scene": "cornell-box-mirror",
           "durationMs": 10000,
           "params": {
@@ -5618,6 +7426,658 @@
           }
         }
       ]
+    },
+    "hiz": {
+      "entries": [
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-mirror",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-rough-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-dielectric-30",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-grazing",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-offscreen",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-occlusion",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-wall",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-sphere",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive-coarse",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-mirror-adaptive",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-linear",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-conservative",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        },
+        {
+          "renderer": "three-hiz-ggx-adaptive",
+          "scene": "diag-metal-hit",
+          "durationMs": 10000,
+          "params": {
+            "width": 480,
+            "height": 360
+          }
+        }
+      ]
     }
   },
   "comparisonPresets": [
@@ -5643,17 +8103,6 @@
       ]
     },
     {
-      "id": "ssr-power-lobe",
-      "name": "Experimental power lobe and matched GGX controls",
-      "ref": "three-gpu-pathtracer",
-      "renderers": [
-        "three-pr72-ggx-raw",
-        "three-pr72-ggx-recurrent",
-        "three-pr72-power-raw",
-        "three-pr72-power-recurrent"
-      ]
-    },
-    {
       "id": "ssr-contributions",
       "name": "Full pipeline and feature-removal comparisons",
       "ref": "three-gpu-pathtracer",
@@ -5669,6 +8118,54 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
+      ]
+    },
+    {
+      "id": "ssr-power-lobe",
+      "name": "Experimental power lobe and matched GGX controls",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-pr72-ggx-raw",
+        "three-pr72-ggx-recurrent",
+        "three-pr72-power-raw",
+        "three-pr72-power-recurrent"
+      ]
+    },
+    {
+      "id": "hiz-mirror",
+      "name": "Hi-Z mirror vs linear",
+      "ref": "three-hiz-mirror-linear",
+      "renderers": [
+        "three-hiz-mirror-adaptive-coarse",
+        "three-hiz-mirror-linear",
+        "three-hiz-mirror-conservative",
+        "three-hiz-mirror-adaptive"
+      ]
+    },
+    {
+      "id": "hiz-ggx",
+      "name": "Hi-Z ggx vs linear",
+      "ref": "three-hiz-ggx-linear",
+      "renderers": [
+        "three-hiz-ggx-adaptive-coarse",
+        "three-hiz-ggx-linear",
+        "three-hiz-ggx-conservative",
+        "three-hiz-ggx-adaptive"
+      ]
+    },
+    {
+      "id": "hiz-pathtracer",
+      "name": "Hi-Z vs pathtracer",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-hiz-mirror-adaptive-coarse",
+        "three-hiz-ggx-adaptive-coarse",
+        "three-hiz-mirror-linear",
+        "three-hiz-mirror-conservative",
+        "three-hiz-mirror-adaptive",
+        "three-hiz-ggx-linear",
+        "three-hiz-ggx-conservative",
+        "three-hiz-ggx-adaptive"
       ]
     }
   ]

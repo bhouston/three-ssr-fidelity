@@ -8,6 +8,7 @@ const stockRequire = createRequire(new URL('../renderers/package.json', import.m
 // Vite module ids use forward slashes on every platform, including Windows.
 const pr72Root = normalizePath(dirname(dirname(stockRequire.resolve('three-pr72'))));
 const pr34Root = normalizePath(dirname(dirname(stockRequire.resolve('three-pr34'))));
+const hiZRoot = normalizePath(dirname(dirname(stockRequire.resolve('three-hiz'))));
 const devRoot = normalizePath(dirname(dirname(stockRequire.resolve('three-dev'))));
 const stockRoot = normalizePath(dirname(dirname(stockRequire.resolve('three-r186'))));
 
@@ -27,6 +28,8 @@ export default defineConfig({
           return normalizePath(
             id === 'three-pr34' ? join(pr34Root, 'build/three.module.js') : stockRequire.resolve(id),
           );
+        if (id === 'three-hiz' || id.startsWith('three-hiz/'))
+          return normalizePath(id === 'three-hiz' ? join(hiZRoot, 'build/three.module.js') : stockRequire.resolve(id));
         if (id === 'three-dev' || id.startsWith('three-dev/'))
           return normalizePath(id === 'three-dev' ? join(devRoot, 'build/three.module.js') : stockRequire.resolve(id));
         if (id !== 'three-r186' && !id.startsWith('three-r186/')) return;
@@ -35,6 +38,7 @@ export default defineConfig({
       transform(code, id) {
         if (id.startsWith(pr72Root + '/')) return code.replace(/(from\s*['"])three(?=\/|['"])/g, '$1three-pr72');
         if (id.startsWith(pr34Root + '/')) return code.replace(/(from\s*['"])three(?=\/|['"])/g, '$1three-pr34');
+        if (id.startsWith(hiZRoot + '/')) return code.replace(/(from\s*['"])three(?=\/|['"])/g, '$1three-hiz');
         if (id.startsWith(devRoot + '/')) return code.replace(/(from\s*['"])three(?=\/|['"])/g, '$1three-dev');
         if (!id.startsWith(stockRoot + '/')) return;
         // Preserve the npm package's self imports and their Vite dependency version.
@@ -79,7 +83,16 @@ export default defineConfig({
   },
   // Keep one TSL stack per Three.js version; prebundling can embed additional runtime copies.
   optimizeDeps: {
-    exclude: ['three-pr72', 'three-pr34', 'three-dev', 'three', 'three-r186', 'three-mesh-bvh', 'three-gpu-pathtracer'],
+    exclude: [
+      'three-pr72',
+      'three-hiz',
+      'three-pr34',
+      'three-dev',
+      'three',
+      'three-r186',
+      'three-mesh-bvh',
+      'three-gpu-pathtracer',
+    ],
   },
   publicDir: fileURLToPath(new URL('../../submodules/three.js/examples/', import.meta.url)),
   server: {

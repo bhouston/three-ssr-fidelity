@@ -1,0 +1,12 @@
+{
+  "scene": "diag-metal-hit",
+  "renderer": "three-hiz-mirror-adaptive",
+  "reference": "three-hiz-mirror-linear",
+  "encoding": "lossless PNG RGB8",
+  "mse": 9.28416087962963,
+  "psnrDb": 38.45337703391437,
+  "identical": false,
+  "changedChannelFraction": 0.03870756172839506,
+  "maxDelta": 91,
+  "deltaGain": 8
+}

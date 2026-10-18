@@ -180,6 +180,9 @@ importers:
       three-gpu-pathtracer:
         specifier: workspace:*
         version: link:../../submodules/three-gpu-pathtracer
+      three-hiz:
+        specifier: link:../../submodules/three-hiz
+        version: link:../../submodules/three-hiz
       three-mesh-bvh:
         specifier: ^0.9.15
         version: 0.9.15(three@submodules+three.js)
@@ -197,6 +200,9 @@ importers:
         specifier: ^0.186.0
         version: 0.186.0
       '@types/three-dev':
+        specifier: npm:@types/three@0.186.0
+        version: '@types/three@0.186.0'
+      '@types/three-hiz':
         specifier: npm:@types/three@0.186.0
         version: '@types/three@0.186.0'
       '@types/three-pr34':

@@ -1,0 +1,12 @@
+{
+  "scene": "diag-metal-hit",
+  "renderer": "three-hiz-mirror-adaptive",
+  "reference": "three-gpu-pathtracer",
+  "encoding": "decoded AVIF quality 90 RGB8",
+  "mse": 157.18286072530864,
+  "psnrDb": 26.16675172206684,
+  "identical": false,
+  "changedChannelFraction": 0.30092978395061726,
+  "maxDelta": 133,
+  "deltaGain": 8
+}

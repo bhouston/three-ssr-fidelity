@@ -1,0 +1,12 @@
+{
+  "scene": "diag-grazing",
+  "renderer": "three-hiz-mirror-conservative",
+  "reference": "three-gpu-pathtracer",
+  "encoding": "decoded AVIF quality 90 RGB8",
+  "mse": 279.32373070987654,
+  "psnrDb": 23.669725269264955,
+  "identical": false,
+  "changedChannelFraction": 0.2341358024691358,
+  "maxDelta": 139,
+  "deltaGain": 8
+}

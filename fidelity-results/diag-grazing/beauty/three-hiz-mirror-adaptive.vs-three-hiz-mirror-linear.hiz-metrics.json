@@ -1,0 +1,12 @@
+{
+  "scene": "diag-grazing",
+  "renderer": "three-hiz-mirror-adaptive",
+  "reference": "three-hiz-mirror-linear",
+  "encoding": "lossless PNG RGB8",
+  "mse": 2.133497299382716,
+  "psnrDb": 44.839882634095964,
+  "identical": false,
+  "changedChannelFraction": 0.01597222222222222,
+  "maxDelta": 105,
+  "deltaGain": 8
+}

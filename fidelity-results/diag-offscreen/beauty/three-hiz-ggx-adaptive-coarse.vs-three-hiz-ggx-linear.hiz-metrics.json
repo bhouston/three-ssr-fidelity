@@ -1,0 +1,12 @@
+{
+  "scene": "diag-offscreen",
+  "renderer": "three-hiz-ggx-adaptive-coarse",
+  "reference": "three-hiz-ggx-linear",
+  "encoding": "lossless PNG RGB8",
+  "mse": 129.1322723765432,
+  "psnrDb": 27.020455673736006,
+  "identical": false,
+  "changedChannelFraction": 0.20444251543209876,
+  "maxDelta": 120,
+  "deltaGain": 8
+}

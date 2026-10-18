@@ -8,6 +8,12 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "imports": {
+    "#hiz": {
+      "types": "./src/hiz-addon.d.ts",
+      "default": "three-hiz/addons/tsl/display/HiZNode.js"
+    }
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -25,6 +31,7 @@
     "three": "workspace:*",
     "three-dev": "link:../../submodules/three-dev",
     "three-gpu-pathtracer": "workspace:*",
+    "three-hiz": "link:../../submodules/three-hiz",
     "three-mesh-bvh": "^0.9.15",
     "three-pr34": "link:../../submodules/three-pr34",
     "three-pr72": "link:../../submodules/three-pr72",
@@ -33,6 +40,7 @@
   "devDependencies": {
     "@types/three": "^0.186.0",
     "@types/three-dev": "npm:@types/three@0.186.0",
+    "@types/three-hiz": "npm:@types/three@0.186.0",
     "@types/three-pr34": "npm:@types/three@0.186.0",
     "@types/three-pr72": "npm:@types/three@0.186.0",
     "@types/three-r186": "npm:@types/three@0.186.0"

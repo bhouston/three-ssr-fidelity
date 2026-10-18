@@ -1,0 +1,1464 @@
+{
+  "suiteCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+  "forkCommit": "fac1b2050ae4cd5a59b890a878e69e616c2782f7",
+  "originalCoreCommit": "83c310af727",
+  "browser": "Chrome/148.0.7778.97",
+  "frames": 64,
+  "seed": 1,
+  "captures": [
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:06.508Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:07.592Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:08.589Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:09.685Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:10.603Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:11.721Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:12.884Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:13.792Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:14.838Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:15.740Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:16.606Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:17.506Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:18.401Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:19.284Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:20.230Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:21.144Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:22.095Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:23.123Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:24.006Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:24.906Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:25.835Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:26.728Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:27.645Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:28.552Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:29.443Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:30.345Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:31.245Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:32.131Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:33.070Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:33.985Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:34.922Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:35.825Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:36.760Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:37.638Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:38.480Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:39.361Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:40.288Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:41.146Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:42.052Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:42.959Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:43.820Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:44.698Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:45.591Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:46.459Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:47.325Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:48.181Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:49.062Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:49.975Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:50.932Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:51.879Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:52.865Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:53.763Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:54.797Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:55.670Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:56.571Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:57.448Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:58.354Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:00:59.270Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:00.183Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:01.110Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:02.016Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:02.911Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:03.802Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:04.732Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:13.231Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:14.296Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:15.318Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:16.376Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:17.271Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-linear",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:18.416Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-conservative",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:19.588Z"
+    },
+    {
+      "sourceCommit": "21e68b83f9fcf29852e9592aa53ab35f8169f30a",
+      "browserVersion": "Chrome/148.0.7778.97",
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-adaptive",
+      "frames": 64,
+      "seed": 1,
+      "width": 480,
+      "height": 360,
+      "adapters": [
+        {
+          "vendor": "nvidia",
+          "architecture": "ampere",
+          "description": "NVIDIA GeForce RTX 3060 Ti",
+          "fallback": false
+        }
+      ],
+      "errors": [],
+      "capturedAt": "2026-10-18T02:01:20.521Z"
+    }
+  ],
+  "equivalentRewordedSuiteCommit": "0bffa993b77d8beeed63cd7a53714c6ef9563767",
+  "suiteTree": "94657ee664e283cfa0167d681ceb632152c839ca",
+  "mergedMainCommit": "cf8df74d6942ee3c99f99e1d994ecbf42f18f4af",
+  "referenceBlobs": {
+    "diag-rough-30": "0712f1a9a02f84f5e5cd1eaa210184965b7bd05b",
+    "diag-dielectric-30": "e090f22c023b7aeb4c2d0c2b72a2d233c5acb7e9",
+    "diag-grazing": "1381ad6382a5fae7c044478fda359f511de7eda8",
+    "diag-offscreen": "e30bf73be48ad41169b18f104103cbc0ddd0a512",
+    "diag-occlusion": "87f244f664c482c1199547ae6af5023a0a8ee4c2",
+    "diag-wall": "01b6e25b6ebc44d8bcf60a05245fc6280f1fbdb4",
+    "diag-sphere": "620b407d29174842d145f358b6af8348a6728285",
+    "diag-metal-hit": "87b937b787234677dd996b077eeb842b51a3a090",
+    "diag-mirror": "3cb72d397a0b7bc8293eeb7aab7fc1ad2da59238"
+  }
+}

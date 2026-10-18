@@ -18,7 +18,8 @@ const hash = async (scene, renderer) =>
     .update(await readFile(`fidelity-results/${scene}/beauty/${renderer}.avif`))
     .digest('hex');
 const comparisons = [];
-for (const [id, profile] of Object.entries(ssrExperimentProfiles)) {
+// Hi-Z uses the separate nine-scene report-hiz-comparisons diagnostic matrix.
+for (const [id, profile] of Object.entries(ssrExperimentProfiles).filter(([, profile]) => profile.kind !== 'hiz')) {
   const scenes = [];
   for (const scene of registry.scenes) {
     const candidate = score(scene.id, id),
