@@ -32,7 +32,7 @@
     {
       "id": "three-hiz-mirror-linear",
       "label": "Fork mirror · linear",
-      "reference": false,
+      "reference": true,
       "enabled": true,
       "category": "Hi-Z traversal"
     },
@@ -53,7 +53,7 @@
     {
       "id": "three-hiz-ggx-linear",
       "label": "Fork ggx · linear",
-      "reference": false,
+      "reference": true,
       "enabled": true,
       "category": "Hi-Z traversal"
     },

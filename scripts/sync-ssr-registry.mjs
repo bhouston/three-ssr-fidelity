@@ -6,7 +6,7 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles))
   registry.renderers.push({
     id,
     name: profile.name,
-    reference: false,
+    reference: profile.kind === 'hiz' && profile.traversal === 'linear',
     enabled: true,
     params: { renderer: id },
     category:

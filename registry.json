@@ -58,7 +58,7 @@
     {
       "id": "three-hiz-mirror-linear",
       "name": "Fork mirror · linear",
-      "reference": false,
+      "reference": true,
       "enabled": true,
       "params": {
         "renderer": "three-hiz-mirror-linear"
@@ -88,7 +88,7 @@
     {
       "id": "three-hiz-ggx-linear",
       "name": "Fork ggx · linear",
-      "reference": false,
+      "reference": true,
       "enabled": true,
       "params": {
         "renderer": "three-hiz-ggx-linear"

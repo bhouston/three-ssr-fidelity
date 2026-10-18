@@ -32,7 +32,7 @@ const scenes = selectNames(
   'scene',
 );
 const renderers = selectNames(
-  suite.renderers.filter((r) => !r.reference).map((r) => r.id),
+  suite.renderers.filter((r) => !r.reference || values.renderers !== undefined).map((r) => r.id),
   values.renderers ?? '*',
   'renderer',
 );
