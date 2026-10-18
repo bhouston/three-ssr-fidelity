@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -5,17 +6,21 @@ import { ssrExperimentProfiles } from '../packages/renderers/src/ssr-experiments
 const require = createRequire(new URL('../submodules/fidelity-kit/packages/cli/package.json', import.meta.url));
 const sharp = require('sharp');
 const root = resolve(process.argv[2] ?? 'fidelity-results');
+const pngRoot = resolve(process.argv[3] ?? process.env.SWARM_ARTIFACTS ?? 'capture-artifacts', 'hiz-captures');
 const registry = JSON.parse(await readFile('registry.json', 'utf8'));
 const comparisons = [];
 for (const scene of registry.scenes.filter((s) => s.id.startsWith('diag-'))) {
   const output = resolve(root, scene.id, 'beauty');
   for (const [renderer, profile] of Object.entries(ssrExperimentProfiles).filter(([, p]) => p.kind === 'hiz')) {
-    const candidate = await sharp(resolve(output, `${renderer}.avif`))
-      .removeAlpha()
-      .raw()
-      .toBuffer({ resolveWithObject: true });
     for (const reference of [profile.comparator, 'three-gpu-pathtracer']) {
-      const control = await sharp(resolve(output, `${reference}.avif`))
+      const candidatePng = resolve(pngRoot, scene.id, `${renderer}.png`);
+      const referencePng = resolve(pngRoot, scene.id, `${reference}.png`);
+      const lossless = existsSync(candidatePng) && existsSync(referencePng);
+      const candidate = await sharp(lossless ? candidatePng : resolve(output, `${renderer}.avif`))
+        .removeAlpha()
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+      const control = await sharp(lossless ? referencePng : resolve(output, `${reference}.avif`))
         .removeAlpha()
         .raw()
         .toBuffer({ resolveWithObject: true });
@@ -41,6 +46,7 @@ for (const scene of registry.scenes.filter((s) => s.id.startsWith('diag-'))) {
         scene: scene.id,
         renderer,
         reference,
+        encoding: lossless ? 'lossless PNG RGB8' : 'decoded AVIF quality 90 RGB8',
         mse,
         psnrDb: mse === 0 ? null : 10 * Math.log10((255 * 255) / mse),
         identical: mse === 0,
@@ -63,7 +69,12 @@ await mkdir('docs/data', { recursive: true });
 await writeFile(
   'docs/data/SSR-HIZ-COMPARISONS.json',
   JSON.stringify(
-    { metric: 'display RGB8 PSNR, decoded AVIF; null PSNR denotes identical images', deltaGain: 8, comparisons },
+    {
+      metric:
+        'display RGB8 PSNR; lossless PNG for matching controls when present, AVIF for pathtrace refs; null PSNR denotes identical images',
+      deltaGain: 8,
+      comparisons,
+    },
     null,
     2,
   ) + '\n',

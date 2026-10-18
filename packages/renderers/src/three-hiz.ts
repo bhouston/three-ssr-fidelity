@@ -70,10 +70,10 @@ function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant:
       binaryRefine: true,
       stochastic: variant.stochastic,
       hiZ: variant.traversal === 'linear' ? null : hiZ(scenePassDepth),
-      hiZEnabled: variant.traversal !== 'linear',
       hiZTraversal: variant.traversal === 'adaptive' ? 'adaptive' : 'conservative',
       reflectNonMetals: true,
     } as AnyNode);
+    ssrPass.hiZEnabled = variant.traversal !== 'linear';
     ssrPass.hiZMinMip.value = variant.minMip ?? 0;
     ssrPass.maxDistance.value = params.maxDistance;
     if (params.quality !== undefined) ssrPass.quality.value = params.quality;

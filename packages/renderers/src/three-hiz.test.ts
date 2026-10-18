@@ -50,11 +50,11 @@ it('shares scene depth with the hierarchy and omits hierarchy work for linear co
     );
     const call = vi.mocked(ssr).mock.calls[0]!;
     expect(vi.mocked(ssr).mock.results[0]!.value).toMatchObject({
+      hiZEnabled: profile.traversal !== 'linear',
       hiZMinMip: { value: 'minMip' in profile ? profile.minMip : 0 },
     });
     expect(call[3]).toMatchObject({
       stochastic: profile.stochastic,
-      hiZEnabled: profile.traversal !== 'linear',
       hiZTraversal: profile.traversal === 'adaptive' ? 'adaptive' : 'conservative',
     });
     if (profile.traversal === 'linear') expect(hiZ).not.toHaveBeenCalled();

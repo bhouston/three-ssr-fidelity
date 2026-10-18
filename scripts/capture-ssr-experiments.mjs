@@ -114,6 +114,11 @@ try {
         const canvas = await page.$('canvas');
         if (!canvas) throw new Error('Missing capture canvas');
         const png = await canvas.screenshot({ type: 'png' });
+        if (renderer.id.startsWith('three-hiz-')) {
+          const lossless = join(artifactRoot, 'hiz-captures', scene.id, `${renderer.id}.png`);
+          await mkdir(dirname(lossless), { recursive: true });
+          await writeFile(lossless, png);
+        }
         const stats = await sharp(png).stats();
         if (!stats.channels.slice(0, 3).some((channel) => channel.stdev > 5)) throw new Error('Flat capture');
         await mkdir(dirname(file), { recursive: true });
