@@ -18,6 +18,11 @@ describe('shared project registry', () => {
       'three-pr72-power-recurrent',
     ]);
     expect(registry.renderers.filter((renderer) => renderer.id.startsWith('three-pr72-'))).toHaveLength(4);
+    expect(
+      registry.renderers
+        .filter((renderer) => renderer.id.startsWith('three-pr72-'))
+        .every((renderer) => !renderer.enabled),
+    ).toBe(true);
   });
   it('registers every runtime scene with its canonical fidelity dimensions', () => {
     const suite = parseRegistry(registry);

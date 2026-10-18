@@ -39,7 +39,7 @@
       "id": "three-pr72-ggx-raw",
       "name": "PR #72 control · GGX raw",
       "reference": false,
-      "enabled": true,
+      "enabled": false,
       "params": {
         "renderer": "three-pr72-ggx-raw"
       },
@@ -49,7 +49,7 @@
       "id": "three-pr72-ggx-recurrent",
       "name": "PR #72 control · GGX recurrent",
       "reference": false,
-      "enabled": true,
+      "enabled": false,
       "params": {
         "renderer": "three-pr72-ggx-recurrent"
       },
@@ -59,7 +59,7 @@
       "id": "three-pr72-power-raw",
       "name": "PR #72 experiment · biased power lobe raw",
       "reference": false,
-      "enabled": true,
+      "enabled": false,
       "params": {
         "renderer": "three-pr72-power-raw"
       },
@@ -69,7 +69,7 @@
       "id": "three-pr72-power-recurrent",
       "name": "PR #72 experiment · biased power lobe recurrent",
       "reference": false,
-      "enabled": true,
+      "enabled": false,
       "params": {
         "renderer": "three-pr72-power-recurrent"
       },

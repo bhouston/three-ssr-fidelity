@@ -35,6 +35,8 @@ the proposals' base `e615266e7647f0a062219d55e79913237594b6b7`.
 The `ssr-power-lobe` comparison preset adds four methods from
 [three.js PR #72](https://github.com/bhouston/three.js/pull/72). The default `ssr`
 preset, existing source pins and path-traced reference images remain unchanged.
+These four methods start unchecked in fidelity views; choosing their preset or
+selecting a method explicitly enables them. They remain available in live views.
 
 | Method                     | Estimator                          | SSR filtering               | Matched estimator control             |
 | -------------------------- | ---------------------------------- | --------------------------- | ------------------------------------- |

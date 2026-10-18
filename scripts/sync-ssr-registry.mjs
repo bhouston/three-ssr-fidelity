@@ -7,7 +7,7 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles))
     id,
     name: profile.name,
     reference: false,
-    enabled: true,
+    enabled: profile.kind !== 'projected',
     params: { renderer: id },
     category:
       profile.kind === 'projected'
