@@ -1,0 +1,12 @@
+{
+  "scene": "diag-dielectric-30",
+  "renderer": "three-hiz-ggx-adaptive",
+  "reference": "three-gpu-pathtracer",
+  "encoding": "decoded AVIF quality 90 RGB8",
+  "mse": 21.79189236111111,
+  "psnrDb": 34.747854157843996,
+  "identical": false,
+  "changedChannelFraction": 0.3725289351851852,
+  "maxDelta": 136,
+  "deltaGain": 8
+}

@@ -1,0 +1,12 @@
+{
+  "scene": "diag-occlusion",
+  "renderer": "three-hiz-ggx-adaptive",
+  "reference": "three-hiz-ggx-linear",
+  "encoding": "lossless PNG RGB8",
+  "mse": 15.492540509259259,
+  "psnrDb": 36.22957720469317,
+  "identical": false,
+  "changedChannelFraction": 0.06111304012345679,
+  "maxDelta": 116,
+  "deltaGain": 8
+}

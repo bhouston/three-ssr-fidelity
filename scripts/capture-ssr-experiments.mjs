@@ -53,6 +53,7 @@ const browser = await puppeteer.launch({
   ],
   protocolTimeout: 300000,
 });
+const browserVersion = await browser.version();
 try {
   captures: for (const scene of suite.scenes.filter((s) => scenes.includes(s.id)))
     for (const renderer of suite.renderers.filter((r) => renderers.includes(r.id))) {
@@ -127,6 +128,7 @@ try {
         if (previous >= 0) rows.splice(previous, 1);
         rows.push({
           sourceCommit,
+          browserVersion,
           scene: scene.id,
           renderer: renderer.id,
           frames: 64,

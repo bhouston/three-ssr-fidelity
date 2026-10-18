@@ -1,0 +1,1006 @@
+{
+  "forkCommit": "fac1b2050ae4cd5a59b890a878e69e616c2782f7",
+  "runDirectory": "performance-results/windows001/2026-10-18-02-02",
+  "browser": "Chrome/148.0.7778.97",
+  "quality": 0.5,
+  "width": 480,
+  "height": 360,
+  "protocol": "GPU-completed end-to-end throughput; 1-second warmup; 16-frame batches and queue drains; 10-second windows; sequential cases; vsync and frame caps disabled",
+  "repeats": 1,
+  "aggregate": [
+    {
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "scenes": 9,
+      "geometricMeanRatio": 0.8471815716508149,
+      "minRatio": 0.7726710335920929,
+      "maxRatio": 0.9176234124182278
+    },
+    {
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "scenes": 9,
+      "geometricMeanRatio": 0.8257634084366577,
+      "minRatio": 0.7431842566482545,
+      "maxRatio": 0.9649509690388957
+    },
+    {
+      "renderer": "three-hiz-mirror-linear",
+      "scenes": 9,
+      "geometricMeanRatio": 1,
+      "minRatio": 1,
+      "maxRatio": 1
+    },
+    {
+      "renderer": "three-hiz-mirror-conservative",
+      "scenes": 9,
+      "geometricMeanRatio": 0.8774510693894668,
+      "minRatio": 0.7826833168901548,
+      "maxRatio": 0.9411181822147365
+    },
+    {
+      "renderer": "three-hiz-mirror-adaptive",
+      "scenes": 9,
+      "geometricMeanRatio": 0.8650646422679291,
+      "minRatio": 0.7519862799031599,
+      "maxRatio": 1.0136284234455604
+    },
+    {
+      "renderer": "three-hiz-ggx-linear",
+      "scenes": 9,
+      "geometricMeanRatio": 1,
+      "minRatio": 1,
+      "maxRatio": 1
+    },
+    {
+      "renderer": "three-hiz-ggx-conservative",
+      "scenes": 9,
+      "geometricMeanRatio": 0.8344417944068958,
+      "minRatio": 0.7756219343097556,
+      "maxRatio": 0.900455508649148
+    },
+    {
+      "renderer": "three-hiz-ggx-adaptive",
+      "scenes": 9,
+      "geometricMeanRatio": 0.819447892056364,
+      "minRatio": 0.7006081391302659,
+      "maxRatio": 0.9345327420289151
+    }
+  ],
+  "measurements": [
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 6384,
+      "elapsedSeconds": 10.004400000035764,
+      "fps": 638.1192275376013,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8563002021579359
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 10256,
+      "elapsedSeconds": 10.01419999998808,
+      "fps": 1024.145713088635,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8788388937671358
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 7456,
+      "elapsedSeconds": 10.005300000011921,
+      "fps": 745.2050413272082,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 6704,
+      "elapsedSeconds": 10.0095,
+      "fps": 669.7637244617614,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8987643498343946
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 5616,
+      "elapsedSeconds": 10.021699999988078,
+      "fps": 560.3839667927278,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7519862799031599
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 11664,
+      "elapsedSeconds": 10.00910000002384,
+      "fps": 1165.3395410148983,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9088,
+      "elapsedSeconds": 10.0105,
+      "fps": 907.8467609010538,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7790405533741753
+    },
+    {
+      "scene": "diag-mirror",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 8976,
+      "elapsedSeconds": 10.018100000023841,
+      "fps": 895.9782793123086,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.768855983837979
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5952,
+      "elapsedSeconds": 10.001800000011922,
+      "fps": 595.0928832803,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7991053455881009
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 9472,
+      "elapsedSeconds": 10.011099999964237,
+      "fps": 946.1497737545162,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8078949306208993
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 7456,
+      "elapsedSeconds": 10.012100000023842,
+      "fps": 744.6989143119071,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 5840,
+      "elapsedSeconds": 10.0195,
+      "fps": 582.8634163381406,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7826833168901548
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 5792,
+      "elapsedSeconds": 10.009800000011921,
+      "fps": 578.6329397183862,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7770025289388748
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 11712,
+      "elapsedSeconds": 10.00060000002384,
+      "fps": 1171.129732213275,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9344,
+      "elapsedSeconds": 10.01230000001192,
+      "fps": 933.2520999159908,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7968819117522292
+    },
+    {
+      "scene": "diag-rough-30",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 9456,
+      "elapsedSeconds": 10.000200000047684,
+      "fps": 945.5810883737236,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8074093436144812
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5760,
+      "elapsedSeconds": 10.015300000011921,
+      "fps": 575.1200662978787,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8641282434996749
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 8992,
+      "elapsedSeconds": 10.004099999964236,
+      "fps": 898.831479096785,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.825809670603821
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 6672,
+      "elapsedSeconds": 10.024800000011922,
+      "fps": 665.5494373944682,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 6272,
+      "elapsedSeconds": 10.013399999976157,
+      "fps": 626.3606766947225,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9411181822147365
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 6752,
+      "elapsedSeconds": 10.008599999964238,
+      "fps": 674.6198269512345,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1.0136284234455604
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 10896,
+      "elapsedSeconds": 10.010799999952315,
+      "fps": 1088.424501543523,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9440,
+      "elapsedSeconds": 10.008100000023843,
+      "fps": 943.2359788548786,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8666067122866594
+    },
+    {
+      "scene": "diag-dielectric-30",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 9312,
+      "elapsedSeconds": 10.010199999988078,
+      "fps": 930.2511438343979,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8546767759409905
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5904,
+      "elapsedSeconds": 10.000399999976159,
+      "fps": 590.3763849460097,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7956164727548837
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 9360,
+      "elapsedSeconds": 10.00689999997616,
+      "fps": 935.354605324556,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7853526033526624
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 7424,
+      "elapsedSeconds": 10.004899999976157,
+      "fps": 742.0364021647085,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 6832,
+      "elapsedSeconds": 10.020899999976159,
+      "fps": 681.7750900633929,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.918789277823139
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 6224,
+      "elapsedSeconds": 10.012800000011921,
+      "fps": 621.6043464358211,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8377006095960298
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 11920,
+      "elapsedSeconds": 10.008400000035762,
+      "fps": 1190.999560365034,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9248,
+      "elapsedSeconds": 10.011199999988078,
+      "fps": 923.7653827723963,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7756219343097556
+    },
+    {
+      "scene": "diag-grazing",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 8352,
+      "elapsedSeconds": 10.009300000011923,
+      "fps": 834.4239856923112,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7006081391302659
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5760,
+      "elapsedSeconds": 10.02019999998808,
+      "fps": 574.8388255730277,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8518205547059637
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 8704,
+      "elapsedSeconds": 10.003800000011921,
+      "fps": 870.0693736369807,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7431842566482545
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 6752,
+      "elapsedSeconds": 10.00539999997616,
+      "fps": 674.8355887836657,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 5824,
+      "elapsedSeconds": 10.01989999997616,
+      "fps": 581.2433257830774,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8613110147772727
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 6672,
+      "elapsedSeconds": 10.016900000035763,
+      "fps": 666.0743343725284,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9870172015869395
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 11712,
+      "elapsedSeconds": 10.004000000000001,
+      "fps": 1170.731707317073,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9408,
+      "elapsedSeconds": 10.002799999952316,
+      "fps": 940.536649742557,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8033750549884342
+    },
+    {
+      "scene": "diag-offscreen",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 9008,
+      "elapsedSeconds": 10.000599999964237,
+      "fps": 900.7459552459065,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7693871701058786
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5856,
+      "elapsedSeconds": 10.001400000035764,
+      "fps": 585.5180274740596,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9176234124182278
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 8688,
+      "elapsedSeconds": 10.00369999998808,
+      "fps": 868.4786628957638,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8228341877151626
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 6384,
+      "elapsedSeconds": 10.004999999999999,
+      "fps": 638.08095952024,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 5872,
+      "elapsedSeconds": 10.02480000001192,
+      "fps": 585.7473465797839,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9179828011482984
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 6000,
+      "elapsedSeconds": 10.000800000011921,
+      "fps": 599.9520038389777,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9402443293247136
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 10560,
+      "elapsedSeconds": 10.004999999999999,
+      "fps": 1055.472263868066,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9008,
+      "elapsedSeconds": 10.008099999964237,
+      "fps": 900.0709425397617,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8527660776619618
+    },
+    {
+      "scene": "diag-occlusion",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 8912,
+      "elapsedSeconds": 10.008,
+      "fps": 890.4876099120704,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8436864145047599
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 6112,
+      "elapsedSeconds": 10.00019999998808,
+      "fps": 611.1877762452036,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8877732886177561
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 9920,
+      "elapsedSeconds": 10.014400000035762,
+      "fps": 990.5735740498258,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9649509690388957
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 6896,
+      "elapsedSeconds": 10.016699999988079,
+      "fps": 688.4502880198276,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 6224,
+      "elapsedSeconds": 10.011100000023841,
+      "fps": 621.7099020072897,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9030570730030463
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 6176,
+      "elapsedSeconds": 10.025500000000001,
+      "fps": 616.02912572939,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8948055312770066
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 10272,
+      "elapsedSeconds": 10.006299999952315,
+      "fps": 1026.5532714438855,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9248,
+      "elapsedSeconds": 10.00469999998808,
+      "fps": 924.3655481934509,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.900455508649148
+    },
+    {
+      "scene": "diag-wall",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 9600,
+      "elapsedSeconds": 10.006800000011921,
+      "fps": 959.3476436012076,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.9345327420289151
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 6224,
+      "elapsedSeconds": 10.003399999976159,
+      "fps": 622.1884559264684,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8911835193425561
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 8880,
+      "elapsedSeconds": 10.002,
+      "fps": 887.8224355128974,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8347533500818635
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 6992,
+      "elapsedSeconds": 10.014899999976157,
+      "fps": 698.1597419861054,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 5712,
+      "elapsedSeconds": 10.028099999964237,
+      "fps": 569.5994256160559,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8158583077214898
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 5936,
+      "elapsedSeconds": 10.005600000023842,
+      "fps": 593.267770047359,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.84975935215005
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 10640,
+      "elapsedSeconds": 10.004000000000001,
+      "fps": 1063.574570171931,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 9312,
+      "elapsedSeconds": 10.01780000001192,
+      "fps": 929.5454091705683,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8739823565171397
+    },
+    {
+      "scene": "diag-sphere",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 8992,
+      "elapsedSeconds": 10.005600000023842,
+      "fps": 898.696729829153,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8449776395874857
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-adaptive-coarse",
+      "completedFrames": 5760,
+      "elapsedSeconds": 10.015199999988079,
+      "fps": 575.1258087713531,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7726710335920929
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-adaptive-coarse",
+      "completedFrames": 9200,
+      "elapsedSeconds": 10.015899999976158,
+      "fps": 918.5395221619525,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7870814172588857
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-linear",
+      "completedFrames": 7456,
+      "elapsedSeconds": 10.017,
+      "fps": 744.334631127084,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-conservative",
+      "completedFrames": 6480,
+      "elapsedSeconds": 10.005,
+      "fps": 647.6761619190404,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8701411097026592
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-mirror-adaptive",
+      "completedFrames": 5776,
+      "elapsedSeconds": 10.014100000023841,
+      "fps": 576.7867307083261,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.7749024519186296
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-linear",
+      "completedFrames": 11680,
+      "elapsedSeconds": 10.008399999976158,
+      "fps": 1167.0197034518828,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 1
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-conservative",
+      "completedFrames": 10176,
+      "elapsedSeconds": 10.001700000047684,
+      "fps": 1017.4270373987907,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8718165035169348
+    },
+    {
+      "scene": "diag-metal-hit",
+      "renderer": "three-hiz-ggx-adaptive",
+      "completedFrames": 10208,
+      "elapsedSeconds": 10.0035,
+      "fps": 1020.4428450042484,
+      "gpuAdapter": {
+        "vendor": "nvidia",
+        "architecture": "ampere",
+        "description": "NVIDIA GeForce RTX 3060 Ti"
+      },
+      "ratioVsLinear": 0.8744006994791259
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "scene": "diag-occlusion",
+  "renderer": "three-hiz-mirror-adaptive-coarse",
+  "reference": "three-gpu-pathtracer",
+  "encoding": "decoded AVIF quality 90 RGB8",
+  "mse": 210.89728009259258,
+  "psnrDb": 24.890093821165486,
+  "identical": false,
+  "changedChannelFraction": 0.2329591049382716,
+  "maxDelta": 142,
+  "deltaGain": 8
+}
