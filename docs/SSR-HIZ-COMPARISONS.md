@@ -8,7 +8,7 @@ After installing and building the pinned code submodules, run from the repositor
 
 ```powershell
 pnpm build
-pnpm --filter @three-fidelity/playground build
+pnpm --filter @three-fidelity/playground build --outDir ../../render-site
 pnpm render:experiments --renderers 'three-hiz-*' --scenes 'diag-*'
 pnpm performance:process
 node scripts/report-hiz-comparisons.mjs

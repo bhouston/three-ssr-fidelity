@@ -1,18 +1,5 @@
 // Matched fork controls: only Hi-Z traversal differs within each sampling mode.
-import * as Fork from 'three';
-import {
-  AmbientLightNode,
-  DirectionalLightNode,
-  HemisphereLightNode,
-  LightProbeNode,
-  PMREMGenerator,
-  PointLightNode,
-  RectAreaLightNode,
-  RenderPipeline,
-  SpotLightNode,
-  UnsignedByteType,
-  WebGPURenderer,
-} from 'three/webgpu';
+import { PMREMGenerator, RenderPipeline, UnsignedByteType, WebGPURenderer } from 'three/webgpu';
 import {
   color,
   metalness,
@@ -38,16 +25,6 @@ import { configureRenderer, prepareScene, setRenderSize } from './helpers.js';
 
 // oxlint-disable-next-line typescript/no-explicit-any
 type AnyNode = any;
-const forkLights: [AnyNode, AnyNode][] = [
-  [PointLightNode, Fork.PointLight],
-  [DirectionalLightNode, Fork.DirectionalLight],
-  [SpotLightNode, Fork.SpotLight],
-  [AmbientLightNode, Fork.AmbientLight],
-  [HemisphereLightNode, Fork.HemisphereLight],
-  [RectAreaLightNode, Fork.RectAreaLight],
-  [LightProbeNode, Fork.LightProbe],
-];
-
 export type HiZSSRVariant = { name: string; stochastic: boolean; traversal: 'linear' | 'conservative' | 'adaptive' };
 
 function createPipeline(renderer: WebGPURenderer, setup: SceneInstance, variant: HiZSSRVariant): RenderPipeline {
@@ -120,7 +97,6 @@ export async function createHiZRenderer(
     trackTimestamp,
     requiredLimits: { maxColorAttachmentBytesPerSample: 64 },
   } as AnyNode);
-  for (const [lightNode, light] of forkLights) renderer.library.addLight(lightNode, light);
   renderer.shadowMap.enabled = true;
   configureRenderer(renderer, effects);
   await renderer.init();
