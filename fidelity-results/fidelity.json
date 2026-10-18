@@ -16,6 +16,34 @@
       "category": "SSR"
     },
     {
+      "id": "three-pr72-ggx-raw",
+      "label": "PR #72 control · GGX raw",
+      "reference": false,
+      "enabled": true,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-ggx-recurrent",
+      "label": "PR #72 control · GGX recurrent",
+      "reference": false,
+      "enabled": true,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-raw",
+      "label": "PR #72 experiment · biased power lobe raw",
+      "reference": false,
+      "enabled": true,
+      "category": "Experimental power lobe"
+    },
+    {
+      "id": "three-pr72-power-recurrent",
+      "label": "PR #72 experiment · biased power lobe recurrent",
+      "reference": false,
+      "enabled": true,
+      "category": "Experimental power lobe"
+    },
+    {
       "id": "three-dev-mirror",
       "label": "Dev mirror control · dielectrics enabled",
       "reference": false,
@@ -139,14 +167,15 @@
     {
       "id": "ssr",
       "name": "Stochastic SSR baseline",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
     },
     {
       "id": "ssr-proposals",
       "name": "Independent SSR PRs",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-dev-mirror",
@@ -156,12 +185,23 @@
         "three-dev-pr32-dielectric",
         "three-dev-pr33-back-depth",
         "three-dev-pr34-radiance-hook"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
+    },
+    {
+      "id": "ssr-power-lobe",
+      "name": "Experimental power lobe and matched GGX controls",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-pr72-ggx-raw",
+        "three-pr72-ggx-recurrent",
+        "three-pr72-power-raw",
+        "three-pr72-power-recurrent"
+      ]
     },
     {
       "id": "ssr-contributions",
       "name": "Full pipeline and feature-removal comparisons",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-ssr-full",
@@ -174,8 +214,7 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
     }
   ]
 }

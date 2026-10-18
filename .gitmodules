@@ -39,3 +39,7 @@
 [submodule "submodules/three-pr34"]
 	path = submodules/three-pr34
 	url = https://github.com/bhouston/three.js.git
+[submodule "submodules/three-pr72"]
+	path = submodules/three-pr72
+	url = https://github.com/bhouston/three.js.git
+	ignore = dirty

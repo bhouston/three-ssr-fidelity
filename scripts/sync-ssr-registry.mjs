@@ -10,13 +10,15 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles))
     enabled: true,
     params: { renderer: id },
     category:
-      profile.kind === 'contribution'
-        ? 'Conditional comparisons'
-        : profile.kind === 'hook'
-          ? 'Independent PRs'
-          : profile.proposal === null
-            ? 'Controls'
-            : 'Independent PRs',
+      profile.kind === 'projected'
+        ? 'Experimental power lobe'
+        : profile.kind === 'contribution'
+          ? 'Conditional comparisons'
+          : profile.kind === 'hook'
+            ? 'Independent PRs'
+            : profile.proposal === null
+              ? 'Controls'
+              : 'Independent PRs',
   });
 registry.comparisonPresets = [
   { id: 'ssr', name: 'Stochastic SSR baseline', ref: 'three-gpu-pathtracer', renderers: ['three-dev'] },
@@ -27,9 +29,17 @@ registry.comparisonPresets = [
     renderers: [
       'three-dev',
       ...Object.entries(ssrExperimentProfiles)
-        .filter(([, p]) => p.kind !== 'contribution')
+        .filter(([, p]) => p.kind !== 'contribution' && p.kind !== 'projected')
         .map(([id]) => id),
     ],
+  },
+  {
+    id: 'ssr-power-lobe',
+    name: 'Experimental power lobe and matched GGX controls',
+    ref: 'three-gpu-pathtracer',
+    renderers: Object.entries(ssrExperimentProfiles)
+      .filter(([, p]) => p.kind === 'projected')
+      .map(([id]) => id),
   },
   {
     id: 'ssr-contributions',

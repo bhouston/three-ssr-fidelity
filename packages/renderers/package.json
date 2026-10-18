@@ -27,12 +27,14 @@
     "three-gpu-pathtracer": "workspace:*",
     "three-mesh-bvh": "^0.9.15",
     "three-pr34": "link:../../submodules/three-pr34",
+    "three-pr72": "link:../../submodules/three-pr72",
     "three-r186": "npm:three@0.186.1"
   },
   "devDependencies": {
     "@types/three": "^0.186.0",
     "@types/three-dev": "npm:@types/three@0.186.0",
     "@types/three-pr34": "npm:@types/three@0.186.0",
+    "@types/three-pr72": "npm:@types/three@0.186.0",
     "@types/three-r186": "npm:@types/three@0.186.0"
   }
 }
