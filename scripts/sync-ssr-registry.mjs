@@ -10,13 +10,15 @@ for (const [id, profile] of Object.entries(ssrExperimentProfiles))
     enabled: true,
     params: { renderer: id },
     category:
-      profile.kind === 'contribution'
-        ? 'Conditional comparisons'
-        : profile.kind === 'hook'
-          ? 'Independent PRs'
-          : profile.proposal === null
-            ? 'Controls'
-            : 'Independent PRs',
+      profile.kind === 'hiz'
+        ? 'Hi-Z traversal'
+        : profile.kind === 'contribution'
+          ? 'Conditional comparisons'
+          : profile.kind === 'hook'
+            ? 'Independent PRs'
+            : profile.proposal === null
+              ? 'Controls'
+              : 'Independent PRs',
   });
 registry.comparisonPresets = [
   { id: 'ssr', name: 'Stochastic SSR baseline', ref: 'three-gpu-pathtracer', renderers: ['three-dev'] },
@@ -27,7 +29,7 @@ registry.comparisonPresets = [
     renderers: [
       'three-dev',
       ...Object.entries(ssrExperimentProfiles)
-        .filter(([, p]) => p.kind !== 'contribution')
+        .filter(([, p]) => p.kind !== 'contribution' && p.kind !== 'hiz')
         .map(([id]) => id),
     ],
   },
@@ -43,6 +45,30 @@ registry.comparisonPresets = [
     ],
   },
 ];
+for (const mode of ['mirror', 'ggx'])
+  registry.comparisonPresets.push({
+    id: `hiz-${mode}`,
+    name: `Hi-Z ${mode} vs linear`,
+    ref: `three-hiz-${mode}-linear`,
+    renderers: Object.keys(ssrExperimentProfiles).filter((id) => id.startsWith(`three-hiz-${mode}-`)),
+  });
+registry.comparisonPresets.push({
+  id: 'hiz-pathtracer',
+  name: 'Hi-Z vs pathtracer',
+  ref: 'three-gpu-pathtracer',
+  renderers: Object.entries(ssrExperimentProfiles)
+    .filter(([, p]) => p.kind === 'hiz')
+    .map(([id]) => id),
+});
+registry.performance.hiz = {
+  entries: registry.scenes
+    .filter((s) => s.id.startsWith('diag-'))
+    .flatMap((scene) =>
+      Object.entries(ssrExperimentProfiles)
+        .filter(([, p]) => p.kind === 'hiz')
+        .map(([renderer]) => ({ renderer, scene: scene.id, durationMs: 10000, params: { width: 480, height: 360 } })),
+    ),
+};
 registry.performance.representative.entries = registry.scenes.flatMap((scene) =>
   registry.renderers.map((renderer) => ({
     renderer: renderer.id,

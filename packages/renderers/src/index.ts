@@ -1,3 +1,4 @@
+import { createHiZRenderer } from './three-hiz.js';
 import { ssrExperimentProfiles, isSSRExperiment } from './ssr-experiments.js';
 import { stockSSRFactories } from './ssr-pr/index.js';
 import { createThreeNewRenderer } from './three-new.js';
@@ -67,6 +68,7 @@ export function createRenderer(
   };
   if (isSSRExperiment(name)) {
     const profile = ssrExperimentProfiles[name];
+    if (profile.kind === 'hiz') return instrument(createHiZRenderer(canvas, setup, options, { name, ...profile }));
     if (profile.kind === 'stock')
       return instrument(
         createDevRenderer(canvas, setup, options, {

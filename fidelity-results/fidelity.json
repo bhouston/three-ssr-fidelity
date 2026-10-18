@@ -133,20 +133,63 @@
       "reference": false,
       "enabled": true,
       "category": "Conditional comparisons"
+    },
+    {
+      "id": "three-hiz-mirror-linear",
+      "label": "Fork mirror · linear",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-conservative",
+      "label": "Fork mirror · conservative",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-mirror-adaptive",
+      "label": "Fork mirror · adaptive",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-linear",
+      "label": "Fork ggx · linear",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-conservative",
+      "label": "Fork ggx · conservative",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
+    },
+    {
+      "id": "three-hiz-ggx-adaptive",
+      "label": "Fork ggx · adaptive",
+      "reference": false,
+      "enabled": true,
+      "category": "Hi-Z traversal"
     }
   ],
   "comparisonPresets": [
     {
       "id": "ssr",
       "name": "Stochastic SSR baseline",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
     },
     {
       "id": "ssr-proposals",
       "name": "Independent SSR PRs",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-dev-mirror",
@@ -156,12 +199,12 @@
         "three-dev-pr32-dielectric",
         "three-dev-pr33-back-depth",
         "three-dev-pr34-radiance-hook"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
     },
     {
       "id": "ssr-contributions",
       "name": "Full pipeline and feature-removal comparisons",
+      "ref": "three-gpu-pathtracer",
       "renderers": [
         "three-dev",
         "three-ssr-full",
@@ -174,8 +217,40 @@
         "three-ssr-no-hit-specular",
         "three-ssr-biased-lobe",
         "three-ssr-short-rays"
-      ],
-      "ref": "three-gpu-pathtracer"
+      ]
+    },
+    {
+      "id": "hiz-mirror",
+      "name": "Hi-Z mirror vs linear",
+      "ref": "three-hiz-mirror-linear",
+      "renderers": [
+        "three-hiz-mirror-linear",
+        "three-hiz-mirror-conservative",
+        "three-hiz-mirror-adaptive"
+      ]
+    },
+    {
+      "id": "hiz-ggx",
+      "name": "Hi-Z ggx vs linear",
+      "ref": "three-hiz-ggx-linear",
+      "renderers": [
+        "three-hiz-ggx-linear",
+        "three-hiz-ggx-conservative",
+        "three-hiz-ggx-adaptive"
+      ]
+    },
+    {
+      "id": "hiz-pathtracer",
+      "name": "Hi-Z vs pathtracer",
+      "ref": "three-gpu-pathtracer",
+      "renderers": [
+        "three-hiz-mirror-linear",
+        "three-hiz-mirror-conservative",
+        "three-hiz-mirror-adaptive",
+        "three-hiz-ggx-linear",
+        "three-hiz-ggx-conservative",
+        "three-hiz-ggx-adaptive"
+      ]
     }
   ]
 }
