@@ -30,6 +30,73 @@ adapted. PR #34 uses its own pinned `submodules/three-pr34` runtime. The shared 
 runtime is pinned at `286e2d8cba7088982eb9068d4bb8f68e42c3bf67`; its SSRNode matches
 the proposals' base `e615266e7647f0a062219d55e79913237594b6b7`.
 
+## Opt-in power-lobe investigation
+
+The `ssr-power-lobe` comparison preset adds four methods from
+[three.js PR #72](https://github.com/bhouston/three.js/pull/72). The default `ssr`
+preset, existing source pins and path-traced reference images remain unchanged.
+These four methods start unchecked in fidelity views; choosing their preset or
+selecting a method explicitly enables them. They remain available in live views.
+
+| Method                     | Estimator                          | SSR filtering               | Matched estimator control             |
+| -------------------------- | ---------------------------------- | --------------------------- | ------------------------------------- |
+| three-pr72-ggx-raw         | Stock stochastic GGX               | None                        | Baseline for this runtime/composition |
+| three-pr72-ggx-recurrent   | Stock stochastic GGX               | Existing temporal/recurrent | Raw GGX for filter-only comparison    |
+| three-pr72-power-raw       | Biased power lobe, projected steps | None                        | three-pr72-ggx-raw                    |
+| three-pr72-power-recurrent | Biased power lobe, projected steps | Existing temporal/recurrent | three-pr72-ggx-recurrent              |
+
+All four use the same isolated `submodules/three-pr72` runtime, scene, full native
+trace resolution, one ray, 16-step budget, authored absolute reach/thickness and
+intensity, disabled radiance clamp, and non-jittered final TRAA. The power seed is
+1; it does not control stock noise. A separate opaque pass supplies matching
+geometry and unexposed linear HDR beauty. Power samples its own reprojected
+previous opaque color; stock samples current opaque color. Transparent beauty is
+added downstream and never enters power's history. SSGI and SSR multibounce are off.
+
+Both estimators receive the same 512×256 linear HDR equirectangular environment,
+baked from the authored environment using a 256-pixel cube. This conversion is
+necessary because stock SSR requires CPU equirectangular data and rejects PMREM.
+The bake uses the inverse of SSR's `equirectUV`, verified on hardware with six
+cardinal directions and an oblique direction in an asymmetric HDR environment.
+If a caller already supplies a CPU-readable HDR equirectangular scene environment,
+both methods borrow it without disposing it; unsupported borrowed maps throw
+instead of silently removing miss fallback.
+Beauty retains its existing diffuse environment lighting; its indirect specular
+is suppressed only in the isolated experimental runtime so fallback is not applied
+twice. Scenes without SSR are explicitly rejected. GGX's native BRDF weights,
+edge fade, distance scaling, thickness acceptance and step distribution still
+differ from the alternative. Matching numeric budgets does not make the methods
+quality-equivalent. Compare within this four-method group before using the older
+`three-dev` captures, which have different runtime/composition defaults.
+
+Power is deliberately **biased**, not GGX VNDF or an unbiased Monte Carlo BRDF
+estimator: restricted Ey and missing BRDF/PDF correction change energy/lobe shape.
+It normalizes over valid launched samples, including environment misses, and
+applies approximate Fresnel once. Its weighted RGB/ray-distance output feeds the
+unchanged specular temporal/recurrent adapter. Coverage, hit distance and filter
+inverse-age alpha remain distinct. Raw means no SSR filter; final TRAA is retained
+on both sides. No moments/à-trous denoiser is added.
+
+Limitations include single-depth screen-space misses/false hits, one-frame incident
+lighting lag, conservative history rejection for depth-moving objects, a
+representative multi-ray distance adapter and approximate additive glass layering.
+The static captures measure one pose/seed after 64 completed frames; they do not
+establish motion quality or speed. Full-frame RGB8 PSNR can hide local reflection
+errors. Inspect images/differences against the existing 4096-sample references.
+
+To regenerate only this investigation after the standard build steps:
+
+```powershell
+pnpm render:experiments --renderers three-pr72-ggx-raw,three-pr72-ggx-recurrent,three-pr72-power-raw,three-pr72-power-recurrent
+pnpm exec fidelity-kit process fidelity-results --performance-root performance-results
+node scripts/report-ssr-experiments.mjs
+pnpm site:build
+```
+
+Run `node scripts/verify-ssr-environment.mjs` to check the shared bake's direction,
+row orientation and values above one on a physical WebGPU adapter. It rejects
+software adapters and writes a report when `SWARM_ARTIFACTS` is set.
+
 ## Conditional contributions
 
 `three-ssr-full` reproduces the reflection pipeline from the

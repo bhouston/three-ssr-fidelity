@@ -19,10 +19,45 @@ type StockProfile = {
 };
 type ContributionProfile = { kind: 'contribution'; name: string; contribution: SSRContribution; comparator: string };
 type HookProfile = { kind: 'hook'; name: string; comparator: string };
-type Profile = StockProfile | ContributionProfile | HookProfile;
+export type ProjectedProfile = {
+  kind: 'projected';
+  name: string;
+  estimator: 'ggx' | 'power';
+  denoise: boolean;
+  comparator: string;
+};
+type Profile = StockProfile | ContributionProfile | HookProfile | ProjectedProfile;
 
 /** Standalone proposals and conditional ablations have deliberately separate comparison controls. */
 export const ssrExperimentProfiles = {
+  'three-pr72-ggx-raw': {
+    kind: 'projected',
+    name: 'PR #72 control · GGX raw',
+    estimator: 'ggx',
+    denoise: false,
+    comparator: 'three-dev',
+  },
+  'three-pr72-ggx-recurrent': {
+    kind: 'projected',
+    name: 'PR #72 control · GGX recurrent',
+    estimator: 'ggx',
+    denoise: true,
+    comparator: 'three-pr72-ggx-raw',
+  },
+  'three-pr72-power-raw': {
+    kind: 'projected',
+    name: 'PR #72 experiment · biased power lobe raw',
+    estimator: 'power',
+    denoise: false,
+    comparator: 'three-pr72-ggx-raw',
+  },
+  'three-pr72-power-recurrent': {
+    kind: 'projected',
+    name: 'PR #72 experiment · biased power lobe recurrent',
+    estimator: 'power',
+    denoise: true,
+    comparator: 'three-pr72-ggx-recurrent',
+  },
   'three-dev-mirror': {
     kind: 'stock',
     name: 'Dev mirror control · dielectrics enabled',

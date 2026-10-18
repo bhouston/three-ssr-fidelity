@@ -5,7 +5,9 @@ import { pathToFileURL } from 'node:url';
 import { spawn } from 'node:child_process';
 // Reuse the installed, pinned build tools without changing the proposal's package or lockfile.
 const require = createRequire(new URL('../submodules/three.js/package.json', import.meta.url));
-const root = resolve('submodules/three-pr34');
+const name = process.argv[2] ?? 'three-pr34';
+if (!['three-pr34', 'three-pr72'].includes(name)) throw new Error('Unknown pinned Three.js runtime');
+const root = resolve('submodules', name);
 await mkdir(join(root, 'build'), { recursive: true });
 const temporary = join(root, 'build/.ssr-rollup.config.mjs');
 const config = (await readFile(join(root, 'utils/build/rollup.config.js'), 'utf8')).replace(

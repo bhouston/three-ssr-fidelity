@@ -7,6 +7,23 @@ import registry from '../../../registry.json';
 import { performanceConfiguration } from './performance-config';
 
 describe('shared project registry', () => {
+  it('keeps power-lobe methods opt-in and pairs each estimator at the same filter setting', () => {
+    expect(registry.comparisonPresets.find((preset) => preset.id === 'ssr')?.renderers).toEqual(['three-dev']);
+    const preset = registry.comparisonPresets.find((candidate) => candidate.id === 'ssr-power-lobe');
+    expect(preset?.ref).toBe('three-gpu-pathtracer');
+    expect(preset?.renderers.toSorted()).toEqual([
+      'three-pr72-ggx-raw',
+      'three-pr72-ggx-recurrent',
+      'three-pr72-power-raw',
+      'three-pr72-power-recurrent',
+    ]);
+    expect(registry.renderers.filter((renderer) => renderer.id.startsWith('three-pr72-'))).toHaveLength(4);
+    expect(
+      registry.renderers
+        .filter((renderer) => renderer.id.startsWith('three-pr72-'))
+        .every((renderer) => !renderer.enabled),
+    ).toBe(true);
+  });
   it('registers every runtime scene with its canonical fidelity dimensions', () => {
     const suite = parseRegistry(registry);
     expect(suite.scenes.length).toBeLessThanOrEqual(20);
