@@ -54,6 +54,11 @@ added downstream and never enters power's history. SSGI and SSR multibounce are 
 Both estimators receive the same 512×256 linear HDR equirectangular environment,
 baked from the authored environment using a 256-pixel cube. This conversion is
 necessary because stock SSR requires CPU equirectangular data and rejects PMREM.
+The bake uses the inverse of SSR's `equirectUV`, verified on hardware with six
+cardinal directions and an oblique direction in an asymmetric HDR environment.
+If a caller already supplies a CPU-readable HDR equirectangular scene environment,
+both methods borrow it without disposing it; unsupported borrowed maps throw
+instead of silently removing miss fallback.
 Beauty retains its existing diffuse environment lighting; its indirect specular
 is suppressed only in the isolated experimental runtime so fallback is not applied
 twice. Scenes without SSR are explicitly rejected. GGX's native BRDF weights,
@@ -85,6 +90,10 @@ pnpm exec fidelity-kit process fidelity-results --performance-root performance-r
 node scripts/report-ssr-experiments.mjs
 pnpm site:build
 ```
+
+Run `node scripts/verify-ssr-environment.mjs` to check the shared bake's direction,
+row orientation and values above one on a physical WebGPU adapter. It rejects
+software adapters and writes a report when `SWARM_ARTIFACTS` is set.
 
 ## Conditional contributions
 

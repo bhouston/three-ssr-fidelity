@@ -43,6 +43,7 @@ import {
   vec4,
   velocity,
   cubeTexture,
+  equirectDirection,
   uv as textureUV,
 } from 'three-pr72/tsl';
 import { ssr } from 'three-pr72/addons/tsl/display/SSRNode.js';
@@ -79,8 +80,13 @@ PhysicalLightingModel.prototype.indirectSpecular = function (this: AnyNode, buil
  * Bake the authored environment identically for both; never give one a black miss fallback.
  * This is initialization work, independent of the per-frame HDR history.
  */
-async function bakeSharedEnvironment(renderer: WebGPURenderer, setup: SceneInstance) {
-  if (!setup.environment) return null;
+export async function bakeSharedEnvironment(renderer: WebGPURenderer, setup: SceneInstance) {
+  if (!setup.environment) {
+    const existing = setup.scene.environment;
+    if (existing && (!(existing as AnyNode).image?.data || existing.mapping !== EquirectangularReflectionMapping))
+      throw new Error('PR72 experiments require CPU-readable equirectangular HDR or an authored environment scene');
+    return { texture: existing, owned: false };
+  }
   const cube = new CubeRenderTarget(256, { type: HalfFloatType });
   const camera = new CubeCamera(0.1, 100, cube);
   const material = new MeshBasicNodeMaterial();
@@ -89,11 +95,9 @@ async function bakeSharedEnvironment(renderer: WebGPURenderer, setup: SceneInsta
   const previous = renderer.getRenderTarget();
   try {
     camera.update(renderer, setup.environment.scene as AnyNode);
-    const theta = textureUV()
-      .x.sub(0.5)
-      .mul(Math.PI * 2);
-    const phi = textureUV().y.sub(0.5).mul(-Math.PI);
-    const direction = vec3(theta.sin().mul(phi.cos()), phi.sin(), theta.cos().mul(phi.cos()).negate());
+    // Match SSR's equirectUV exactly. The WebGPU readback/DataTexture round trip
+    // preserves these UVs; cardinal-direction hardware tests guard against extra flips.
+    const direction = equirectDirection(textureUV());
     material.colorNode = cubeTexture(cube.texture, direction);
     material.toneMapped = false;
     renderer.setRenderTarget(target);
@@ -105,7 +109,7 @@ async function bakeSharedEnvironment(renderer: WebGPURenderer, setup: SceneInsta
     texture.generateMipmaps = false;
     texture.minFilter = texture.magFilter = LinearFilter;
     texture.needsUpdate = true;
-    return texture;
+    return { texture, owned: true };
   } finally {
     renderer.setRenderTarget(previous);
     material.dispose();
@@ -140,7 +144,14 @@ export async function createProjectedSSRRenderer(
       }
     },
   });
-  const environment = await bakeSharedEnvironment(renderer, setup);
+  let environment: Awaited<ReturnType<typeof bakeSharedEnvironment>>;
+  try {
+    environment = await bakeSharedEnvironment(renderer, setup);
+  } catch (error) {
+    releaseScene();
+    renderer.dispose();
+    throw error;
+  }
   const pipeline = new RenderPipeline(renderer);
   const beauty = pass(scene, camera);
   // Both estimators use the same opaque geometry/color pass and final transparent beauty.
@@ -173,7 +184,7 @@ export async function createProjectedSSRRenderer(
     metalnessNode: material.r,
     roughnessNode: material.g,
     diffuseNode: diffuse,
-    environmentNode: environment,
+    environmentNode: environment.texture,
     velocityNode: motion,
   });
   node.maxDistance.value = params?.maxDistance ?? 1;
@@ -228,7 +239,7 @@ export async function createProjectedSSRRenderer(
       aa.dispose();
       opaque.dispose();
       beauty.dispose();
-      environment?.dispose();
+      if (environment.owned) environment.texture?.dispose();
       releaseScene();
       renderer.dispose();
     },

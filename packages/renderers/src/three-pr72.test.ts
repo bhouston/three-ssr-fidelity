@@ -1,5 +1,6 @@
 import { beforeEach, expect, it, vi } from 'vitest';
 import type { SceneInstance } from '@three-fidelity/scenes';
+import type { Texture } from 'three';
 import { createProjectedSSRRenderer } from './three-pr72.js';
 import { ssrExperimentProfiles } from './ssr-experiments.js';
 
@@ -111,6 +112,7 @@ vi.mock('three-pr72/tsl', () => ({
   velocity: {},
   screenUV: {},
   cubeTexture: vi.fn(),
+  equirectDirection: vi.fn(),
   uv: vi.fn(),
 }));
 vi.mock('three-pr72/addons/tsl/display/PowerLobeSSRNode.js', () => ({ powerLobeSSR: mock.power }));
@@ -195,4 +197,42 @@ it('rejects scenes without SSR instead of removing their environment specular', 
     ),
   ).rejects.toThrow('require a scene with SSR enabled');
   expect(mock.power).not.toHaveBeenCalled();
+});
+
+it('borrows an existing CPU HDR for both estimators without disposing caller-owned textures', async () => {
+  const hdr = { mapping: 303, image: { data: new Float32Array([1, 1, 1, 1]) }, dispose: vi.fn() };
+  for (const id of ['three-pr72-ggx-raw', 'three-pr72-power-raw'] as const) {
+    const scene = setup();
+    scene.scene.environment = hdr as unknown as Texture;
+    const live = await createProjectedSSRRenderer(
+      {} as HTMLCanvasElement,
+      scene,
+      { width: 16, height: 16 },
+      ssrExperimentProfiles[id],
+    );
+    const factory = id.includes('ggx') ? mock.ggx : mock.power;
+    expect(factory).toHaveBeenLastCalledWith(
+      expect.anything(),
+      expect.anything(),
+      expect.anything(),
+      expect.objectContaining({ environmentNode: hdr }),
+    );
+    live.dispose();
+    expect(hdr.dispose).not.toHaveBeenCalled();
+    expect(scene.scene.environment).toBe(hdr);
+  }
+});
+
+it('rejects unsupported borrowed environments instead of silently blackening misses', async () => {
+  const scene = setup();
+  scene.scene.environment = { mapping: 306, image: {} } as Texture;
+  await expect(
+    createProjectedSSRRenderer(
+      {} as HTMLCanvasElement,
+      scene,
+      { width: 16, height: 16 },
+      ssrExperimentProfiles['three-pr72-ggx-raw'],
+    ),
+  ).rejects.toThrow('CPU-readable equirectangular HDR');
+  expect(mock.ggx).not.toHaveBeenCalled();
 });

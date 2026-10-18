@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SSR environment orientation check</title>
+  </head>
+  <body>
+    <script type="module">
+      import { runEnvironmentCheck } from '../../renderers/src/three-pr72-environment-check.ts';
+      try {
+        window.ssrEnvironmentCheck = { passed: true, ...(await runEnvironmentCheck()) };
+      } catch (error) {
+        window.ssrEnvironmentCheck = { passed: false, message: error.message, stack: error.stack };
+      }
+    </script>
+  </body>
+</html>
